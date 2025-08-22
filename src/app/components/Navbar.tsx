@@ -20,7 +20,7 @@ function Navbar() {
         <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-quicksand text-sm font-medium tracking-widest ">
           <span>RADOVANA SIMICA CIGE 7, BEOGRAD</span>
         </div>
-        <div className=" px-4 py-8 lg:py-12 bg-white ">
+        <div className="px-4 py-8 lg:py-12 bg-white ">
           <div className="container mx-auto flex items-center justify-between ">
             <button
               className=" flex lg:hidden"
@@ -31,7 +31,9 @@ function Navbar() {
             <nav className="hidden lg:flex flex-1 font-quicksand font-bold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase col-">
                 <li>
-                  <Link href="/">The doctors</Link>
+                  <Link href="/" className="hover:underline">
+                    The doctors
+                  </Link>
                 </li>
                 <li>
                   <Link href="/">Photo gallery</Link>
@@ -41,7 +43,9 @@ function Navbar() {
                 </li>
               </ul>
             </nav>
-            <div className="text-7xl font-extrabold flex-none px-5">VTR</div>
+            <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
+              VTR
+            </div>
             <nav className="hidden lg:flex flex-1 justify-end font-quicksand font-bold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase">
                 <li>
@@ -66,7 +70,7 @@ function Navbar() {
         </div>
       </header>
       <div
-        className={`flex flex-col fixed top-[160px] w-full bg-white min-h-full overflow-y-auto z-50 ${navOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out
+        className={`flex flex-col fixed top-[148px] w-full bg-white min-h-full overflow-y-auto z-50 ${navOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out
       `}
       >
         <nav className="flex w-full justify-center">

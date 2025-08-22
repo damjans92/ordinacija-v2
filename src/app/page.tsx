@@ -1,103 +1,207 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [showControls, setShowControls] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  return (
+    <main>
+      <section id="hero" className="container mx-auto">
+        <div className="flex flex-wrap border-1 border-black">
+          <div className="w-full lg:w-1/2">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/banner-image-left.jpg"
+              alt="Hero Image"
+              width={450}
+              height={800}
+              className="w-full h-full object-cover"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          </div>
+          <div className="w-full lg:w-1/2 flex flex-col p-12">
+            {/* H1 fills top space */}
+            <div className="flex flex-1 flex-col items-center justify-center text-center">
+              <h1 className="text-5xl font-medium tracking-widest mb-4">
+                THE ART OF <br /> THE SMILE
+              </h1>
+              <a href="#" className="uppercase tracking-widest">
+                Pročitajte više
+              </a>
+            </div>
+
+            {/* Paragraph sticks to bottom */}
+            <div className="flex justify-between">
+              <p className="mt-4 text-md font-bold uppercase tracking-widest font-quicksand">
+                nađite nas na adresi
+                <br /> Radovana Simića Cige 7<br /> 11000 Beograd
+              </p>
+              <div className="text-7xl font-extrabold flex-none px-5">VTR</div>
+            </div>
+          </div>
+        </div>
+        <div className="text-center py-3">
+          <a href="#"> SCROLL DOWN</a>
+        </div>
+      </section>
+      <section id="doctors" className="container mx-auto py-12">
+        <div className="flex flex-wrap">
+          <div className="lg:w-5/12 flex flex-col md:text-center justify-center">
+            <h2 className="uppercase pb-7 text-4xl tracking-widest">
+              The <br />
+              Doctors
+            </h2>
+            <p className="pb-6 md:px-10">
+              Dr. Marc Lowenberg, Dr. Gregg Lituchy, and Dr. Brian Kantor are
+              cosmetic dentists who have transformed the smiles of many of the
+              world’s best-known actors, models, rock stars, authors, and other
+              public figures. Since the 1980’s, Dr. Lowenberg and Dr. Lituchy
+              have been at the forefront of the field, with Dr. Kantor joining
+              the practice in 2002.
+            </p>
+            <a href="#" className="uppercase pb-6">
+              Read more
+            </a>
+          </div>
+          <div className="lg:w-7/12 bg-gray-400 h-full w-full ">
+            <img src="https://placehold.co/1400x776" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="stories" className="container mx-auto py-12">
+        <div className="flex flex-col border-1 justify-center border-black text-center bg-gray-300 min-h-[426px]">
+          <h2 className="uppercase pb-7 text-4xl tracking-widest">
+            View our
+            <br /> patient stories
+          </h2>
+          <a href="#" className="uppercase">
+            See our results
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="text-center w-full py-6">
+          <a href="#" className="uppercase pb-6 text-center">
+            More
+          </a>
+        </div>
+        <h2 className="uppercase pb-7 text-4xl tracking-widest"></h2>
+      </section>
+      <div className="border-t-1 border-black"></div>
+      <section id="whatwedo" className="container mx-auto py-12 ">
+        <div className="flex flex-wrap mb-16">
+          <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
+            <a
+              href="#"
+              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+            >
+              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+                Porcelain
+                <br /> veneers
+              </h3>
+              <span className="uppercase text-white">More</span>
+            </a>
+            <a
+              href="#"
+              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+            >
+              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+                Bonding
+              </h3>
+              <span className="uppercase text-white">More</span>
+            </a>
+            <a
+              href="#"
+              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+            >
+              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+                Whitening
+              </h3>
+              <span className="uppercase text-white">More</span>
+            </a>
+            <a
+              href="#"
+              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+            >
+              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+                Procelain fillings
+              </h3>
+              <span className="uppercase text-white">More</span>
+            </a>
+          </div>
+          <div className="lg:w-4/12 flex-col pr-12 pt-8 lg:pl-10 box-border">
+            <h2 className="uppercase pb-7 tracking-widest">
+              What
+              <br /> we do
+            </h2>
+            <p className=" pb-6">
+              Your smile is your calling card. Whether you’re on a job interview
+              or a first date – or just going through the many actions and
+              interactions of an average day – your smile has an immediate
+              impact on the way people perceive you. And if you’re embarrassed
+              about your teeth – because of spaces, chips, crookedness, or color
+              – people aren’t perceiving the most confident and attractive
+              version of you.
+            </p>
+
+            <div className="flex flex-col gap-4 mt-8 uppercase font-bold tracking-widest">
+              <a href="#" className="">
+                More about our procedures
+              </a>
+              <a href="#">Before and after gallery</a>
+              <a href="#">Read our faqs</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p className=" pb-6 text-center">
+            Lowenberg, Lituchy & Kantor is a cosmetic dental practice in
+            Manhattan, New York (NY) at the forefront of the cosmetic dental
+            revolution. In the early 1980’s, Dr. Marc Lowenberg became the
+            founding member of this dental practice that early on included rock
+            stars, movie stars, fashion designers, artists and authors, who were
+            among the first to seek cosmetic dental enhancement and smile
+            makeover. He was later joined by Dr.Gregg Lituchy and Dr. Brian
+            Kantor. Over the years, they earned the moniker of “dentists to the
+            stars” and became universally renowned for their smile
+            transformations with the use of porcelain veneers. With the addition
+            of Jason J. Kim, a master ceramist, and a world class in house
+            dental lab, LLK
+          </p>
+        </div>
+      </section>
+      <div className="border-t-1 border-black"></div>
+      <section id="office" className="py-12 bg-black text-white">
+        <div className="container mx-auto  ">
+          <div className="text-center">
+            <h2 className=" uppercase pb-7 text-4xl tracking-widest">
+              View our office
+            </h2>
+            <p className="">
+              You can visit us at Radovana Simica Cige 7, 11000 Beograd
+            </p>
+          </div>
+          <div
+            onMouseEnter={() => setShowControls(true)}
+            onMouseLeave={() => setShowControls(false)}
+          >
+            <video
+              loop
+              muted
+              playsInline
+              controls={showControls}
+              className="w-full h-full object-cover mt-6"
+            >
+              <source src="/office.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div>
+            <p className="font-quicksand tracking-widest py-6 text-center uppercase">
+              Our office is located in the heart of Belgrade, in a modern and
+              comfortable building. We have state-of-the-art equipment and a
+              team of experienced professionals who are dedicated to providing
+              you with the best possible care.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

@@ -31,15 +31,28 @@ function Navbar() {
             <nav className="hidden lg:flex flex-1 font-quicksand font-bold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase col-">
                 <li>
-                  <Link href="/" className="hover:underline">
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
                     The doctors
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">Photo gallery</Link>
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
+                    Photo gallery
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/">Patient stories</Link>
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
+                    Patient stories
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -49,16 +62,36 @@ function Navbar() {
             <nav className="hidden lg:flex flex-1 justify-end font-quicksand font-bold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase">
                 <li>
-                  <Link href="/">Services</Link>
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/">FAQS</Link>
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
+                    FAQS
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/">Reviews</Link>
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
+                    Reviews
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/">Contact</Link>
+                  <Link
+                    href="/"
+                    className="hover:border-b-1 hover:border-black pb-1"
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
               <div></div>

@@ -21,31 +21,35 @@ export default function Home() {
           <div className="w-full lg:w-1/2 flex flex-col p-12">
             {/* H1 fills top space */}
             <div className="flex flex-1 flex-col items-center justify-center text-center">
-              <h1 className="text-5xl font-medium tracking-widest mb-4">
+              <h1 className="text-3xl lg:text-5xl font-medium tracking-widest mb-4">
                 THE ART OF <br /> THE SMILE
               </h1>
-              <a href="#" className="uppercase tracking-widest">
+              <a href="#" className="uppercase tracking-widest link-underline">
                 Pročitajte više
               </a>
             </div>
 
             {/* Paragraph sticks to bottom */}
-            <div className="flex justify-between">
-              <p className="mt-4 text-md font-bold uppercase tracking-widest font-quicksand">
+            <div className="flex flex-col items-center md:flex-row md:justify-between">
+              <p className="mt-4 text-md font-bold uppercase tracking-widest font-quicksand text-center md:text-left">
                 nađite nas na adresi
                 <br /> Radovana Simića Cige 7<br /> 11000 Beograd
               </p>
-              <div className="text-7xl font-extrabold flex-none px-5">VTR</div>
+              <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
+                VTR
+              </div>
             </div>
           </div>
         </div>
         <div className="text-center py-3">
-          <a href="#"> SCROLL DOWN</a>
+          <a href="#" className="link-underline">
+            SCROLL DOWN
+          </a>
         </div>
       </section>
       <section id="doctors" className="container mx-auto py-12">
         <div className="flex flex-wrap">
-          <div className="lg:w-5/12 flex flex-col md:text-center justify-center">
+          <div className="lg:w-5/12 flex flex-col md:text-center justify-center items-center">
             <h2 className="uppercase pb-7 text-4xl tracking-widest">
               The <br />
               Doctors
@@ -58,7 +62,7 @@ export default function Home() {
               have been at the forefront of the field, with Dr. Kantor joining
               the practice in 2002.
             </p>
-            <a href="#" className="uppercase pb-6">
+            <a href="#" className="uppercase pb-6 link-underline">
               Read more
             </a>
           </div>
@@ -68,17 +72,17 @@ export default function Home() {
         </div>
       </section>
       <section id="stories" className="container mx-auto py-12">
-        <div className="flex flex-col border-1 justify-center border-black text-center bg-gray-300 min-h-[426px]">
+        <div className="flex flex-col border-1 items-center justify-center border-black text-center bg-gray-300 min-h-[426px]">
           <h2 className="uppercase pb-7 text-4xl tracking-widest">
             View our
             <br /> patient stories
           </h2>
-          <a href="#" className="uppercase">
+          <a href="#" className="uppercase link-underline w-auto">
             See our results
           </a>
         </div>
         <div className="text-center w-full py-6">
-          <a href="#" className="uppercase pb-6 text-center">
+          <a href="#" className="uppercase pb-6 text-center link-underline">
             More
           </a>
         </div>
@@ -90,40 +94,40 @@ export default function Home() {
           <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
             <a
               href="#"
-              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Porcelain
                 <br /> veneers
               </h3>
-              <span className="uppercase text-white">More</span>
+              <span className="uppercase text-white link-underline">More</span>
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Bonding
               </h3>
-              <span className="uppercase text-white">More</span>
+              <span className="uppercase text-white link-underline">More</span>
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Whitening
               </h3>
-              <span className="uppercase text-white">More</span>
+              <span className="uppercase text-white link-underline">More</span>
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Procelain fillings
               </h3>
-              <span className="uppercase text-white">More</span>
+              <span className="uppercase text-white link-underline">More</span>
             </a>
           </div>
           <div className="lg:w-4/12 flex-col pr-12 pt-8 lg:pl-10 box-border">
@@ -141,12 +145,16 @@ export default function Home() {
               version of you.
             </p>
 
-            <div className="flex flex-col gap-4 mt-8 uppercase font-bold tracking-widest">
-              <a href="#" className="">
+            <div className="flex flex-col items-start gap-4 mt-8 uppercase font-bold tracking-widest">
+              <a href="#" className="link-underline-reverse ">
                 More about our procedures
               </a>
-              <a href="#">Before and after gallery</a>
-              <a href="#">Read our faqs</a>
+              <a href="#" className="link-underline-reverse ">
+                Before and after gallery
+              </a>
+              <a href="#" className="link-underline-reverse ">
+                Read our faqs
+              </a>
             </div>
           </div>
         </div>

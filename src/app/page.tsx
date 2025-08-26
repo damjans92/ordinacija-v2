@@ -94,7 +94,7 @@ export default function Home() {
           <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Porcelain
@@ -104,7 +104,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Bonding
@@ -113,7 +113,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Whitening
@@ -122,7 +122,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-black text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
             >
               <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
                 Procelain fillings
@@ -175,8 +175,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <div className="border-t-1 border-black"></div>
-      <section id="office" className="py-12 bg-black text-white">
+      <div></div>
+      <section id="office" className="py-12 bg-foreground2 text-white">
         <div className="container mx-auto  ">
           <div className="text-center">
             <h2 className=" uppercase pb-7 text-4xl tracking-widest">

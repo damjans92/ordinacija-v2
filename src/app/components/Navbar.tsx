@@ -20,7 +20,7 @@ function Navbar() {
         <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-quicksand text-sm font-medium tracking-widest ">
           <span>RADOVANA SIMICA CIGE 7, BEOGRAD</span>
         </div>
-        <div className="px-4 py-8 lg:py-12 bg-white ">
+        <div className="px-4 py-8 lg:py-12 bg-background2">
           <div className="container mx-auto flex items-center justify-between ">
             <button
               className=" flex lg:hidden"
@@ -40,7 +40,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/gallery"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Photo gallery

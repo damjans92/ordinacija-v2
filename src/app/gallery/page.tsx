@@ -22,7 +22,7 @@ type PhotoGallery = {
   pairs: BeforeAfterPair[];
 };
 
-const page = () => {
+const GalleryPage = () => {
   const [gallery, setGallery] = useState<PhotoGallery | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
@@ -137,4 +137,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default GalleryPage;

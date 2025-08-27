@@ -109,8 +109,8 @@ const GalleryPage = () => {
 
       <div>
         {gallery?.pairs?.map((pair) => (
-          <>
-            <div key={pair._key} className="container mx-auto flex gap-4 ">
+          <div key={pair._key}>
+            <div className="container mx-auto flex gap-4 ">
               <div className="flex flex-col flex-1  justify-center py-6">
                 <img
                   src={urlFor(pair.before).url()}
@@ -130,7 +130,7 @@ const GalleryPage = () => {
               </div>
             </div>
             <div className="border-t-1 border-gray-300"></div>
-          </>
+          </div>
         ))}
       </div>
     </section>

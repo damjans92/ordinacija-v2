@@ -36,7 +36,14 @@ export default function Home() {
                 <br /> Radovana Simića Cige 7<br /> 11000 Beograd
               </p>
               <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
-                VTR
+                <Image
+                  src="/Logo.svg"
+                  alt="Logo"
+                  width={220} // base size
+                  height={40}
+                  className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -49,8 +56,8 @@ export default function Home() {
       </section>
       <section id="doctors" className="container mx-auto py-12">
         <div className="flex flex-wrap">
-          <div className="lg:w-5/12 flex flex-col md:text-center justify-center items-center">
-            <h2 className="uppercase pb-7 text-4xl tracking-widest">
+          <div className="order-2 lg:order-1 lg:w-5/12 flex flex-col md:text-center lg:justify-center lg:items-center">
+            <h2 className="uppercase pb-7 text-2xl lg:text-4xl tracking-widest">
               The <br />
               Doctors
             </h2>
@@ -66,7 +73,7 @@ export default function Home() {
               Read more
             </a>
           </div>
-          <div className="lg:w-7/12 bg-gray-400 h-full w-full ">
+          <div className="order-1 lg:order-2 lg:w-7/12 mb-6 lg:mb-0 bg-gray-400 h-full w-full ">
             <img src="https://placehold.co/1400x776" alt="" />
           </div>
         </div>
@@ -94,9 +101,9 @@ export default function Home() {
           <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
             >
-              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+              <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
                 Porcelain
                 <br /> veneers
               </h3>
@@ -104,27 +111,27 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
             >
-              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+              <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
                 Bonding
               </h3>
               <span className="uppercase text-white link-underline">More</span>
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
             >
-              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+              <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
                 Whitening
               </h3>
               <span className="uppercase text-white link-underline">More</span>
             </a>
             <a
               href="#"
-              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 min-h-[320px]"
+              className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
             >
-              <h3 className="m-auto uppercase text-3xl tracking-widest text-white">
+              <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
                 Procelain fillings
               </h3>
               <span className="uppercase text-white link-underline">More</span>

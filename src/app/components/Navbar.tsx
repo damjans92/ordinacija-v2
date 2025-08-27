@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
@@ -57,7 +58,14 @@ function Navbar() {
               </ul>
             </nav>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
-              VTR
+              <Image
+                src="/Logo.svg"
+                alt="Logo"
+                width={220} // base size
+                height={40}
+                className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
+                priority
+              />
             </div>
             <nav className="hidden lg:flex flex-1 justify-end font-quicksand font-bold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase">

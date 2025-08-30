@@ -60,7 +60,7 @@ function Navbar() {
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
               <Link href="/">
                 <Image
-                  src="/Logo.svg"
+                  src="/LogoBlue.svg"
                   alt="Logo"
                   width={220} // base size
                   height={40}
@@ -73,7 +73,7 @@ function Navbar() {
               <ul className="flex items-center justify-center gap-8 uppercase">
                 <li>
                   <Link
-                    href="/"
+                    href="/services"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Services

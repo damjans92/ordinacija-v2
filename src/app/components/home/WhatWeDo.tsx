@@ -1,6 +1,8 @@
-import React from "react";
+type WhatWeDoProps = {
+  showDesc?: boolean;
+};
 
-const WhatWeDo = () => {
+const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
   return (
     <section id="whatwedo" className="container mx-auto py-12 ">
       <div className="flex flex-wrap mb-16">
@@ -70,21 +72,24 @@ const WhatWeDo = () => {
           </div>
         </div>
       </div>
-      <div>
-        <p className=" pb-6 text-center">
-          Lowenberg, Lituchy & Kantor is a cosmetic dental practice in
-          Manhattan, New York (NY) at the forefront of the cosmetic dental
-          revolution. In the early 1980’s, Dr. Marc Lowenberg became the
-          founding member of this dental practice that early on included rock
-          stars, movie stars, fashion designers, artists and authors, who were
-          among the first to seek cosmetic dental enhancement and smile
-          makeover. He was later joined by Dr.Gregg Lituchy and Dr. Brian
-          Kantor. Over the years, they earned the moniker of “dentists to the
-          stars” and became universally renowned for their smile transformations
-          with the use of porcelain veneers. With the addition of Jason J. Kim,
-          a master ceramist, and a world class in house dental lab, LLK
-        </p>
-      </div>
+      {showDesc && (
+        <div>
+          <p className=" pb-6 text-center">
+            Lowenberg, Lituchy & Kantor is a cosmetic dental practice in
+            Manhattan, New York (NY) at the forefront of the cosmetic dental
+            revolution. In the early 1980’s, Dr. Marc Lowenberg became the
+            founding member of this dental practice that early on included rock
+            stars, movie stars, fashion designers, artists and authors, who were
+            among the first to seek cosmetic dental enhancement and smile
+            makeover. He was later joined by Dr.Gregg Lituchy and Dr. Brian
+            Kantor. Over the years, they earned the moniker of “dentists to the
+            stars” and became universally renowned for their smile
+            transformations with the use of porcelain veneers. With the addition
+            of Jason J. Kim, a master ceramist, and a world class in house
+            dental lab, LLK
+          </p>
+        </div>
+      )}
     </section>
   );
 };

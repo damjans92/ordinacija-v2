@@ -33,7 +33,7 @@ const Hero = () => {
             </p>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
               <Image
-                src="/Logo.svg"
+                src="/LogoBlue.svg"
                 alt="Logo"
                 width={220} // base size
                 height={40}

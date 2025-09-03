@@ -15,7 +15,9 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
               Porcelain
               <br /> veneers
             </h3>
-            <span className="uppercase text-white link-underline">More</span>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
           </a>
           <a
             href="#"
@@ -24,7 +26,9 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
               Bonding
             </h3>
-            <span className="uppercase text-white link-underline">More</span>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
           </a>
           <a
             href="#"
@@ -33,7 +37,9 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
               Whitening
             </h3>
-            <span className="uppercase text-white link-underline">More</span>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
           </a>
           <a
             href="#"
@@ -42,13 +48,15 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
               Procelain fillings
             </h3>
-            <span className="uppercase text-white link-underline">More</span>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
           </a>
         </div>
         <div className="lg:w-4/12 flex-col pr-12 pt-8 lg:pl-10 box-border">
           <h2 className="uppercase pb-7 tracking-widest">
-            What
-            <br /> we do
+            Za vaš <br />
+            osmeh
           </h2>
           <p className=" pb-6">
             Your smile is your calling card. Whether you’re on a job interview
@@ -61,13 +69,13 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
 
           <div className="flex flex-col items-start gap-4 mt-8 uppercase font-bold tracking-widest">
             <a href="#" className="link-underline-reverse ">
-              More about our procedures
+              Više o procedurama
             </a>
             <a href="#" className="link-underline-reverse ">
-              Before and after gallery
+              Pre i posle galerija
             </a>
             <a href="#" className="link-underline-reverse ">
-              Read our faqs
+              Pročitajte Najčešća pitanja
             </a>
           </div>
         </div>

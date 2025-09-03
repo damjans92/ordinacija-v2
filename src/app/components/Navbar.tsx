@@ -36,7 +36,7 @@ function Navbar() {
                     href="/"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    The doctors
+                    Vaš stomatolog
                   </Link>
                 </li>
                 <li>
@@ -44,7 +44,7 @@ function Navbar() {
                     href="/gallery"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    Photo gallery
+                    Foto galerija
                   </Link>
                 </li>
                 <li>
@@ -52,7 +52,7 @@ function Navbar() {
                     href="/"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    Patient stories
+                    Priče pacijenata
                   </Link>
                 </li>
               </ul>
@@ -76,7 +76,7 @@ function Navbar() {
                     href="/services"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    Services
+                    Usluge
                   </Link>
                 </li>
                 <li>
@@ -84,7 +84,7 @@ function Navbar() {
                     href="/"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    FAQS
+                    Najčešća pitanja
                   </Link>
                 </li>
                 <li>
@@ -92,7 +92,7 @@ function Navbar() {
                     href="/"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    Reviews
+                    Utisci
                   </Link>
                 </li>
                 <li>
@@ -100,7 +100,7 @@ function Navbar() {
                     href="/"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    Contact
+                    Kontakt
                   </Link>
                 </li>
               </ul>

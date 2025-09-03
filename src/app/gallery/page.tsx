@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../../../lib/sanity.client";
 import { mainGalleryQuery } from "../../../lib/sanity.queries";
 import HeroGallery from "./HeroGallery";
+import Hero from "../components/Hero";
 
 type SanityImage = {
   asset: { _id: string; url: string };
@@ -49,8 +50,22 @@ const GalleryPage = () => {
 
   return (
     <main>
-      <HeroGallery />
+      <Hero imageSrc="/banner-gallery.jpg" />
+      <div className="py-12 px-6 mt-6">
+        <p className="max-w-2xl mx-auto text-center">
+          Success and celebrity is not what defines LLK; the doctor’s commitment
+          to their patients and to each other is the true hallmark of the LLK
+          philosophy. Doctors Marc Lowenberg, Gregg Lituchy and Brian Kantor are
+          partners and best friends, and the key to this triumvirate’s success
+          is their shared value system which places patient care above all else.
+          They have done more than perfect the art of the smile; they have found
+          a way to individualize the art of dental care and treatment so that
+          each patient’s result reflects how they want to be seen, and
+          ultimately how they see themselves.
+        </p>
+      </div>
       <div className="border-t-1 border-gray-300"></div>
+
       <section>
         <div>
           {gallery?.pairs?.map((pair) => (
@@ -61,7 +76,7 @@ const GalleryPage = () => {
                     src={urlFor(pair.before).url()}
                     alt={pair.before.alt || ""}
                   />
-                  <span className="mt-3 font-bold uppercase">Before</span>
+                  <span className="mt-3 font-bold uppercase">Pre</span>
                 </div>
                 <div className="w-px bg-gray-200"></div>
                 <div className="flex flex-col  flex-1  justify-center py-6 ">
@@ -70,7 +85,7 @@ const GalleryPage = () => {
                     alt={pair.after.alt || ""}
                   />
                   <span className="mt-3 font-bold uppercase text-right">
-                    After
+                    Posle
                   </span>
                 </div>
               </div>

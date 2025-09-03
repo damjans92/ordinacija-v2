@@ -1,13 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-const Hero = () => {
+type HeroProps = {
+  imageSrc?: string;
+};
+
+const Hero = ({ imageSrc }: HeroProps) => {
   return (
     <section id="hero" className="container mx-auto">
       <div className="flex flex-wrap border-1 border-black">
         <div className="w-full lg:w-1/2">
           <Image
-            src="/banner-home.jpg"
+            src={imageSrc || "/banner-home.jpg"}
             alt="Hero Image"
             width={450}
             height={800}

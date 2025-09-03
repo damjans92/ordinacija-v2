@@ -8,7 +8,7 @@ const Office = () => {
       <div className="container mx-auto  ">
         <div className="text-center">
           <h2 className=" uppercase pb-7 text-4xl tracking-widest">
-            View our office
+            Ordinacija
           </h2>
           <p className="">
             You can visit us at Radovana Simica Cige 7, 11000 Beograd
@@ -23,7 +23,7 @@ const Office = () => {
             muted
             playsInline
             controls={showControls}
-            className="w-full h-full object-cover mt-6"
+            className="w-full h-full object-cover mt-6 border-10 border-neutral-100 "
           >
             <source src="/office.mp4" type="video/mp4" />
           </video>

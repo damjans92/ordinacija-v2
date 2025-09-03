@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   FaSquareInstagram,
@@ -12,7 +13,14 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="order-4 lg:order-1">
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5 py-12 text-center">
-              VTR
+              <Image
+                src="/LogoBlue.svg"
+                alt="Logo"
+                width={220} // base size
+                height={40}
+                className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
+                priority
+              />
             </div>
           </div>
           <div className="order-1 lg:order-2 flex gap-12 mb-12 lg:mb-30">
@@ -77,7 +85,7 @@ const Footer = () => {
           </div>
           <div className="lg:order-3"> </div>
           <div className="order-2 lg:order-4 border-b-1 border-black lg:border-none pb-6">
-            <h5 className="uppercase mb-6">Follow Us</h5>
+            <h5 className="uppercase mb-6">PRATITE NA</h5>
             <div className="flex gap-4">
               <div>
                 <FaSquareFacebook size={30} />
@@ -93,7 +101,8 @@ const Footer = () => {
         </div>
         <div className="border-t-1 border-black pt-6">
           <p className="text-center text-sm">
-            &copy; {new Date().getFullYear()} VTR. All rights reserved.
+            &copy; {new Date().getFullYear()} Dr Savkovic Dental Office | Sva
+            prava su zadržana.
           </p>
         </div>
       </div>

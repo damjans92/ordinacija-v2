@@ -21,7 +21,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
         <div className="w-full lg:w-1/2 flex flex-col p-12">
           {/* H1 fills top space */}
           <div className="flex flex-1 flex-col items-center justify-center text-center">
-            <h1 className="text-3xl lg:text-5xl font-medium tracking-widest mb-4 uppercase leading-16">
+            <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase leading-16">
               {/* THE ART OF <br /> THE SMILE */}
               {/* Vaš osmeh, <br /> naša briga */}
               Zdrav osmeh

@@ -33,7 +33,7 @@ function Navbar() {
               <ul className="flex items-center justify-center gap-8 uppercase col-">
                 <li>
                   <Link
-                    href="/"
+                    href="/about"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Vaš stomatolog

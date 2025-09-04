@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Doctor = () => {
@@ -18,12 +19,12 @@ const Doctor = () => {
             oblasti, kao i iz oblasti terapije poremećaja u radu donjoviličnog
             zgloba i estetske medicine uz primenu hijaluronskih preparata.
           </p>
-          <a
-            href="#"
-            className="uppercase tracking-widest pb-6 link-underline  font-light"
+          <Link
+            href="/about"
+            className="uppercase tracking-widest pb-6 link-underline font-light"
           >
             Pročitaj više
-          </a>
+          </Link>
         </div>
         <div className="order-1 lg:order-2 lg:w-7/12 mb-6 lg:mb-0 bg-gray-400 h-full w-full ">
           <img src="https://placehold.co/1400x776" alt="" />

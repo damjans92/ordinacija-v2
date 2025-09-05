@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../../../lib/sanity.client";
 import { mainGalleryQuery } from "../../../lib/sanity.queries";
-import HeroGallery from "./HeroGallery";
 import Hero from "../components/Hero";
 
 type SanityImage = {

@@ -27,7 +27,7 @@ const Doctor = () => {
           </Link>
         </div>
         <div className="order-1 lg:order-2 lg:w-7/12 mb-6 lg:mb-0 bg-gray-400 h-full w-full ">
-          <img src="https://placehold.co/1400x776" alt="" />
+          <img src="/drsavkovic-wide.jpg" alt="" className="grayscale" />
         </div>
       </div>
     </section>

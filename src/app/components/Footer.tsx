@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-background2 text-black py-6 mt-12">
+    <footer className="bg-background2 text-black py-6 pt-12 border-t-1 border-black">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="order-4 lg:order-1">
@@ -99,12 +99,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t-1 border-black pt-6">
-          <p className="text-center text-sm">
-            &copy; {new Date().getFullYear()} Dr Savkovic Dental Office | Sva
-            prava su zadržana.
-          </p>
-        </div>
+      </div>
+      <div className="border-t-1 border-black pt-6">
+        <p className="text-center text-sm">
+          &copy; {new Date().getFullYear()} Dr Savkovic Dental Office | Sva
+          prava su zadržana.
+        </p>
       </div>
     </footer>
   );

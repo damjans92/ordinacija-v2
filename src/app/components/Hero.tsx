@@ -47,12 +47,31 @@ const Hero = ({ imageSrc }: HeroProps) => {
                 className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
                 priority
               />
+              <Image
+                src="/LogoNew2.svg"
+                alt="Logo"
+                width={220} // base size
+                height={40}
+                className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
+                priority
+              />
+              <Image
+                src="/LogoNewGreen.svg"
+                alt="Logo"
+                width={250} // base size
+                height={60}
+                className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
+                priority
+              />
             </div>
           </div>
         </div>
       </div>
       <div className="text-center py-3">
-        <a href="#" className="link-underline tracking-widest uppercase">
+        <a
+          href="#"
+          className="link-underline tracking-widest uppercase font-light"
+        >
           Skroluj dole
         </a>
       </div>

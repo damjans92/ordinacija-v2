@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type WhatWeDoProps = {
   showDesc?: boolean;
 };
@@ -7,13 +9,23 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
     <section id="whatwedo" className="container mx-auto py-12 ">
       <div className="flex flex-wrap mb-16">
         <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
-          <a
-            href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
+          <Link
+            href="/conservative-dentistry"
+            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
           >
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Porcelain
-              <br /> veneers
+              Konzervativna <br /> stomatologija
+            </h3>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
+          </Link>
+          <a
+            href="#"
+            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
+          >
+            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
+              Endodoncija
             </h3>
             <span className="uppercase text-white link-underline tracking-widest font-light">
               Detaljnije
@@ -21,10 +33,10 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
           </a>
           <a
             href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
+            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
           >
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Bonding
+              Protetika <br /> Hirurgija
             </h3>
             <span className="uppercase text-white link-underline tracking-widest font-light">
               Detaljnije
@@ -32,10 +44,10 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
           </a>
           <a
             href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
+            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
           >
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Whitening
+              Izbeljivanje
             </h3>
             <span className="uppercase text-white link-underline tracking-widest font-light">
               Detaljnije
@@ -43,15 +55,39 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
           </a>
           <a
             href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[320px]"
+            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
           >
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Procelain fillings
+              Pregled
             </h3>
             <span className="uppercase text-white link-underline tracking-widest font-light">
               Detaljnije
             </span>
           </a>
+          <a
+            href="#"
+            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
+          >
+            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
+              Ortodoncija
+            </h3>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
+          </a>
+          <a
+            href="#"
+            className="flex-1 flex flex-col grow items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
+          >
+            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
+              Terapija donjoviličnog <br />
+              zgloba
+            </h3>
+            <span className="uppercase text-white link-underline tracking-widest font-light">
+              Detaljnije
+            </span>
+          </a>
+          <div className="flex-1 flex flex-col grow items-center text-center p-12 lg:min-h-[170px]"></div>
         </div>
         <div className="lg:w-4/12 flex-col pr-12 pt-8 lg:pl-10 box-border">
           <h2 className="uppercase pb-7 tracking-widest">
@@ -83,18 +119,18 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
       {showDesc && (
         <div>
           <p className=" pb-6 text-center">
-            Lowenberg, Lituchy & Kantor is a cosmetic dental practice in
-            Manhattan, New York (NY) at the forefront of the cosmetic dental
-            revolution. In the early 1980’s, Dr. Marc Lowenberg became the
-            founding member of this dental practice that early on included rock
-            stars, movie stars, fashion designers, artists and authors, who were
-            among the first to seek cosmetic dental enhancement and smile
-            makeover. He was later joined by Dr.Gregg Lituchy and Dr. Brian
-            Kantor. Over the years, they earned the moniker of “dentists to the
-            stars” and became universally renowned for their smile
-            transformations with the use of porcelain veneers. With the addition
-            of Jason J. Kim, a master ceramist, and a world class in house
-            dental lab, LLK
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem et
+            fugit quia totam expedita beatae consequatur obcaecati. Distinctio
+            quo, et assumenda porro nulla odio expedita inventore repellat dicta
+            omnis dolores explicabo voluptatibus nisi, cum voluptates? Commodi
+            beatae sapiente facilis unde aspernatur a expedita consectetur
+            necessitatibus vitae vero. Necessitatibus itaque odit id iusto
+            eveniet incidunt, quaerat deleniti quas dolore aut qui? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Natus, expedita
+            tenetur. Ab nostrum natus voluptates numquam impedit atque soluta
+            accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Debitis praesentium quidem officia saepe odit? Odit dolorum magnam
+            sed repudiandae sapiente?
           </p>
         </div>
       )}

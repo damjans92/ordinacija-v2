@@ -3,6 +3,15 @@ import Hero from "../components/home/Hero";
 import WhatWeDo from "../components/home/WhatWeDo";
 
 const ServicesPage = () => {
+  const services = [
+    { name: "Design", slug: "design" },
+    { name: "Marketing", slug: "marketing" },
+    { name: "SEO", slug: "seo" },
+    { name: "Branding", slug: "branding" },
+    { name: "Consulting", slug: "consulting" },
+    { name: "Support", slug: "support" },
+  ];
+
   return (
     <main>
       <Hero />

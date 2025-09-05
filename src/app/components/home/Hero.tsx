@@ -48,7 +48,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="text-center py-3">
-        <a href="#" className="link-underline tracking-widest uppercase">
+        <a
+          href="#"
+          className="link-underline tracking-widest uppercase font-light"
+        >
           Skroluj dole
         </a>
       </div>

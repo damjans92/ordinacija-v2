@@ -5,7 +5,7 @@ const About = () => {
     <main>
       <section>
         <div className="container mx-auto py-12">
-          <h1 className="text-4xl lg:text-5xl font-medium tracking-widest mb-12 uppercase leading-16 text-center">
+          <h1 className="text-4xl lg:text-5xl font-normal tracking-widest mb-12 uppercase leading-16 text-center">
             Vaš stomatolog
           </h1>
           <div className="flex flex-wrap justify-between gap-6 px-6 lg:px-0 max-w-4xl mx-auto  ">

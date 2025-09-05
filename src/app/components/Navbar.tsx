@@ -60,11 +60,11 @@ function Navbar() {
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
               <Link href="/">
                 <Image
-                  src="/LogoBlue.svg"
+                  src="/LogoNewBlack.svg"
                   alt="Logo"
-                  width={220} // base size
-                  height={40}
-                  className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
+                  width={250} // base size
+                  height={60}
+                  className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
                   priority
                 />
               </Link>
@@ -81,7 +81,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/faqs"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Najčešća pitanja

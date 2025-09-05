@@ -113,7 +113,7 @@ function Navbar() {
         </div>
       </header>
       <div
-        className={`flex flex-col fixed top-[148px] w-full bg-white min-h-full overflow-y-auto z-50 ${navOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out
+        className={`flex flex-col fixed top-[135px] w-full bg-[var(--background2)] min-h-full overflow-y-auto z-50 ${navOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out
       `}
       >
         <nav className="flex w-full justify-center">

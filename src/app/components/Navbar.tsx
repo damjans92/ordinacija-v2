@@ -119,26 +119,26 @@ function Navbar() {
         <nav className="flex w-full justify-center">
           <ul className="flex flex-col w-full h-full border-t-1 text-center font-quicksand font-bold text-md tracking-widest uppercase">
             <li className="py-6 border-b-1 border-black">
-              <Link href="#"> The doctors</Link>
+              <Link href="/about"> Vaš stomatolog</Link>
             </li>
 
             <li className="py-6 border-b-1 border-black">
-              <Link href="#">Photo gallery</Link>
+              <Link href="/gallery">Foto galerija</Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#">Patient stories</Link>
+              <Link href="#">Priče pacijenata</Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#">Services</Link>
+              <Link href="/services">Usluge</Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#"> FAQS</Link>
+              <Link href="#">Najčešća pitanja</Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#"> Reviews</Link>
+              <Link href="#">Utisci</Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#"> Contact</Link>
+              <Link href="#">Kontakt</Link>
             </li>
           </ul>
         </nav>

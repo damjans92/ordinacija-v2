@@ -10,7 +10,7 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
       <div className="flex flex-wrap mb-16">
         <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
           <Link
-            href="/conservative-dentistry"
+            href="/services/conservative-dentistry"
             className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
           >
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
@@ -20,8 +20,8 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
               Detaljnije
             </span>
           </Link>
-          <a
-            href="#"
+          <Link
+            href="/services/endodontics"
             className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
           >
             <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
@@ -30,7 +30,7 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
             <span className="uppercase text-white link-underline tracking-widest font-light">
               Detaljnije
             </span>
-          </a>
+          </Link>
           <a
             href="#"
             className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"

@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id="hero" className="container mx-auto">
+    <section id="hero" className="container  mx-auto">
       <div className="flex flex-wrap border-1 border-black">
         <div className="w-full lg:w-1/2">
           <Image

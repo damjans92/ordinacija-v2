@@ -26,7 +26,7 @@ const Doctor = () => {
             Pročitaj više
           </Link>
         </div>
-        <div className="order-1 lg:order-2 lg:w-7/12 mb-6 lg:mb-0 bg-gray-400 h-full w-full ">
+        <div className="order-1 lg:order-2 lg:w-7/12 mb-6 lg:mb-0 bg-gray-400 h-full w-full border-1">
           <img src="/drsavkovic-wide.jpg" alt="" className="grayscale" />
         </div>
       </div>

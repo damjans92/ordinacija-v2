@@ -10,10 +10,10 @@ const ReviewsPage = () => {
           <div className="grid lg:grid-cols-3 gap-8 py-12">
             <div className="border-1 p-10">
               <p>
-                My dentist anxiety turned to happiness after a visit that wasn't
-                scary at all. Dr Savković is very kind, patient, meticulous, and
-                explains every step. He also lets you take the time you need to
-                adjust. I'll be going back for sure 😊 …
+                My dentist anxiety turned to happiness after a visit that
+                wasn&apos;t scary at all. Dr Savković is very kind, patient,
+                meticulous, and explains every step. He also lets you take the
+                time you need to adjust. I&apos;ll be going back for sure 😊 …
               </p>
             </div>
             <div className="border-1 p-10">
@@ -46,9 +46,9 @@ const ReviewsPage = () => {
             <div className="border-1 p-10">
               <p>
                 Vitor is, above all, a great person and a professional in his
-                field, who loves people and meets everyone's needs, with care
-                and an approach that allows him to reach every patient. He has a
-                lot of knowledge and always has the right solution for a
+                field, who loves people and meets everyone&apos;s needs, with
+                care and an approach that allows him to reach every patient. He
+                has a lot of knowledge and always has the right solution for a
                 dazzling smile. Every recommendation for this wonderful doctor
                 🙂 …
               </p>

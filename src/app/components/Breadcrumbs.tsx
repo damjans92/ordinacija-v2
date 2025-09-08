@@ -7,15 +7,17 @@ const Breadcrumbs = () => {
   const pathname = usePathname();
 
   const segments = pathname.split("/").filter((seg) => seg);
-
+  console.log(segments);
   return (
-    <nav className="text-sm text-gray-600 uppercase mt-4">
+    <nav className="text-sm font-extralight text-gray-600 uppercase mt-4">
       <ol className="flex items-center space-x-2">
-        <li>
-          <Link href="/" className="hover:underline">
-            Home
-          </Link>
-        </li>
+        {segments.length > 0 && (
+          <li>
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
+          </li>
+        )}
 
         {segments.map((segment, idx) => {
           const href = "/" + segments.slice(0, idx + 1).join("/");

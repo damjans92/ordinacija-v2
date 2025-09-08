@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Breadcrumbs from "./Breadcrumbs";
@@ -7,6 +9,15 @@ type HeroProps = {
 };
 
 const Hero = ({ imageSrc }: HeroProps) => {
+  const scrollNext = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    const currentSection = (e.target as HTMLElement).closest("section");
+    const nextSection =
+      currentSection?.nextElementSibling as HTMLElement | null;
+    nextSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="hero" className="container mx-auto">
       <div className="flex flex-wrap border-1 border-black">
@@ -73,6 +84,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
         <a
           href="#"
           className="link-underline tracking-widest uppercase font-light"
+          onClick={scrollNext}
         >
           Skroluj dole
         </a>

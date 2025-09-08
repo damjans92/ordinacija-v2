@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import React from "react";
 
 const ServiceConservative = () => {
@@ -8,9 +9,8 @@ const ServiceConservative = () => {
           Konzervativna
           <br /> stomatologija
         </h1>
-        {/* <div className="py-10"></div> */}
-
-        <div className="grid grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
+        <Breadcrumbs />
+        <div className="grid grid-cols-3 gap-4 p-10 px-8 mt-7 border-1 border-foreground2">
           <div>
             <h2 className="text-2xl   font-light font-outfit  mb-4 uppercase">
               Ispuni (plombe) i viniri
@@ -38,9 +38,7 @@ const ServiceConservative = () => {
               plombe ili inleji mogu biti izrađeni i od keramike.
             </p>
           </div>
-          <div>
-            <img src="" alt="" />
-          </div>
+          <div>{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
     </main>

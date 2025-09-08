@@ -23,7 +23,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
       id="hero"
       className="container !px-0 mx-auto ml-[-15px] lg:ml-[15px]"
     >
-      <div className="flex flex-wrap border-1 border-black">
+      <div className="flex flex-wrap lg:border-1 border-black">
         <div className="w-full lg:w-1/2">
           <Image
             src={imageSrc || "/banner-home2.jpg"}
@@ -55,6 +55,14 @@ const Hero = ({ imageSrc }: HeroProps) => {
             </p>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
               <Image
+                src="/LogoNewBlack.svg"
+                alt="Logo"
+                width={220} // base size
+                height={40}
+                className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
+                priority
+              />
+              {/* <Image
                 src="/LogoBlue.svg"
                 alt="Logo"
                 width={220} // base size
@@ -77,7 +85,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
                 height={60}
                 className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
                 priority
-              />
+              /> */}
             </div>
           </div>
         </div>

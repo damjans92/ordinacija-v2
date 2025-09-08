@@ -7,7 +7,7 @@ const ReviewsPage = () => {
       <Hero imageSrc="/banner-home2.jpg" />
       <section id="reviews">
         <div className="container mx-auto ">
-          <div className="grid lg:grid-cols-3 gap-8 py-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 py-12">
             <div className="border-1 p-10">
               <p>
                 My dentist anxiety turned to happiness after a visit that

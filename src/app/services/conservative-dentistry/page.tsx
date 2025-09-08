@@ -4,14 +4,14 @@ import React from "react";
 const ServiceConservative = () => {
   return (
     <main>
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-8 lg:py-12">
         <Breadcrumbs />
-        <h1 className="uppercase text-4xl font-extralight font-outfit mb-4 mt-4 leading-14 tracking-widest bg-foreground2 text-white text-center p-6">
+        <h1 className="uppercase text-2xl md:text-4xl font-extralight font-outfit mb-4 mt-4 md:leading-14 tracking-widest bg-foreground2 text-white text-center p-6">
           Konzervativna
           <br /> stomatologija
         </h1>
 
-        <div className="grid grid-cols-3 gap-4 p-10 px-8 mt-12 border-1 border-foreground2">
+        <div className="grid md:grid-cols-3 gap-4 p-10 px-8 mt-12 border-1 border-foreground2">
           <div>
             <h2 className="text-2xl   font-light font-outfit  mb-4 uppercase">
               Ispuni (plombe) i viniri

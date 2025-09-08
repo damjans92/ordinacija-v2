@@ -49,7 +49,7 @@ const GalleryPage = () => {
 
   return (
     <main>
-      <Hero imageSrc="/banner-gallery.jpg" />
+      <Hero imageSrc="/banner-gallery2.jpg" />
       <div className="py-12 px-6 mt-6">
         <p className="max-w-2xl mx-auto text-center">
           Success and celebrity is not what defines LLK; the doctor’s commitment

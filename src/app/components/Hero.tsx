@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Breadcrumbs from "./Breadcrumbs";
 
 type HeroProps = {
   imageSrc?: string;
@@ -11,7 +12,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
       <div className="flex flex-wrap border-1 border-black">
         <div className="w-full lg:w-1/2">
           <Image
-            src={imageSrc || "/banner-home.jpg"}
+            src={imageSrc || "/banner-home2.jpg"}
             alt="Hero Image"
             width={450}
             height={800}
@@ -67,6 +68,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
           </div>
         </div>
       </div>
+      <Breadcrumbs />
       <div className="text-center py-3">
         <a
           href="#"

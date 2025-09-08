@@ -9,7 +9,7 @@ import Hero from "./components/Hero";
 export default function Home() {
   return (
     <main>
-      <Hero imageSrc="/banner-home.jpg" />
+      <Hero imageSrc="/banner-home2.jpg" />
       <Doctor />
       <Stories />
       <div className="border-t-1 border-black"></div>

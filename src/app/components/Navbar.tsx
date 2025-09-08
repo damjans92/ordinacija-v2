@@ -33,7 +33,7 @@ function Navbar() {
               <ul className="flex items-center justify-center gap-8 uppercase col-">
                 <li>
                   <Link
-                    href="/about"
+                    href="/vas-stomatolog"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Vaš stomatolog
@@ -41,7 +41,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/gallery"
+                    href="/foto-galerija"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Foto galerija
@@ -119,11 +119,11 @@ function Navbar() {
         <nav className="flex w-full justify-center">
           <ul className="flex flex-col w-full h-full border-t-1 text-center font-quicksand font-bold text-md tracking-widest uppercase">
             <li className="py-6 border-b-1 border-black">
-              <Link href="/about"> Vaš stomatolog</Link>
+              <Link href="/vas-stomatolog"> Vaš stomatolog</Link>
             </li>
 
             <li className="py-6 border-b-1 border-black">
-              <Link href="/gallery">Foto galerija</Link>
+              <Link href="/foto-galerija">Foto galerija</Link>
             </li>
             <li className="py-6 border-b-1 border-black">
               <Link href="#">Priče pacijenata</Link>

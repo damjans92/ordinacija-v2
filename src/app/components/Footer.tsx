@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="order-4 lg:order-1">
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5 py-12 text-center">
               <Image
-                src="/LogoBlue.svg"
+                src="/LogoNewBlack.svg"
                 alt="Logo"
                 width={220} // base size
                 height={40}

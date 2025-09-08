@@ -105,7 +105,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/reviews"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Utisci
@@ -162,7 +162,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#" onClick={handleClose}>
+              <Link href="/reviews" onClick={handleClose}>
                 Utisci
               </Link>
             </li>

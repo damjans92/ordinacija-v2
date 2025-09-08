@@ -157,7 +157,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#" onClick={handleClose}>
+              <Link href="/faqs" onClick={handleClose}>
                 Najčešća pitanja
               </Link>
             </li>

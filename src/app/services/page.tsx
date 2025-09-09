@@ -5,7 +5,7 @@ import WhatWeDo from "../components/home/WhatWeDo";
 const ServicesPage = () => {
   return (
     <main>
-      <Hero />
+      <Hero title="Usluge" />
       <div className="border-t-1 border-gray-300 mt-12"></div>
       <WhatWeDo showDesc={false} />
     </main>

@@ -5,7 +5,7 @@ import Accordion from "../components/Accordion";
 const FaqsPage = () => {
   return (
     <main>
-      <Hero />
+      <Hero title="Najčešća pitanja" />
       <section>
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-20 px-6 py-12">

@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 const ReviewsPage = () => {
   return (
     <main>
-      <Hero imageSrc="/banner-home2.jpg" />
+      <Hero title="Utisci" imageSrc="/banner-home2.jpg" />
       <section id="reviews">
         <div className="container mx-auto ">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 py-12">

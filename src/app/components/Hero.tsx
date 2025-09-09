@@ -5,10 +5,11 @@ import React from "react";
 import Breadcrumbs from "./Breadcrumbs";
 
 type HeroProps = {
+  title: string;
   imageSrc?: string;
 };
 
-const Hero = ({ imageSrc }: HeroProps) => {
+const Hero = ({ title, imageSrc }: HeroProps) => {
   const scrollNext = (e: React.MouseEvent) => {
     e.preventDefault();
 
@@ -23,7 +24,7 @@ const Hero = ({ imageSrc }: HeroProps) => {
       id="hero"
       className="container !px-0 mx-auto ml-[-15px] lg:ml-[15px]"
     >
-      <div className="flex flex-wrap lg:border-1 border-black">
+      <div className="flex flex-wrap border-b-1 lg:border-1 border-black">
         <div className="w-full lg:w-1/2">
           <Image
             src={imageSrc || "/banner-home2.jpg"}
@@ -36,11 +37,10 @@ const Hero = ({ imageSrc }: HeroProps) => {
         <div className="w-full lg:w-1/2 flex flex-col p-12">
           {/* H1 fills top space */}
           <div className="flex flex-1 flex-col items-center justify-center text-center">
-            <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-16">
+            <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-16 max-w-[70%]">
               {/* THE ART OF <br /> THE SMILE */}
               {/* Vaš osmeh, <br /> naša briga */}
-              Zdrav osmeh
-              <br /> za ceo život
+              {title}
             </h1>
             <a href="#" className="uppercase tracking-widest link-underline">
               Pročitaj više
@@ -51,9 +51,9 @@ const Hero = ({ imageSrc }: HeroProps) => {
           <div className="flex flex-col items-center md:flex-row md:justify-between">
             <p className="mt-4 text-md font-bold uppercase tracking-widest font-quicksand text-center md:text-left">
               nađite nas na adresi
-              <br /> Radovana Simića Cige 7<br /> 11000 Beograd
+              <br /> Radovana Simića Cige 7
             </p>
-            <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
+            <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5 mt-8 lg:mt-0">
               <Image
                 src="/LogoNewBlack.svg"
                 alt="Logo"

@@ -5,7 +5,7 @@ import Link from "next/link";
 const PatientStoriesPage = () => {
   return (
     <main>
-      <Hero />
+      <Hero title="Priče pacijenata" />
       <section>
         <div className="container mx-auto py-8 lg:py-12 text-center">
           <h3 className="uppercase text-3xl tracking-widest leading-12 font-light">

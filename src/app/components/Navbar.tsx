@@ -65,7 +65,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/patient-stories"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
                     Priče pacijenata
@@ -136,7 +136,6 @@ function Navbar() {
           <ul className="flex flex-col w-full h-full border-t-1 text-center font-quicksand font-bold text-md tracking-widest uppercase">
             <li className="py-6 border-b-1 border-black">
               <Link href="/about" onClick={handleClose}>
-                {" "}
                 Vaš stomatolog
               </Link>
             </li>
@@ -147,7 +146,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="py-6 border-b-1 border-black">
-              <Link href="#" onClick={handleClose}>
+              <Link href="/patient-stories" onClick={handleClose}>
                 Priče pacijenata
               </Link>
             </li>

@@ -1,6 +1,3 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../../../lib/sanity.client";
 import { mainGalleryQuery } from "../../../lib/sanity.queries";
 import Hero from "../components/Hero";
@@ -22,30 +19,13 @@ type PhotoGallery = {
   pairs: BeforeAfterPair[];
 };
 
-const GalleryPage = () => {
-  const [gallery, setGallery] = useState<PhotoGallery | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<Error | null>(null);
+const GalleryPage = async () => {
+  const data: PhotoGallery[] = await client.fetch(mainGalleryQuery);
+  const gallery = data;
 
-  useEffect(() => {
-    const fetchPhotos = async () => {
-      setLoading(true);
-      try {
-        const data = await client.fetch(mainGalleryQuery);
-        console.log(data);
-        setGallery(data || null);
-
-        console.log(gallery?.pairs);
-      } catch (err) {
-        setError(err as Error);
-        console.error("Error fetching photos:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPhotos();
-  }, []);
+  if (!gallery) {
+    return <p className="text-center py-10">No gallery found.</p>;
+  }
 
   return (
     <main>

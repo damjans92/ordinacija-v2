@@ -26,3 +26,10 @@ export const mainGalleryQuery = `*[_type == "photoGallery" && title == "Photo ga
     }
   }
 }`;
+
+export const getPatientStories = `*[_type == "patientStory"][0]{
+  _id,
+  title,
+  "slug":slug.current,
+  "imageUrl":image.asset->url
+  }`;

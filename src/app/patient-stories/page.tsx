@@ -1,6 +1,16 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Link from "next/link";
+import { patients } from "@/data/patients";
+import Image from "next/image";
+import { getPatientStories } from "../../../lib/sanity.queries";
+import { client } from "../../../lib/sanity.client";
+
+const getAllStories = async () => {
+  const res = await client.fetch(getPatientStories);
+  const data = await res.json();
+  console.log(data);
+};
 
 const PatientStoriesPage = () => {
   return (
@@ -14,6 +24,7 @@ const PatientStoriesPage = () => {
           </h3>
         </div>
         <div className="container">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
           <p className="text-center">
             Uspeh i slava nisu ono što definiše ASDF; prava odlika ASDF
             filozofije jeste posvećenost lekara svojim pacijentima i jedni
@@ -28,134 +39,26 @@ const PatientStoriesPage = () => {
         </div>
         <div className="container py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-16">
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Milica je imala razmak izmedju zuba
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Jovana je boleo zub
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Miloš je imao strah od zubara
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Milica je imala razmak izmedju zuba
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Miloš je imao strah od zubara
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Jovana je boleo zub
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Milica je imala razmak izmedju zuba
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
-            <div className="flex flex-col justify-top">
-              <img
-                src="/jessica.jpg"
-                alt="story1"
-                className="grayscale hover:grayscale-1 transition-all duration-300"
-              />
-              <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                Milica je imala razmak izmedju zuba
-              </h4>
-              <Link
-                href="#"
-                className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
-              >
-                Opširnije
-              </Link>
-            </div>
+            {patients.map((patient) => (
+              <div className="flex flex-col justify-top" key={patient.slug}>
+                <img
+                  src={patient.image}
+                  alt={patient.title}
+                  className="grayscale hover:grayscale-1 transition-all duration-300"
+                />
+                <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
+                  Milica <br />
+                  razmak izmedju zuba
+                </h4>
+                <Link
+                  key={patient.slug}
+                  href={`/patient-stories/${patient.slug}`}
+                  className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
+                >
+                  Opširnije
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>

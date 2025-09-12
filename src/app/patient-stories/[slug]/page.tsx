@@ -13,13 +13,17 @@ type PatientStory = {
   imageUrl: string;
 };
 
-const PatientPage = async ({ params }: any) => {
-  const { slug } = params;
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+const PatientPage = async ({ params }: PageProps) => {
+  const { slug } = await params;
 
   const story = await client.fetch(getPatientStoryBySlug, {
     slug,
   });
-  console.log(story);
+
   if (!story) return <p>Story not found</p>;
 
   return (

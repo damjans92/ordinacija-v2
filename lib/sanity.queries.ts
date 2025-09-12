@@ -27,9 +27,19 @@ export const mainGalleryQuery = `*[_type == "photoGallery" && title == "Photo ga
   }
 }`;
 
-export const getPatientStories = `*[_type == "patientStory"][0]{
+export const getPatientStories = `*[_type == "patientStory"]{
   _id,
   title,
+  patientName,
   "slug":slug.current,
   "imageUrl":image.asset->url
   }`;
+
+export const getPatientStoryBySlug = `*[_type == "patientStory" && slug.current == $slug][0]{
+    _id,
+    title,
+    patientName,
+    story,
+    "slug":slug.current,
+    "imageUrl":image.asset->url
+    }`;

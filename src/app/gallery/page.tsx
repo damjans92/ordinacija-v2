@@ -20,7 +20,7 @@ type PhotoGallery = {
 };
 
 const GalleryPage = async () => {
-  const data: PhotoGallery[] = await client.fetch(mainGalleryQuery);
+  const data: PhotoGallery = await client.fetch(mainGalleryQuery);
   const gallery = data;
 
   if (!gallery) {
@@ -47,7 +47,7 @@ const GalleryPage = async () => {
 
       <section>
         <div>
-          {gallery?.pairs?.map((pair) => (
+          {gallery.pairs.map((pair) => (
             <div key={pair._key}>
               <div className="container mx-auto flex gap-4 ">
                 <div className="flex flex-col flex-1  justify-center py-6">

@@ -6,13 +6,17 @@ import Image from "next/image";
 import { getPatientStories } from "../../../lib/sanity.queries";
 import { client } from "../../../lib/sanity.client";
 
-const getAllStories = async () => {
-  const res = await client.fetch(getPatientStories);
-  const data = await res.json();
-  console.log(data);
+type PatientStory = {
+  _id: string;
+  title: string;
+  patientName: string;
+  slug: string;
+  imageUrl: string;
 };
 
-const PatientStoriesPage = () => {
+const PatientStoriesPage = async () => {
+  const patientStories = await client.fetch(getPatientStories);
+  console.log(patientStories);
   return (
     <main>
       <Hero title="Priče pacijenata" />
@@ -39,19 +43,18 @@ const PatientStoriesPage = () => {
         </div>
         <div className="container py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-16">
-            {patients.map((patient) => (
-              <div className="flex flex-col justify-top" key={patient.slug}>
+            {patientStories.map((patient: PatientStory) => (
+              <div className="flex flex-col justify-top" key={patient._id}>
                 <img
-                  src={patient.image}
+                  src={patient.imageUrl}
                   alt={patient.title}
                   className="grayscale hover:grayscale-1 transition-all duration-300"
                 />
                 <h4 className="text-xl uppercase font-outfit font-light mt-6 tracking-widest text-center">
-                  Milica <br />
-                  razmak izmedju zuba
+                  {patient.patientName} <br />
+                  {patient.title}
                 </h4>
                 <Link
-                  key={patient.slug}
                   href={`/patient-stories/${patient.slug}`}
                   className="font-light uppercase self-center link-underline mt-6 tracking-widest inline-block"
                 >

@@ -1,23 +1,35 @@
 import { notFound } from "next/navigation";
-import { Patient, patients } from "../../../data/patients";
+import { PortableTextBlock } from "@portabletext/types";
+import { getPatientStoryBySlug } from "../../../../lib/sanity.queries";
+import { client } from "../../../../lib/sanity.client";
+import { PortableText } from "next-sanity";
 
-export async function generateStaticParams() {
-  //const patients = await getPatients()
-  return patients.map((patient) => ({ slug: patient.slug }));
-}
+type PatientStory = {
+  _id: string;
+  title: string;
+  patientName: string;
+  slug: string;
+  story: PortableTextBlock[];
+  imageUrl: string;
+};
 
-export default function PatientPage({ params }: { params: { slug: string } }) {
-  const patient = (patients as Patient[]).find((p) => p.slug === params.slug);
+const PatientPage = async ({ params }: { params: { slug: string } }) => {
+  const { slug } = await params;
 
-  if (!patient) {
-    notFound();
-  }
+  const story = await client.fetch(getPatientStoryBySlug, {
+    slug,
+  });
+  console.log(story);
+  if (!story) return <p>Story not found</p>;
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">{patient.title}</h1>
-      <img src={patient.image} alt={patient.title} className="my-4 w-full" />
-      <p>Condition: {patient.text}</p>
+      <h1 className="text-3xl font-bold">{story.patientName}</h1>
+      <h1 className="text-3xl font-bold">{story.title}</h1>
+      <img src={story.imageUrl} alt={story.title} className="my-4 w-20" />
+
+      <PortableText value={story.story} />
     </div>
   );
-}
+};
+export default PatientPage;

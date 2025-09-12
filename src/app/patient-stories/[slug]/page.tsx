@@ -18,7 +18,7 @@ type PageProps = {
 };
 
 const PatientPage = async ({ params }: PageProps) => {
-  const { slug } = await params;
+  const { slug } = params;
 
   const story = await client.fetch(getPatientStoryBySlug, {
     slug,

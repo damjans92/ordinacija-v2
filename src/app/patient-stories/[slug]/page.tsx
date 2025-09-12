@@ -13,7 +13,7 @@ type PatientStory = {
   imageUrl: string;
 };
 
-const PatientPage = async ({ params }: { params: { slug: string } }) => {
+const PatientPage = async ({ params }: any) => {
   const { slug } = params;
 
   const story = await client.fetch(getPatientStoryBySlug, {

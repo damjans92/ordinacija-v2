@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Card from "./Card";
 type WhatWeDoProps = {
   showDesc?: boolean;
 };
@@ -9,84 +9,21 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
     <section id="whatwedo" className="container mx-auto py-12 ">
       <div className="flex flex-wrap mb-16">
         <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
-          <Link
-            href="/services/conservative-dentistry"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Konzervativna <br /> stomatologija
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </Link>
-          <Link
-            href="/services/endodontics"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Endodoncija
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </Link>
-          <a
-            href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Protetika <br /> Hirurgija
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </a>
-          <a
-            href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Izbeljivanje
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </a>
-          <a
-            href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Pregled
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </a>
-          <a
-            href="#"
-            className="flex-1 flex flex-col items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Ortodoncija
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </a>
-          <a
-            href="#"
-            className="flex-1 flex flex-col grow items-center bg-foreground2 text-center p-12 lg:min-h-[170px]"
-          >
-            <h3 className="m-auto uppercase text-2xl lg:text-3xl tracking-widest text-white">
-              Terapija donjoviličnog <br />
-              zgloba
-            </h3>
-            <span className="uppercase text-white link-underline tracking-widest font-light">
-              Detaljnije
-            </span>
-          </a>
+          <Card url="/services/endodontics">Endodoncija</Card>
+          <Card url="/services/conservative-dentistry">
+            Konzervativna <br /> stomatologija
+          </Card>
+          <Card url="/services/conservative-dentistry">
+            Protetika <br /> Hirurgija
+          </Card>
+          <Card url="/services/conservative-dentistry"> Izbeljivanje</Card>
+          <Card url="/services/conservative-dentistry"> Pregled</Card>
+          <Card url="/services/conservative-dentistry"> Ortodoncija</Card>
+          <Card url="/services/conservative-dentistry">
+            Terapija donjoviličnog <br />
+            zgloba
+          </Card>
+
           <div className="flex-1 flex flex-col grow items-center text-center p-12 lg:min-h-[170px]"></div>
         </div>
         <div className="lg:w-4/12 flex-col pr-12 pt-8 lg:pl-10 box-border">

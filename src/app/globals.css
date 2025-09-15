@@ -72,3 +72,33 @@ body {
   @apply relative after:absolute after:left-0 after:bottom-0 after:h-[1px] 
          after:w-full after:bg-current after:transition-all hover:after:w-0 after:duration-300 pb-1;
 }
+
+.card-shine-effect {
+  --shine-deg: 45deg;
+  background-repeat: no-repeat;
+  background-position:
+    -100% 0,
+    0 0;
+
+  background-image: linear-gradient(
+    var(--shine-deg),
+    transparent 20%,
+    transparent 40%,
+    rgba(221, 221, 221, 0.075) 50%,
+    rgba(240, 240, 240, 0.123) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+
+  background-size:
+    250% 250%,
+    100% 100%;
+  transition: background-position 0s ease;
+}
+
+.card-shine-effect:hover {
+  background-position:
+    200%0,
+    0 0;
+  transition-duration: 1s;
+}

@@ -32,7 +32,7 @@ export const getPatientStories = `*[_type == "patientStory"]{
   title,
   patientName,
   "slug":slug.current,
-  "imageUrl":image.asset->url
+  image
   }`;
 
 export const getPatientStoryBySlug = `*[_type == "patientStory" && slug.current == $slug][0]{
@@ -41,5 +41,5 @@ export const getPatientStoryBySlug = `*[_type == "patientStory" && slug.current 
     patientName,
     story,
     "slug":slug.current,
-    "imageUrl":image.asset->url
+    image
     }`;

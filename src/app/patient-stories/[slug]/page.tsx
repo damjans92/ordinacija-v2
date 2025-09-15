@@ -40,15 +40,20 @@ const PatientPage = async ({ params }: PageProps) => {
     <main>
       <div className="container mx-auto p-8">
         <div className="flex flex-wrap border-1">
-          <div className="order-2 lg:order-1 flex flex-col justify-center px-8 py-8 ">
-            <h1 className="text-3xl font-normal uppercase mb-6 tracking-widest leading-15">
-              <span className="border-b-6 border-[var(--foreground2)]">
+          <div className="order-2 lg:order-1 w-full lg:w-[400px] flex flex-col justify-center px-8 py-8 ">
+            <h1 className="text-3xl font-normal uppercase mb-6 tracking-widest">
+              <span className="border-b-6 border-[var(--foreground2)] inline-block mb-6">
                 {story.patientName}
               </span>
               <br />
-              <span className="text-2xl font-light">{story.title}</span>
+              <span className="text-2xl font-light leading-8">
+                {story.title}
+              </span>
             </h1>
-            <a href="" className="uppercase">
+            <a
+              href=""
+              className="uppercase link-underline inline-block w-auto self-start"
+            >
               Opširnije
             </a>
           </div>

@@ -4,11 +4,11 @@ const Office = () => {
   const [showControls, setShowControls] = useState(false);
 
   return (
-    <section id="office" className="py-12 bg-foreground2 text-white">
-      <div className="container mx-auto  ">
+    <section id="office" className="py-12 bg-background2 text-black border-t">
+      <div className="container mx-auto pt-10">
         <div className="text-center">
-          <h2 className=" uppercase pb-7 text-4xl tracking-widest">
-            Ordinacija
+          <h2 className="uppercase pb-7 md:text-4xl tracking-widest font-light">
+            Pogled iz naše ordinacije
           </h2>
           <p className="">
             You can visit us at Radovana Simica Cige 7, 11000 Beograd
@@ -23,7 +23,7 @@ const Office = () => {
             muted
             playsInline
             controls={showControls}
-            className="w-full h-full object-cover mt-6 border-10 border-neutral-100 "
+            className="w-full h-full object-cover mt-6 border-10 border-black"
           >
             <source src="/office.mp4" type="video/mp4" />
           </video>

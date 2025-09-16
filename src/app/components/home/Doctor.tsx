@@ -6,7 +6,7 @@ const Doctor = () => {
     <section id="doctor" className="container mx-auto py-12">
       <div className="flex flex-wrap">
         <div className="order-2 lg:order-1 lg:w-5/12 flex flex-col md:text-center lg:justify-center lg:items-center">
-          <h2 className="uppercase pb-7 text-2xl lg:text-4xl tracking-widest">
+          <h2 className="uppercase pb-7 text-2xl lg:text-4xl font-light tracking-widest">
             Vaš <br />
             Stomatolog
           </h2>

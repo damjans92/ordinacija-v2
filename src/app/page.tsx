@@ -5,6 +5,7 @@ import Stories from "./components/home/Stories";
 import WhatWeDo from "./components/home/WhatWeDo";
 import Office from "./components/home/Office";
 import Hero from "./components/Hero";
+import Contact from "./components/home/Contact";
 
 export default function Home() {
   return (

@@ -1,22 +1,13 @@
 import { notFound } from "next/navigation";
-import { PortableTextBlock } from "@portabletext/types";
 import { getPatientStoryBySlug } from "../../../../lib/sanity.queries";
 import { client } from "../../../../lib/sanity.client";
 import { PortableText } from "next-sanity";
 import { urlFor } from "../../../../lib/sanity.client";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { PatientStorySingle } from "../../../../lib/types";
 
 export const dynamic = "force-dynamic";
-
-type PatientStory = {
-  _id: string;
-  title: string;
-  patientName: string;
-  slug: string;
-  story: PortableTextBlock[];
-  image: object;
-};
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -25,7 +16,7 @@ interface PageProps {
 const PatientPage = async ({ params }: PageProps) => {
   const { slug } = await params;
 
-  const story: PatientStory = await client.fetch(
+  const story: PatientStorySingle = await client.fetch(
     getPatientStoryBySlug,
     {
       slug,

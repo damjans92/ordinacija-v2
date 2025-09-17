@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/Hero";
-import Accordion from "@/components/ui/Accordion";
+import Accordion from "@/app/faqs/Accordion";
 
 const FaqsPage = () => {
   return (

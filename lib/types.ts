@@ -33,3 +33,9 @@ export type PatientStorySingle = {
   image: object;
   story: PortableTextBlock[];
 };
+
+export type Review = {
+  id: number;
+  text: string;
+  author: string;
+};

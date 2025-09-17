@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
-import WhatWeDo from "../components/home/WhatWeDo";
+import Hero from "../../components/Hero";
+import WhatWeDo from "../_components/WhatWeDo";
 
 const ServicesPage = () => {
   return (

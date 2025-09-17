@@ -1,23 +1,8 @@
 import { client, urlFor } from "../../../lib/sanity.client";
 import { mainGalleryQuery } from "../../../lib/sanity.queries";
-import Hero from "../components/Hero";
-
-type SanityImage = {
-  asset: { _id: string; url: string };
-  alt?: string;
-};
-
-type BeforeAfterPair = {
-  _key: string;
-  before: SanityImage;
-  after: SanityImage;
-};
-
-type PhotoGallery = {
-  _id: string;
-  title: string;
-  pairs: BeforeAfterPair[];
-};
+import { PhotoGallery } from "../../../lib/types";
+import Hero from "../../components/Hero";
+import GalleryContainer from "./_components/GalleryContainer";
 
 const GalleryPage = async () => {
   const data: PhotoGallery = await client.fetch(mainGalleryQuery);
@@ -45,34 +30,7 @@ const GalleryPage = async () => {
       </div>
       <div className="border-t-1 border-gray-300"></div>
 
-      <section>
-        <div>
-          {gallery.pairs.map((pair) => (
-            <div key={pair._key}>
-              <div className="container mx-auto flex gap-4 ">
-                <div className="flex flex-col flex-1  justify-center py-6">
-                  <img
-                    src={urlFor(pair.before).url()}
-                    alt={pair.before.alt || ""}
-                  />
-                  <span className="mt-3 font-bold uppercase">Pre</span>
-                </div>
-                <div className="w-px bg-gray-200"></div>
-                <div className="flex flex-col  flex-1  justify-center py-6 ">
-                  <img
-                    src={urlFor(pair.after).url()}
-                    alt={pair.after.alt || ""}
-                  />
-                  <span className="mt-3 font-bold uppercase text-right">
-                    Posle
-                  </span>
-                </div>
-              </div>
-              <div className="border-t-1 border-gray-300"></div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <GalleryContainer gallery={gallery} />
     </main>
   );
 };

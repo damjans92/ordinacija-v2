@@ -4,16 +4,16 @@ const Contact = () => {
   return (
     <section
       id="stories"
-      className="bg-gradient-to-br from-foreground2 via-foreground2 to-green-900/80 text-white"
+      className="bg-gradient-to-br from-foreground2 via-45-foreground2 to-green-900/80 text-white"
     >
       <div className="container mx-auto py-12 pb-24 text-white">
-        <h2 className="text-4xl text-center uppercase pb-7 tracking-widest font-light">
+        <h2 className="md:text-4xl text-center uppercase pb-7 tracking-widest font-light">
           Kontakt
         </h2>
         <p className="text-center text-white mb-12">
           Posetite nas u Radovana Simica Cige 7, 11000 Beograd
         </p>
-        <div className="flex flex-wrap gap-8 border border-green-900/20 ">
+        <div className="flex flex-wrap gap-8 border-2 border-background2/25 ">
           <div className="order-2 md:order-1 w-full md:flex-1">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3780.6911350433247!2d20.497611681968248!3d44.774319826168764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a71d1d92fc845%3A0xebf4ebf097ca252f!2sDr%20Savkovi%C4%87%20Dental%20Office!5e0!3m2!1sen!2srs!4v1637866099433!5m2!1sen!2srs"

@@ -1,4 +1,4 @@
-import Breadcrumbs from "@/app/components/Breadcrumbs";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import React from "react";
 
 const ServiceConservative = () => {

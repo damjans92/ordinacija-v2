@@ -5,7 +5,7 @@ import { client } from "../../../../lib/sanity.client";
 import { PortableText } from "next-sanity";
 import { urlFor } from "../../../../lib/sanity.client";
 import Image from "next/image";
-import Breadcrumbs from "@/app/components/Breadcrumbs";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const dynamic = "force-dynamic";
 

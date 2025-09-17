@@ -29,7 +29,7 @@ const Office = () => {
           </video>
         </div>
         <div>
-          <p className="font-quicksand tracking-widest py-6 text-center uppercase">
+          <p className="font-outfit font-extralight tracking-widest py-6 text-center uppercase">
             Our office is located in the heart of Belgrade, in a modern and
             comfortable building. We have state-of-the-art equipment and a team
             of experienced professionals who are dedicated to providing you with

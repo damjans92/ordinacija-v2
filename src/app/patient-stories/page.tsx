@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero";
+import Hero from "../../components/Hero";
 import Link from "next/link";
 import { patients } from "@/data/patients";
 import Image from "next/image";

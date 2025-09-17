@@ -6,9 +6,9 @@ type WhatWeDoProps = {
 
 const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
   return (
-    <section id="whatwedo" className="container mx-auto py-12 ">
+    <section id="whatwedo" className="container mx-auto py-12 md:pt-24">
       <div className="flex flex-wrap mb-16">
-        <div className="lg:w-8/12 flex gap-6 flex-wrap box-border">
+        <div className="order-2 md:order-1 lg:w-8/12 flex gap-6 flex-wrap box-border">
           <Card url="/services/endodontics">Endodoncija</Card>
           <Card url="/services/conservative-dentistry">
             Konzervativna <br /> stomatologija
@@ -24,10 +24,10 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
             zgloba
           </Card>
 
-          <div className="flex-1 flex flex-col grow items-center text-center p-12 lg:min-h-[170px]"></div>
+          <div className="hidden flex md:flex flex-1 flex-col grow items-center text-center p-12 lg:min-h-[170px]"></div>
         </div>
-        <div className="lg:w-4/12 flex-col pr-12 pt-8 lg:pl-10 box-border">
-          <h2 className="uppercase pb-7 tracking-widest">
+        <div className="order-1 md:order-2 lg:w-4/12 flex-col pr-12 md:pt-8 lg:pl-10 box-border">
+          <h2 className="uppercase pb-7 tracking-widest font-light">
             Za vaš <br />
             osmeh
           </h2>

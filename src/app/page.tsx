@@ -1,11 +1,10 @@
 "use client";
 
-import Doctor from "./components/home/Doctor";
-import Stories from "./components/home/Stories";
-import WhatWeDo from "./components/home/WhatWeDo";
-import Office from "./components/home/Office";
-import Hero from "./components/Hero";
-import Contact from "./components/home/Contact";
+import Doctor from "./_components/Doctor";
+import Stories from "./_components/Stories";
+import WhatWeDo from "./_components/WhatWeDo";
+import Office from "./_components/Office";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (

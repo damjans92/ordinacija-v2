@@ -14,7 +14,7 @@ export default function Home() {
       </h1>
       <Hero title="Zdrav osmeh za ceo život" imageSrc="/banner-home2.jpg" />
       <Doctor />
-      <Stories />
+
       <div className="border-t-1 border-black"></div>
       <WhatWeDo />
       <Office />

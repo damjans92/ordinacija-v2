@@ -17,7 +17,6 @@ export default function DentistServiceCard({ children, url }: CardProps) {
       <span className="z-1 uppercase text-white link-underline mt-3 tracking-widest font-light">
         Detaljnije
       </span>
-      <div className="absolute z-[0] inset-0 bg-gradient-to-tr from-black/15 via-transparent to-white/10"></div>
     </Link>
   );
 }

@@ -8,7 +8,7 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
   return (
     <section id="whatwedo" className="container mx-auto py-12 md:pt-24">
       <div className="flex flex-wrap mb-16">
-        <div className="order-2 md:order-1 lg:w-8/12 flex gap-6 flex-wrap box-border">
+        <div className="order-2 md:order-1 lg:w-8/12 grid grid-cols-1 sm:grid-cols-2   gap-6">
           <Card url="/services/endodontics">Endodoncija</Card>
           <Card url="/services/conservative-dentistry">
             Konzervativna <br /> stomatologija
@@ -16,15 +16,12 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
           <Card url="/services/conservative-dentistry">
             Protetika <br /> Hirurgija
           </Card>
-          <Card url="/services/conservative-dentistry"> Izbeljivanje</Card>
-          <Card url="/services/conservative-dentistry"> Pregled</Card>
-          <Card url="/services/conservative-dentistry"> Ortodoncija</Card>
+          <Card url="/services/conservative-dentistry">Izbeljivanje</Card>
+          <Card url="/services/conservative-dentistry">Pregled</Card>
+          <Card url="/services/conservative-dentistry">Ortodoncija</Card>
           <Card url="/services/conservative-dentistry">
-            Terapija donjoviličnog <br />
-            zgloba
+            Terapija donjoviličnog <br /> zgloba
           </Card>
-
-          <div className="hidden flex md:flex flex-1 flex-col grow items-center text-center p-12 lg:min-h-[170px]"></div>
         </div>
         <div className="order-1 md:order-2 lg:w-4/12 flex-col pr-12 md:pt-8 lg:pl-10 box-border">
           <h2 className="uppercase pb-7 tracking-widest font-light">
@@ -40,7 +37,7 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
             aren’t perceiving the most confident and attractive version of you.
           </p>
 
-          <div className="flex flex-col items-start gap-4 mt-8 uppercase font-bold tracking-widest">
+          <div className="flex flex-col items-start gap-4 mt-8 uppercase font-bold tracking-widest mb-12">
             <a href="#" className="link-underline-reverse ">
               Više o procedurama
             </a>

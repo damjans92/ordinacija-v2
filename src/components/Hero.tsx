@@ -90,15 +90,18 @@ const Hero = ({ title, imageSrc }: HeroProps) => {
           </div>
         </div>
       </div>
-      <Breadcrumbs />
-      <div className="text-center py-3">
-        <a
-          href="#"
-          className="link-underline tracking-widest uppercase"
-          onClick={scrollNext}
-        >
-          Skroluj dole
-        </a>
+      <div className="flex">
+        <Breadcrumbs />
+        <div className="text-center py-3 flex-1">
+          <a
+            href="#"
+            className="link-underline tracking-widest uppercase"
+            onClick={scrollNext}
+          >
+            Skroluj dole
+          </a>
+        </div>
+        <div className="flex-1"></div>
       </div>
     </section>
   );

@@ -1,11 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
 
+const navLinks = [
+  { href: "/about", label: "Vaš stomatolog" },
+  { href: "/gallery", label: "Foto galerija" },
+  { href: "/services", label: "Usluge" },
+  { href: "/faqs", label: "Najčešća pitanja" },
+  { href: "/reviews", label: "Utisci" },
+  { href: "/", label: "Kontakt" }, // ako Kontakt nije posebna ruta, možeš ostaviti "#"
+];
+
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+
+  const pathname = usePathname();
 
   const handleToggle = () => {
     setNavOpen(!navOpen);
@@ -47,30 +59,18 @@ function Navbar() {
             </button>
             <nav className="hidden lg:flex flex-1 font-quicksand font-extrabold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase col-">
-                <li>
-                  <Link
-                    href="/about"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Vaš stomatolog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/gallery"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Foto galerija
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Usluge
-                  </Link>
-                </li>
+                {navLinks.slice(0, 3).map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`pb-1 hover:border-b-1 hover:border-black ${
+                        pathname === link.href ? "border-b-2 border-black" : ""
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
@@ -87,30 +87,18 @@ function Navbar() {
             </div>
             <nav className="hidden lg:flex flex-1 justify-end font-quicksand font-extrabold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase">
-                <li>
-                  <Link
-                    href="/faqs"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Najčešća pitanja
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/reviews"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Utisci
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Kontakt
-                  </Link>
-                </li>
+                {navLinks.slice(3).map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`pb-1 hover:border-b-1 hover:border-black ${
+                        pathname === link.href ? "border-b-2 border-black" : ""
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
               <div></div>
             </nav>
@@ -126,37 +114,19 @@ function Navbar() {
       >
         <nav className="flex w-full justify-center">
           <ul className="flex flex-col w-full h-full border-t-1 text-center font-quicksand font-bold text-md tracking-widest uppercase">
-            <li className="py-6 border-b-1 border-black">
-              <Link href="/about" onClick={handleClose}>
-                Vaš stomatolog
-              </Link>
-            </li>
-
-            <li className="py-6 border-b-1 border-black">
-              <Link href="/gallery" onClick={handleClose}>
-                Foto galerija
-              </Link>
-            </li>
-            <li className="py-6 border-b-1 border-black">
-              <Link href="/services" onClick={handleClose}>
-                Usluge
-              </Link>
-            </li>
-            <li className="py-6 border-b-1 border-black">
-              <Link href="/faqs" onClick={handleClose}>
-                Najčešća pitanja
-              </Link>
-            </li>
-            <li className="py-6 border-b-1 border-black">
-              <Link href="/reviews" onClick={handleClose}>
-                Utisci
-              </Link>
-            </li>
-            <li className="py-6 border-b-1 border-black">
-              <Link href="#" onClick={handleClose}>
-                Kontakt
-              </Link>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href} className="py-6 border-b border-black">
+                <Link
+                  href={link.href}
+                  onClick={handleClose}
+                  className={`${
+                    pathname === link.href ? "text-green-600" : ""
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="flex justify-center py-6">

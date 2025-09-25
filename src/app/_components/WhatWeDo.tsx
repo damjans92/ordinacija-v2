@@ -8,7 +8,7 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
   return (
     <section id="whatwedo" className="container mx-auto py-12 md:pt-24">
       <div className="flex flex-wrap mb-16">
-        <div className="order-2 md:order-1 lg:w-8/12 grid grid-cols-1 sm:grid-cols-2   gap-6">
+        <div className="order-2 md:order-1 w-full lg:w-8/12 grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
           <Card url="/services/endodontics">Endodoncija</Card>
           <Card url="/services/conservative-dentistry">
             Konzervativna <br /> stomatologija

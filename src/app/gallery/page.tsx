@@ -1,4 +1,4 @@
-import { client, urlFor } from "../../../lib/sanity.client";
+import { client } from "../../../lib/sanity.client";
 import { mainGalleryQuery } from "../../../lib/sanity.queries";
 import { PhotoGallery } from "../../../lib/types";
 import Hero from "../../components/Hero";
@@ -15,6 +15,7 @@ const GalleryPage = async () => {
   return (
     <main>
       <Hero title="Foto galerija" imageSrc="/banner-gallery2.jpg" />
+
       <div className="py-12 px-6 mt-6">
         <p className="max-w-2xl mx-auto text-center">
           Success and celebrity is not what defines LLK; the doctor’s commitment
@@ -28,6 +29,7 @@ const GalleryPage = async () => {
           ultimately how they see themselves.
         </p>
       </div>
+
       <div className="border-t-1 border-gray-300"></div>
 
       <GalleryContainer gallery={gallery} />

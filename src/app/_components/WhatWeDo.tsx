@@ -24,7 +24,7 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
           </Card>
         </div>
         <div className="order-1 md:order-2 lg:w-4/12 flex-col pr-12 md:pt-8 lg:pl-10 box-border">
-          <h2 className="uppercase pb-7 tracking-widest font-light">
+          <h2 className="uppercase pb-7 tracking-[7px]">
             Za vaš <br />
             osmeh
           </h2>

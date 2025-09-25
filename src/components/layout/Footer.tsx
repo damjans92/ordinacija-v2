@@ -31,53 +31,39 @@ const Footer = () => {
               <ul className="flex flex-col gap-2 leading-5">
                 <li>
                   <a href="#" className="underline hover:no-underline">
-                    Patient Stories
+                    Vaš stomatolog
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline hover:no-underline">
-                    {" "}
-                    FAQs
+                    Foto galerija
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline hover:no-underline">
-                    Print Media
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="underline hover:no-underline">
-                    {" "}
-                    Reviews
+                    Usluge
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h5 className="uppercase mb-6">
+              {/* <h5 className="uppercase mb-6">
                 <a href="#">Site Links</a>
-              </h5>
+              </h5> */}
               <ul className="flex flex-col gap-2 leading-5">
                 <li>
                   <a href="#" className="underline hover:no-underline">
-                    Patient Stories
-                  </a>{" "}
-                </li>
-                <li>
-                  <a href="#" className="underline hover:no-underline">
-                    {" "}
-                    FAQs
+                    Najčešća pitanja
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline hover:no-underline">
-                    Print Media
+                    Utisci
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline hover:no-underline">
-                    {" "}
-                    Reviews
+                    Kontakt
                   </a>
                 </li>
               </ul>

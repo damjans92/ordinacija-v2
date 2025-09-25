@@ -7,7 +7,7 @@ const Office = () => {
     <section id="office" className="py-12 bg-background2 text-black border-t">
       <div className="container mx-auto pt-10">
         <div className="text-center">
-          <h2 className="uppercase pb-7 md:text-4xl tracking-widest font-light">
+          <h2 className="uppercase pb-7 md:text-4xl tracking-[7px] ">
             Pogled iz naše ordinacije
           </h2>
           <p className="">
@@ -28,12 +28,11 @@ const Office = () => {
             <source src="/office.mp4" type="video/mp4" />
           </video>
         </div>
-        <div>
-          <p className="font-outfit font-extralight tracking-widest py-6 text-center uppercase">
-            Our office is located in the heart of Belgrade, in a modern and
-            comfortable building. We have state-of-the-art equipment and a team
-            of experienced professionals who are dedicated to providing you with
-            the best possible care.
+        <div className="mt-10 px-4 lg:px-20">
+          <p className="font-redhat font-extralight tracking-[4px] py-6 text-center uppercase">
+            Our office is located in the heart of Belgrade. We have
+            state-of-the-art equipment and a team of experienced professionals
+            who are dedicated to providing you with the best possible care.
           </p>
         </div>
       </div>

@@ -94,7 +94,7 @@ const Hero = ({ title, imageSrc }: HeroProps) => {
       <div className="text-center py-3">
         <a
           href="#"
-          className="link-underline tracking-widest uppercase font-light"
+          className="link-underline tracking-widest uppercase"
           onClick={scrollNext}
         >
           Skroluj dole

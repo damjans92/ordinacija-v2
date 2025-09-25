@@ -21,6 +21,7 @@
   --font-quicksand: var(--font-quicksand);
   --font-outfit: var(--font-outfit);
   --font-baskervville: var(--font-baskervville);
+  --font-redhat: var(--font-redhat);
 
   --container-max: 1330px;
 
@@ -34,7 +35,7 @@
   h2,
   h3,
   a {
-    @apply font-outfit;
+    @apply font-redhat;
   }
 
   h1,

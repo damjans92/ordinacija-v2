@@ -45,7 +45,7 @@ function Navbar() {
             <button className=" flex lg:hidden" onClick={handleToggle}>
               <FaBars className="w-full h-full" size={28} />
             </button>
-            <nav className="hidden lg:flex flex-1 font-quicksand font-bold text-sm tracking-widest ">
+            <nav className="hidden lg:flex flex-1 font-quicksand font-extrabold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase col-">
                 <li>
                   <Link
@@ -65,10 +65,10 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/patient-stories"
+                    href="/services"
                     className="hover:border-b-1 hover:border-black pb-1"
                   >
-                    Priče pacijenata
+                    Usluge
                   </Link>
                 </li>
               </ul>
@@ -85,16 +85,8 @@ function Navbar() {
                 />
               </Link>
             </div>
-            <nav className="hidden lg:flex flex-1 justify-end font-quicksand font-bold text-sm tracking-widest ">
+            <nav className="hidden lg:flex flex-1 justify-end font-quicksand font-extrabold text-sm tracking-widest ">
               <ul className="flex items-center justify-center gap-8 uppercase">
-                <li>
-                  <Link
-                    href="/services"
-                    className="hover:border-b-1 hover:border-black pb-1"
-                  >
-                    Usluge
-                  </Link>
-                </li>
                 <li>
                   <Link
                     href="/faqs"
@@ -143,11 +135,6 @@ function Navbar() {
             <li className="py-6 border-b-1 border-black">
               <Link href="/gallery" onClick={handleClose}>
                 Foto galerija
-              </Link>
-            </li>
-            <li className="py-6 border-b-1 border-black">
-              <Link href="/patient-stories" onClick={handleClose}>
-                Priče pacijenata
               </Link>
             </li>
             <li className="py-6 border-b-1 border-black">

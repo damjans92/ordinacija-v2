@@ -6,6 +6,7 @@ import {
   Quicksand,
   Outfit,
   Baskervville,
+  Red_Hat_Display,
 } from "next/font/google";
 
 import "./globals.css";
@@ -48,6 +49,12 @@ const baskervvile = Baskervville({
   variable: "--font-baskervville",
 });
 
+const redhat = Red_Hat_Display({
+  subsets: ["latin"],
+  weight: "variable",
+  variable: "--font-redhat",
+});
+
 export const metadata: Metadata = {
   title: "DrSavkovic Dental Office",
   description: "DrSavkovic Dental Office",
@@ -61,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baskervvile.variable} ${outfit.variable} ${comfortaa.variable} ${quicksand.variable} ${notoSans.variable} ${lora.variable} antialiased`}
+        className={`${redhat.variable} ${baskervvile.variable} ${outfit.variable} ${comfortaa.variable} ${quicksand.variable} ${notoSans.variable} ${lora.variable} antialiased`}
       >
         <Navbar />
         {children}

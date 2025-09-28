@@ -1,10 +1,26 @@
 import { serviceList } from "@/data/services";
 import Card from "./Card";
+import React from "react";
+
 type WhatWeDoProps = {
+  title: string;
+  description: string;
+  link1: { text: string; href: string };
+  link2: { text: string; href: string };
+  link3: { text: string; href: string };
+  serviceList: typeof serviceList;
   showDesc?: boolean;
 };
 
-const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
+const WhatWeDo = ({
+  title,
+  description,
+  link1,
+  link2,
+  link3,
+  serviceList,
+  showDesc = true,
+}: WhatWeDoProps) => {
   return (
     <section id="whatwedo" className="container mx-auto py-12 md:pt-24">
       <div className="flex flex-wrap mb-16">
@@ -17,47 +33,31 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
         </div>
         <div className="order-1 md:order-2 lg:w-4/12 flex-col pr-12 md:pt-8 lg:pl-10 box-border">
           <h2 className="uppercase pb-7 tracking-[7px]">
-            Za vaš <br />
-            osmeh
+            {title.split("\n").map((line, idx) => (
+              <React.Fragment key={idx}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
           </h2>
-          <p className=" pb-6">
-            Your smile is your calling card. Whether you’re on a job interview
-            or a first date – or just going through the many actions and
-            interactions of an average day – your smile has an immediate impact
-            on the way people perceive you. And if you’re embarrassed about your
-            teeth – because of spaces, chips, crookedness, or color – people
-            aren’t perceiving the most confident and attractive version of you.
-          </p>
+          <p className=" pb-6">{description}</p>
 
           <div className="flex flex-col items-start gap-4 mt-8 uppercase font-bold tracking-widest mb-12">
             <a href="#" className="link-underline-reverse ">
-              Više o procedurama
+              {link1.text}
             </a>
             <a href="#" className="link-underline-reverse ">
-              Pre i posle galerija
+              {link2.text}
             </a>
             <a href="#" className="link-underline-reverse ">
-              Pročitajte Najčešća pitanja
+              {link3.text}
             </a>
           </div>
         </div>
       </div>
       {showDesc && (
         <div>
-          <p className=" pb-6 text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem et
-            fugit quia totam expedita beatae consequatur obcaecati. Distinctio
-            quo, et assumenda porro nulla odio expedita inventore repellat dicta
-            omnis dolores explicabo voluptatibus nisi, cum voluptates? Commodi
-            beatae sapiente facilis unde aspernatur a expedita consectetur
-            necessitatibus vitae vero. Necessitatibus itaque odit id iusto
-            eveniet incidunt, quaerat deleniti quas dolore aut qui? Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Natus, expedita
-            tenetur. Ab nostrum natus voluptates numquam impedit atque soluta
-            accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Debitis praesentium quidem officia saepe odit? Odit dolorum magnam
-            sed repudiandae sapiente?
-          </p>
+          <p className=" pb-6 text-center">{description}</p>
         </div>
       )}
     </section>

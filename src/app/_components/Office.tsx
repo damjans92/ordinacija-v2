@@ -1,6 +1,13 @@
+"use client";
 import React, { useState } from "react";
 
-const Office = () => {
+type OfficeProps = {
+  title: string;
+  location: string;
+  description: string;
+};
+
+const Office = ({ title, location, description }: OfficeProps) => {
   const [showControls, setShowControls] = useState(false);
 
   return (
@@ -8,11 +15,9 @@ const Office = () => {
       <div className="container mx-auto pt-10">
         <div className="text-center">
           <h2 className="uppercase pb-7 md:text-4xl tracking-[7px] ">
-            Pogled iz naše ordinacije
+            {title}
           </h2>
-          <p className="">
-            You can visit us at Radovana Simica Cige 7, 11000 Beograd
-          </p>
+          <p className="">{location}</p>
         </div>
         <div
           onMouseEnter={() => setShowControls(true)}
@@ -30,9 +35,7 @@ const Office = () => {
         </div>
         <div className="mt-10 px-4 lg:px-20">
           <p className="font-redhat font-extralight tracking-[4px] py-6 text-center uppercase">
-            Our office is located in the heart of Belgrade. We have
-            state-of-the-art equipment and a team of experienced professionals
-            who are dedicated to providing you with the best possible care.
+            {description}
           </p>
         </div>
       </div>

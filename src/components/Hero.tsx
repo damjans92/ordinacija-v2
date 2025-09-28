@@ -6,10 +6,13 @@ import Breadcrumbs from "./Breadcrumbs";
 
 type HeroProps = {
   title: string;
+  moreBtn: string;
+  location: string;
+  scrollBtn: string;
   imageSrc?: string;
 };
 
-const Hero = ({ title, imageSrc }: HeroProps) => {
+const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
   const scrollNext = (e: React.MouseEvent) => {
     e.preventDefault();
 
@@ -42,16 +45,24 @@ const Hero = ({ title, imageSrc }: HeroProps) => {
               {/* Vaš osmeh, <br /> naša briga */}
               {title}
             </h1>
-            <a href="#" className="uppercase tracking-widest link-underline">
-              Pročitaj više
+            <a
+              href="#"
+              className="uppercase tracking-widest link-underline"
+              onClick={scrollNext}
+            >
+              {moreBtn}
             </a>
           </div>
 
           {/* Paragraph sticks to bottom */}
           <div className="flex flex-col items-center md:flex-row md:justify-between">
             <p className="mt-4 text-md font-bold uppercase tracking-widest font-quicksand text-center md:text-left">
-              nađite nas na adresi
-              <br /> Radovana Simića Cige 7
+              {location.split("\n").map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
             </p>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5 mt-8 lg:mt-0">
               <Image
@@ -98,7 +109,7 @@ const Hero = ({ title, imageSrc }: HeroProps) => {
             className="link-underline tracking-widest uppercase"
             onClick={scrollNext}
           >
-            Skroluj dole
+            {scrollBtn}
           </a>
         </div>
         <div className="flex-1"></div>

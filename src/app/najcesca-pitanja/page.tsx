@@ -1,11 +1,12 @@
 import React from "react";
 import Hero from "../../components/Hero";
 import Accordion from "@/app/najcesca-pitanja/Accordion";
+import { faqsData } from "@/data/faqs";
 
 const FaqsPage = () => {
   return (
     <main>
-      <Hero title="Najčešća pitanja" />
+      <Hero {...faqsData.sr.hero} title="Najčešća pitanja" />
       <section>
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-20 px-6 py-12">

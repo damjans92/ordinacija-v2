@@ -5,6 +5,8 @@ import Stories from "./_components/Stories";
 import WhatWeDo from "./_components/WhatWeDo";
 import Office from "./_components/Office";
 import Hero from "../components/Hero";
+import { homeData } from "@/data/home";
+import { serviceList } from "@/data/services";
 
 export default function Home() {
   return (
@@ -12,12 +14,12 @@ export default function Home() {
       <h1 className="sr-only">
         Dr Savković – stomatolog u Beogradu, zdrav osmeh za ceo život
       </h1>
-      <Hero title="Zdrav osmeh za ceo život" imageSrc="/banner-home2.jpg" />
-      <Doctor />
+      <Hero {...homeData.sr.hero} imageSrc="/banner-home2.jpg" />
+      <Doctor {...homeData.sr.doctor} />
 
       <div className="border-t-1 border-black"></div>
-      <WhatWeDo />
-      <Office />
+      <WhatWeDo {...homeData.sr.whatWeDo} serviceList={serviceList} />
+      <Office {...homeData.sr.office} />
     </main>
   );
 }

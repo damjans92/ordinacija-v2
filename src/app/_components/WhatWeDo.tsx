@@ -1,3 +1,4 @@
+import { serviceList } from "@/data/services";
 import Card from "./Card";
 type WhatWeDoProps = {
   showDesc?: boolean;
@@ -8,20 +9,11 @@ const WhatWeDo = ({ showDesc = true }: WhatWeDoProps) => {
     <section id="whatwedo" className="container mx-auto py-12 md:pt-24">
       <div className="flex flex-wrap mb-16">
         <div className="order-2 md:order-1 w-full lg:w-8/12 grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
-          <Card url="/terapijske-usluge/konzervativna-stomatologija">
-            Konzervativna <br /> stomatologija
-          </Card>
-          <Card url="/terapijske-usluge/endodoncija">Endodoncija</Card>
-
-          <Card url="/terapijske-usluge/protetska-hirurgija">
-            Protetika <br /> Hirurgija
-          </Card>
-          <Card url="/terapijske-usluge/izbeljivanje">Izbeljivanje</Card>
-          <Card url="/terapijske-usluge/pregled">Pregled</Card>
-          <Card url="/terapijske-usluge/ortodoncija">Ortodoncija</Card>
-          <Card url="/terapijske-usluge/terapija-donjovilicnog-zgloba">
-            Terapija donjoviličnog <br /> zgloba
-          </Card>
+          {serviceList.map((service) => (
+            <Card url={service.url} key={service.id}>
+              {service.title}
+            </Card>
+          ))}
         </div>
         <div className="order-1 md:order-2 lg:w-4/12 flex-col pr-12 md:pt-8 lg:pl-10 box-border">
           <h2 className="uppercase pb-7 tracking-[7px]">

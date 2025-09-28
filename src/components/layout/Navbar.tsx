@@ -6,12 +6,12 @@ import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
 
 const navLinks = [
-  { href: "/about", label: "Vaš stomatolog" },
-  { href: "/gallery", label: "Foto galerija" },
-  { href: "/services", label: "Usluge" },
-  { href: "/faqs", label: "Najčešća pitanja" },
-  { href: "/reviews", label: "Utisci" },
-  { href: "/", label: "Kontakt" }, // ako Kontakt nije posebna ruta, možeš ostaviti "#"
+  { href: "/o-osnivacu", label: "Vaš stomatolog" },
+  { href: "/galerija", label: "Foto galerija" },
+  { href: "/usluge", label: "Usluge" },
+  { href: "/najcesca-pitanja", label: "Najčešća pitanja" },
+  { href: "/utisci", label: "Utisci" },
+  { href: "/", label: "Kontakt" },
 ];
 
 function Navbar() {

@@ -8,7 +8,7 @@ import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
 const navLinks = [
   { href: "/o-osnivacu", label: "Vaš stomatolog" },
   { href: "/galerija", label: "Foto galerija" },
-  { href: "/usluge", label: "Usluge" },
+  { href: "/terapijske-usluge", label: "Usluge" },
   { href: "/najcesca-pitanja", label: "Najčešća pitanja" },
   { href: "/utisci", label: "Utisci" },
   { href: "/", label: "Kontakt" },

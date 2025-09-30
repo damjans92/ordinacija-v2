@@ -1,7 +1,7 @@
-import { client } from "../../../lib/sanity.client";
-import { mainGalleryQuery } from "../../../lib/sanity.queries";
-import { PhotoGallery } from "../../../lib/types";
-import Hero from "../../components/Hero";
+import { client } from "../../../../lib/sanity.client";
+import { mainGalleryQuery } from "../../../../lib/sanity.queries";
+import { PhotoGallery } from "../../../../lib/types";
+import Hero from "../../../components/Hero";
 import GalleryContainer from "./_components/GalleryContainer";
 import GalleryText from "./_components/GalleryText";
 import { galleryData } from "@/data/gallery";

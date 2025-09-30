@@ -1,6 +1,6 @@
 import { PortableText } from "next-sanity";
 import React from "react";
-import { PatientStorySingle } from "../../../../../lib/types";
+import { PatientStorySingle } from "../../../../../../lib/types";
 
 interface StoryHeaderProps {
   story: PatientStorySingle;

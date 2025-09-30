@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/terapijske-usluge", label: "Usluge" },
   { href: "/najcesca-pitanja", label: "Najčešća pitanja" },
   { href: "/utisci", label: "Utisci" },
-  { href: "/", label: "Kontakt" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 function Navbar() {

@@ -1,4 +1,3 @@
-import { serviceList } from "@/data/services";
 import Card from "./Card";
 import React from "react";
 
@@ -8,7 +7,8 @@ type WhatWeDoProps = {
   link1: { text: string; href: string };
   link2: { text: string; href: string };
   link3: { text: string; href: string };
-  serviceList: typeof serviceList;
+  btnText: string;
+  servicesList: { id: string | number; title: string; url: string }[];
   showDesc?: boolean;
 };
 
@@ -18,15 +18,16 @@ const WhatWeDo = ({
   link1,
   link2,
   link3,
-  serviceList,
+  servicesList,
+  btnText,
   showDesc = true,
 }: WhatWeDoProps) => {
   return (
     <section id="whatwedo" className="container mx-auto py-12 md:pt-24">
       <div className="flex flex-wrap mb-16">
         <div className="order-2 md:order-1 w-full lg:w-8/12 grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
-          {serviceList.map((service) => (
-            <Card url={service.url} key={service.id}>
+          {servicesList.map((service) => (
+            <Card url={service.url} btnText={btnText} key={service.id}>
               {service.title}
             </Card>
           ))}

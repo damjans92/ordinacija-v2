@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import { getPatientStoryBySlug } from "../../../../lib/sanity.queries";
-import { client } from "../../../../lib/sanity.client";
+import { getPatientStoryBySlug } from "../../../../../lib/sanity.queries";
+import { client } from "../../../../../lib/sanity.client";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { PatientStorySingle } from "../../../../lib/types";
+import { PatientStorySingle } from "../../../../../lib/types";
 import StoryHeader from "./_component/StoyHeader";
 import StoryTextSection from "./_component/StoryTextSection";
 

@@ -12,7 +12,7 @@ import {
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Contact from "../components/Contact";
+import { headers } from "next/headers";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -60,19 +60,20 @@ export const metadata: Metadata = {
   description: "DrSavkovic Dental Office",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = (await headers()).get("x-site-locale") || "sr";
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${redhat.variable} ${baskervvile.variable} ${outfit.variable} ${comfortaa.variable} ${quicksand.variable} ${notoSans.variable} ${lora.variable} antialiased`}
       >
         <Navbar />
         {children}
-        <Contact />
         <Footer />
       </body>
     </html>

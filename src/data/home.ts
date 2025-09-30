@@ -17,7 +17,7 @@ export const homeData = {
       },
     },
     whatWeDo: {
-      title: "Za vaš osmeh",
+      title: "Za vaš \n osmeh",
       description:
         "Nudimo širok spektar stomatoloških usluga, od preventivnih pregleda i čišćenja, preko estetskih zahvata kao što su izbeljivanje i fasete, do složenijih procedura poput endodoncije i protetike. Naš cilj je da vam pružimo sveobuhvatnu negu kako biste imali zdrav i lep osmeh.",
       link1: { text: "Viđe o procedurama", href: "#" },
@@ -34,7 +34,7 @@ export const homeData = {
   en: {
     hero: {
       title: "A healthy smile for a lifetime",
-      moreBtn: "Learn more",
+      moreBtn: "More",
       location: "Find us at \n Radovana Simića Cige 7",
       imageAlt: "Dental clinic Dr Savković",
       scrollBtn: "Scroll down",
@@ -49,7 +49,7 @@ export const homeData = {
       },
     },
     whatWeDo: {
-      title: "For your smile",
+      title: "For your \n smile",
       description:
         "We offer a wide range of dental services, from preventive check-ups and cleanings to cosmetic procedures such as whitening and veneers, as well as more complex treatments like endodontics and prosthetics. Our goal is to provide you with comprehensive care to ensure you have a healthy and beautiful smile.",
       link1: { text: "Learn about procedures", href: "#" },

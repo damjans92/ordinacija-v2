@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import Doctor from "../_components/Doctor";
 import WhatWeDo from "../_components/WhatWeDo";
 import Office from "../_components/Office";
-import { serviceListEN } from "@/data/services";
+import { servicesData } from "@/data/services";
 
 const HomePageEN = () => {
   return (
@@ -16,7 +16,11 @@ const HomePageEN = () => {
       <Doctor {...homeData.en.doctor} />
 
       <div className="border-t-1 border-black"></div>
-      <WhatWeDo {...homeData.en.whatWeDo} serviceList={serviceListEN} />
+      <WhatWeDo
+        {...homeData.en.whatWeDo}
+        servicesList={servicesData.en.servicesList}
+        btnText={servicesData.en.btnText}
+      />
       <Office {...homeData.en.office} />
     </main>
   );

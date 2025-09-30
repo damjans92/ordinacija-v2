@@ -1,8 +1,16 @@
 "use client";
 import { useState } from "react";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
+import { faqsData } from "@/data/faqs";
 
-export default function Accordion() {
+type AccordionProps = {
+  questions: {
+    title: string;
+    content: string;
+  }[];
+};
+
+export default function Accordion({ questions }: AccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (index: number) => {
@@ -59,7 +67,7 @@ export default function Accordion() {
 
   return (
     <div className="mx-auto space-y-2">
-      {items.map((item, index) => (
+      {questions.map((item, index) => (
         <div key={index} className="overflow-hidden">
           <button
             onClick={() => toggle(index)}
@@ -73,7 +81,7 @@ export default function Accordion() {
 
           <div
             className={`overflow-hidden transition-all duration-600 ${
-              openIndex === index ? "max-h-40 " : "max-h-0 "
+              openIndex === index ? "max-h-150 " : "max-h-0 "
             }  text-gray-700`}
           >
             <p className="py-4   text-gray-700  ">{item.content}</p>

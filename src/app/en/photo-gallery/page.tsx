@@ -1,6 +1,6 @@
 import React from "react";
-import GalleryContainer from "@/app/galerija/_components/GalleryContainer";
-import GalleryText from "@/app/galerija/_components/GalleryText";
+import GalleryContainer from "@/app/(sr)/galerija/_components/GalleryContainer";
+import GalleryText from "@/app/(sr)/galerija/_components/GalleryText";
 import Hero from "@/components/Hero";
 
 import { PhotoGallery } from "../../../../lib/types";

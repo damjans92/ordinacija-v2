@@ -1,7 +1,7 @@
 import React from "react";
-import { PatientStorySingle } from "../../../../../lib/types";
+import { PatientStorySingle } from "../../../../../../lib/types";
 import Image from "next/image";
-import { urlFor } from "../../../../../lib/sanity.client";
+import { urlFor } from "../../../../../../lib/sanity.client";
 
 interface StoryHeaderProps {
   story: PatientStorySingle;

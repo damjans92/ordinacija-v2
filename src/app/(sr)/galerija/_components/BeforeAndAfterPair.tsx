@@ -1,6 +1,6 @@
 import React from "react";
-import { urlFor } from "../../../../lib/sanity.client";
-import { BeforeAfterPair } from "../../../../lib/types";
+import { urlFor } from "../../../../../lib/sanity.client";
+import { BeforeAfterPair } from "../../../../../lib/types";
 
 type BeforeAfterPairProps = {
   pair: BeforeAfterPair;

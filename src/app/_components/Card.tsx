@@ -3,9 +3,10 @@ import Link from "next/link";
 type CardProps = {
   url: string;
   children: React.ReactNode;
+  btnText: string;
 };
 
-export default function ServiceCard({ children, url }: CardProps) {
+export default function ServiceCard({ children, url, btnText }: CardProps) {
   return (
     <Link
       href={url}
@@ -15,7 +16,7 @@ export default function ServiceCard({ children, url }: CardProps) {
         {children}
       </h3>
       <span className="z-1 uppercase text-white link-underline mt-3 tracking-widest ">
-        Detaljnije
+        {btnText}
       </span>
     </Link>
   );

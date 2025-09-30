@@ -28,10 +28,6 @@ const Contact = () => {
             </h3>
 
             <div className="info-box">
-              {/* <img
-                alt="Zakazivanje termina"
-                style={{ width: "200px", marginLeft: "-20px" }}
-              /> */}
               <div className="leading-7 md:leading-10 text-lg">
                 <span>
                   <strong>PON - PET</strong>: 11h - 19h

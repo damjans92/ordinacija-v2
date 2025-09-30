@@ -1,5 +1,5 @@
 import React from "react";
-import { PhotoGallery } from "../../../../lib/types";
+import { PhotoGallery } from "../../../../../lib/types";
 import BeforeAndAfterPair from "./BeforeAndAfterPair";
 
 type GalleryContainerProps = {

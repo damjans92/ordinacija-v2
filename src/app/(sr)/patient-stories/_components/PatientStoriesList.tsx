@@ -1,6 +1,6 @@
 import React from "react";
-import { PatientStory } from "../../../../lib/types";
-import { urlFor } from "../../../../lib/sanity.client";
+import { PatientStory } from "../../../../../lib/types";
+import { urlFor } from "../../../../../lib/sanity.client";
 import Link from "next/link";
 
 interface PatientStoriesListProps {

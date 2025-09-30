@@ -47,7 +47,7 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
             </h1>
             <a
               href="#"
-              className="uppercase tracking-widest link-underline"
+              className="uppercase tracking-widest link-underline text-sm"
               onClick={scrollNext}
             >
               {moreBtn}
@@ -106,7 +106,7 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
         <div className="text-center py-3 flex-1">
           <a
             href="#"
-            className="link-underline tracking-widest uppercase"
+            className="link-underline tracking-widest uppercase text-sm"
             onClick={scrollNext}
           >
             {scrollBtn}

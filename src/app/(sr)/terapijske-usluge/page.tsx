@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../../components/Hero";
-import WhatWeDo from "../_components/WhatWeDo";
+import Hero from "../../../components/Hero";
+import WhatWeDo from "../../_components/WhatWeDo";
 import { homeData } from "@/data/home";
-import { serviceList } from "@/data/services";
+import { servicesData } from "@/data/services";
 
 const ServicesPage = () => {
   return (
@@ -12,7 +12,8 @@ const ServicesPage = () => {
       <WhatWeDo
         {...homeData.sr.whatWeDo}
         showDesc={false}
-        serviceList={serviceList}
+        servicesList={servicesData.sr.servicesList}
+        btnText={servicesData.sr.btnText}
       />
     </main>
   );

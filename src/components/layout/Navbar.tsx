@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
+import LanguageSelector from "./LanguageSelector";
 
 const navLinks = [
   { href: "/o-osnivacu", label: "Vaš stomatolog" },
@@ -51,6 +52,9 @@ function Navbar() {
       <header>
         <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-quicksand text-sm font-medium tracking-widest ">
           <span>RADOVANA SIMICA CIGE 7, BEOGRAD</span>
+          <div className="">
+            <LanguageSelector />
+          </div>
         </div>
         <div className="px-4 py-8 lg:py-12 bg-background2">
           <div className="container mx-auto flex items-center justify-between ">

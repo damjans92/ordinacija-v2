@@ -101,9 +101,9 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex flex-wrap">
         <Breadcrumbs />
-        <div className="text-center py-3 flex-1">
+        <div className="w-full text-center py-3 md:flex-1 justify-center">
           <a
             href="#"
             className="link-underline tracking-widest uppercase text-sm"

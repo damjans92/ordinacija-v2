@@ -39,3 +39,9 @@ export type Review = {
   text: string;
   author: string;
 };
+
+export type Lang = "sr" | "en";
+
+export interface PageProps {
+  params: { lang?: Lang };
+}

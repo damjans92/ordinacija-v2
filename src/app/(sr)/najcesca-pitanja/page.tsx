@@ -2,7 +2,13 @@ import React from "react";
 import Hero from "../../../components/Hero";
 import Accordion from "@/app/(sr)/najcesca-pitanja/Accordion";
 import { faqsData } from "@/data/faqs";
+import Contact from "@/components/Contact";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Najčešća pitanja",
+  description: "DrSavkovic Dental Office ",
+};
 const FaqsPage = () => {
   return (
     <main>
@@ -31,6 +37,7 @@ const FaqsPage = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </main>
   );
 };

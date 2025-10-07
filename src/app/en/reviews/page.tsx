@@ -1,7 +1,14 @@
 import ReviewCard from "@/app/(sr)/utisci/_components/ReviewCard";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { reviewsData } from "@/data/reviews";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Reviews",
+  description: "DrSavkovic Dental Office ",
+};
 
 const ReviewsPageEN = () => {
   return (
@@ -16,6 +23,7 @@ const ReviewsPageEN = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </main>
   );
 };

@@ -1,8 +1,15 @@
 import WhatWeDo from "@/app/_components/WhatWeDo";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { homeData } from "@/data/home";
 import { servicesData } from "@/data/services";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: "DrSavkovic Dental Office ",
+};
 
 const ServicesPage = () => {
   return (
@@ -15,6 +22,7 @@ const ServicesPage = () => {
         servicesList={servicesData.en.servicesList}
         btnText={servicesData.en.btnText}
       />
+      <Contact />
     </main>
   );
 };

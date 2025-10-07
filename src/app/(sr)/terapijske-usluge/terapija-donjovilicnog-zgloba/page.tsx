@@ -1,5 +1,11 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Terapija donjoviličnog zgloba",
+  description: "DrSavkovic Dental Office ",
+};
 
 const ServicePages = () => {
   return (

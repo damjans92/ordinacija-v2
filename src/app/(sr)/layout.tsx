@@ -1,5 +1,3 @@
-import Contact from "@/components/Contact";
-
 export default function SerbianLayout({
   children,
 }: Readonly<{
@@ -8,7 +6,6 @@ export default function SerbianLayout({
   return (
     <>
       <main>{children}</main>
-      <Contact />
     </>
   );
 }

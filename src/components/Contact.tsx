@@ -1,15 +1,28 @@
-import React from "react";
+"use client";
 
-const Contact = () => {
+import React from "react";
+import { contactData } from "@/data/contact";
+import { usePathname } from "next/navigation";
+
+const Contact = ({ headingAsMain = false }) => {
+  const pathname = usePathname();
+  const lang = pathname.startsWith("/en") ? "en" : "sr";
+  const t = contactData[lang];
+
   return (
     <section id="stories" className="bg-foreground2 text-white">
       <div className="container mx-auto py-12 pb-24 text-white">
-        <h2 className="md:text-4xl text-center uppercase pb-7 tracking-[7px]">
-          Kontakt
-        </h2>
-        <p className="text-center text-white mb-12">
-          Posetite nas u Radovana Simica Cige 7, 11000 Beograd
-        </p>
+        {headingAsMain ? (
+          <h1 className="md:text-4xl text-center uppercase pb-7 tracking-[7px]">
+            {t.title}
+          </h1>
+        ) : (
+          <h2 className="md:text-4xl text-center uppercase pb-7 tracking-[7px]">
+            {t.title}
+          </h2>
+        )}
+
+        <p className="text-center text-white mb-12">{t.subtitle}</p>
         <div className="flex flex-wrap gap-8 border-2 border-background2/25 ">
           <div className="order-2 md:order-1 w-full md:flex-1">
             <iframe
@@ -24,26 +37,26 @@ const Contact = () => {
           </div>
           <article className="order-1 md:order-2 w-full md:flex-1 flex flex-col gap-8 md:gap-12 justify-start p-6 pt-12 text-center md:text-left">
             <h3 className="text-2xl font-light tracking-widest uppercase">
-              Zakazivanje termina
+              {t.booking}
             </h3>
 
             <div className="info-box">
               <div className="leading-7 md:leading-10 text-lg">
                 <span>
-                  <strong>PON - PET</strong>: 11h - 19h
+                  <strong> {t.workdays}</strong> {t.workhours}
                 </span>
                 <br />
                 <span>
-                  <strong>SUB i NED</strong> po pozivu
+                  <strong> {t.weekends} po pozivu </strong>
                 </span>
                 <br />
                 <br />
                 <span>
-                  <strong>Email</strong>: info@drsavkovic.rs
+                  <strong>{t.email}</strong>: info@drsavkovic.rs
                 </span>
                 <br />
                 <span>
-                  <strong>Telefon</strong>:{" "}
+                  <strong>{t.phone}</strong>:
                   <a href="tel:+381691986900">069/19 869 00</a>
                 </span>
               </div>

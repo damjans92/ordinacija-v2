@@ -1,5 +1,4 @@
 // app/en/layout.tsx
-import Contact from "@/components/Contact";
 
 export default function EnglishLayout({
   children,
@@ -9,7 +8,6 @@ export default function EnglishLayout({
   return (
     <>
       <main>{children}</main>
-      <Contact />
     </>
   );
 }

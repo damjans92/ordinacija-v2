@@ -5,20 +5,38 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
 import LanguageSelector from "./LanguageSelector";
+import { routeMap } from "../../../lib/routeMap";
 
-const navLinks = [
-  { href: "/o-osnivacu", label: "Vaš stomatolog" },
-  { href: "/galerija", label: "Foto galerija" },
-  { href: "/terapijske-usluge", label: "Usluge" },
-  { href: "/najcesca-pitanja", label: "Najčešća pitanja" },
-  { href: "/utisci", label: "Utisci" },
-  { href: "/kontakt", label: "Kontakt" },
-];
+// const navLinks = [
+//   { href: "/o-osnivacu", label: "Vaš stomatolog" },
+//   { href: "/galerija", label: "Foto galerija" },
+//   { href: "/terapijske-usluge", label: "Usluge" },
+//   { href: "/najcesca-pitanja", label: "Najčešća pitanja" },
+//   { href: "/utisci", label: "Utisci" },
+//   { href: "/kontakt", label: "Kontakt" },
+// ];
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
-
   const pathname = usePathname();
+
+  const lang = pathname.startsWith("/en") ? "en" : "sr";
+  const routes = routeMap[lang];
+
+  const navLinks = [
+    {
+      href: routes.about,
+      label: lang === "en" ? "Your Dentist" : "Vaš stomatolog",
+    },
+    {
+      href: routes.gallery,
+      label: lang === "en" ? "Photo Gallery" : "Foto galerija",
+    },
+    { href: routes.services, label: lang === "en" ? "Services" : "Usluge" },
+    { href: routes.faq, label: lang === "en" ? "FAQ" : "Najčešća pitanja" },
+    { href: routes.reviews, label: lang === "en" ? "Testimonials" : "Utisci" },
+    { href: routes.contact, label: lang === "en" ? "Contact" : "Kontakt" },
+  ];
 
   const handleToggle = () => {
     setNavOpen(!navOpen);
@@ -30,9 +48,9 @@ function Navbar() {
 
   useEffect(() => {
     if (navOpen) {
-      document.body.style.overflow = "hidden"; // lock scroll
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // unlock scroll
+      document.body.style.overflow = "auto";
     }
   }, [navOpen]);
 
@@ -78,7 +96,7 @@ function Navbar() {
               </ul>
             </nav>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
-              <Link href="/">
+              <Link href={routeMap[lang].home}>
                 <Image
                   src="/LogoNewBlack.svg"
                   alt="Logo"

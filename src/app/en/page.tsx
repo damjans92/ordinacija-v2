@@ -5,6 +5,7 @@ import Doctor from "../_components/Doctor";
 import WhatWeDo from "../_components/WhatWeDo";
 import Office from "../_components/Office";
 import { servicesData } from "@/data/services";
+import Contact from "@/components/Contact";
 
 const HomePageEN = () => {
   return (
@@ -22,6 +23,7 @@ const HomePageEN = () => {
         btnText={servicesData.en.btnText}
       />
       <Office {...homeData.en.office} />
+      <Contact />
     </main>
   );
 };

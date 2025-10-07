@@ -13,6 +13,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { headers } from "next/headers";
+import LangUpdater from "@/components/LangUpdater";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -56,8 +57,12 @@ const redhat = Red_Hat_Display({
 });
 
 export const metadata: Metadata = {
-  title: "DrSavkovic Dental Office",
-  description: "DrSavkovic Dental Office",
+  title: {
+    default: "Dr Savković Dental Office",
+    template: "%s | Dr Savković Dental Office",
+  },
+  description:
+    "Dr Savković Dental Office – stomatolog u Beogradu, zdrav osmeh za ceo život",
 };
 
 export default async function RootLayout({
@@ -69,9 +74,19 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <link rel="alternate" hrefLang="sr" href="https://drsavkovic.rs" />
+        <link rel="alternate" hrefLang="en" href="https://drsavkovic.rs/en" />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://drsavkovic.rs"
+        />
+      </head>
       <body
         className={`${redhat.variable} ${baskervvile.variable} ${outfit.variable} ${comfortaa.variable} ${quicksand.variable} ${notoSans.variable} ${lora.variable} antialiased`}
       >
+        <LangUpdater />
         <Navbar />
         {children}
         <Footer />

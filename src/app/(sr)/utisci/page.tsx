@@ -10,8 +10,8 @@ const ReviewsPage = () => {
 
   return (
     <main>
-      <Hero {...t.hero} title="Utisci" imageSrc="/banner-home2.jpg" />
-      <section id="reviews">
+      <Hero {...t.hero} imageSrc="/banner-home2.jpg" />
+      <section id="reviews" className="lg:py-16 lg:pb-20">
         <div className="container mx-auto ">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 py-12">
             {t.reviewsList.map((review) => (

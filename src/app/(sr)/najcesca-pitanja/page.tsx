@@ -13,7 +13,7 @@ const FaqsPage = () => {
   return (
     <main>
       <Hero {...faqsData.sr.hero} title={faqsData.sr.hero.title} />
-      <section>
+      <section className="lg:py-16">
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-20 px-6 py-12">
             <div className="lg:flex-1">

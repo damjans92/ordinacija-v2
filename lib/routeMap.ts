@@ -1,5 +1,3 @@
-// src/lib/routeMap.ts
-
 export const routeMap: Record<string, Record<string, string>> = {
   sr: {
     home: "/",

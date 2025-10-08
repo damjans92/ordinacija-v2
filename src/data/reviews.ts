@@ -1,7 +1,7 @@
 export const reviewsData = {
   sr: {
     hero: {
-      title: "Usluge",
+      title: "Utisci",
       moreBtn: "Saznajte više",
       location: "Nađite nas na adresi \n Radovana Simića Cige 7",
       imageAlt: "Stomatološka ordinacija Dr Savković",

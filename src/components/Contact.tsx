@@ -3,6 +3,7 @@
 import React from "react";
 import { contactData } from "@/data/contact";
 import { usePathname } from "next/navigation";
+import Breadcrumbs from "./Breadcrumbs";
 
 const Contact = ({ headingAsMain = false }) => {
   const pathname = usePathname();
@@ -12,8 +13,9 @@ const Contact = ({ headingAsMain = false }) => {
   return (
     <section id="stories" className="bg-foreground2 text-white">
       <div className="container mx-auto py-12 pb-24 text-white">
+        {headingAsMain && <Breadcrumbs />}
         {headingAsMain ? (
-          <h1 className="md:text-4xl text-center uppercase pb-7 tracking-[7px]">
+          <h1 className="text-3xl lg:text-5xl text-center uppercase pb-7 tracking-[7px]">
             {t.title}
           </h1>
         ) : (

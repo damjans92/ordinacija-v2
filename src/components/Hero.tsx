@@ -40,7 +40,7 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
         <div className="w-full lg:w-1/2 flex flex-col p-12">
           {/* H1 fills top space */}
           <div className="flex flex-1 flex-col items-center justify-center text-center">
-            <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-16 max-w-[70%]">
+            <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-13 max-w-[70%]">
               {/* THE ART OF <br /> THE SMILE */}
               {/* Vaš osmeh, <br /> naša briga */}
               {title}
@@ -73,36 +73,14 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
                 className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
                 priority
               />
-              {/* <Image
-                src="/LogoBlue.svg"
-                alt="Logo"
-                width={220} // base size
-                height={40}
-                className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
-                priority
-              />
-              <Image
-                src="/LogoNew2.svg"
-                alt="Logo"
-                width={220} // base size
-                height={40}
-                className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
-                priority
-              />
-              <Image
-                src="/LogoNewGreen.svg"
-                alt="Logo"
-                width={250} // base size
-                height={60}
-                className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
-                priority
-              /> */}
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-wrap">
-        <Breadcrumbs />
+        <div className="w-full md:flex-1 text-gray-600">
+          <Breadcrumbs />
+        </div>
         <div className="w-full text-center py-3 md:flex-1 justify-center">
           <a
             href="#"

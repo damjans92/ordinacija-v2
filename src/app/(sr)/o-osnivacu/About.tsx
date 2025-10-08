@@ -9,7 +9,7 @@ const About = ({ aboutTitle, aboutText }: AboutProps) => {
   return (
     <main>
       <section>
-        <div className="container mx-auto py-8 lg:py-12">
+        <div className="container mx-auto py-8 lg:pt-20 lg:pb-36">
           <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-12 uppercase lg:leading-16 text-center">
             {aboutTitle}
           </h1>

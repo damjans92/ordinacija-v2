@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import React from "react";
-import ServiceHeading from "../_components/ServiceHeading";
 import { servicesTextsData } from "@/data/servicesTexts";
+import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHeading";
 
 export const metadata: Metadata = {
   title: "Konzervativna stomatologija",
   description: "DrSavkovic Dental Office ",
 };
 
-const ServiceConservative = () => {
-  const lang = "sr";
+const ServiceConservativeEN = () => {
+  const lang = "en";
   const t = servicesTextsData[lang];
 
   return (
@@ -37,4 +37,4 @@ const ServiceConservative = () => {
   );
 };
 
-export default ServiceConservative;
+export default ServiceConservativeEN;

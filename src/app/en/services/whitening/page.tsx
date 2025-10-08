@@ -1,15 +1,15 @@
+import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHeading";
 import { servicesTextsData } from "@/data/servicesTexts";
 import { Metadata } from "next";
 import React from "react";
-import ServiceHeading from "../_components/ServiceHeading";
 
 export const metadata: Metadata = {
   title: "Izbeljivanje",
   description: "DrSavkovic Dental Office ",
 };
 
-const ServiceWhitening = () => {
-  const lang = "sr";
+const ServiceWhiteningEN = () => {
+  const lang = "en";
   const t = servicesTextsData[lang];
 
   return (
@@ -23,7 +23,7 @@ const ServiceWhitening = () => {
           </div>
 
           <div>
-            <img src="/Izbeljivanje2.webp" alt="Izbeljivanje" />
+            <img src="/Izbeljivanje2.webp" alt={t.whitening.title} />
           </div>
         </div>
       </div>
@@ -31,4 +31,4 @@ const ServiceWhitening = () => {
   );
 };
 
-export default ServiceWhitening;
+export default ServiceWhiteningEN;

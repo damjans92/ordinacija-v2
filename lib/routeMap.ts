@@ -8,6 +8,8 @@ export const routeMap: Record<string, Record<string, string>> = {
     reviews: "/utisci",
     contact: "/kontakt",
     endodontics: "/terapijske-usluge/endodoncija",
+    conservative: "/terapijske-usluge/konzervativna-stomatologija",
+    whitening: "/terapijske-usluge/izbeljivanje",
   },
   en: {
     home: "/en",
@@ -18,5 +20,7 @@ export const routeMap: Record<string, Record<string, string>> = {
     reviews: "/en/reviews",
     contact: "/en/contact",
     endodontics: "/en/services/endodontics",
+    conservative: "/en/services/conservative-dentistry",
+    whitening: "/en/services/whitening",
   },
 };

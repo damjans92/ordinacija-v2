@@ -17,7 +17,12 @@ const PatientStoriesPage = async () => {
   console.log(patientStories);
   return (
     <main>
-      <Hero title="Priče pacijenata" />
+      <Hero
+        title="Priče pacijenata"
+        moreBtn={""}
+        location={""}
+        scrollBtn={""}
+      />
       <section>
         <Heading />
         <div className="container">

@@ -10,6 +10,10 @@ export const routeMap: Record<string, Record<string, string>> = {
     endodontics: "/terapijske-usluge/endodoncija",
     conservative: "/terapijske-usluge/konzervativna-stomatologija",
     whitening: "/terapijske-usluge/izbeljivanje",
+    orthodontics: "/terapijske-usluge/ortodoncija",
+    examination: "/terapijske-usluge/pregled",
+    prosthetics: "/terapijske-usluge/protetska-hirurgija",
+    TMJ: "/terapijske-usluge/terapija-donjovilicnog-zgloba",
   },
   en: {
     home: "/en",
@@ -22,5 +26,9 @@ export const routeMap: Record<string, Record<string, string>> = {
     endodontics: "/en/services/endodontics",
     conservative: "/en/services/conservative-dentistry",
     whitening: "/en/services/whitening",
+    orthodontics: "/en/services/orthodontics",
+    examination: "/en/services/examination",
+    prosthetics: "/en/services/prosthetic-surgery",
+    TMJ: "/en/services/temporomandibular-joint-therapy",
   },
 };

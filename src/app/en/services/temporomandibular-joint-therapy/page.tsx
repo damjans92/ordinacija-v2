@@ -1,8 +1,7 @@
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Metadata } from "next";
 import React from "react";
-import ServiceHeading from "../_components/ServiceHeading";
 import { servicesTextsData } from "@/data/servicesTexts";
+import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHeading";
 
 export const metadata: Metadata = {
   title: "Terapija donjoviličnog zgloba",
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const ServicePages = () => {
-  const lang = "sr";
+  const lang = "en";
   const t = servicesTextsData[lang];
   return (
     <main>

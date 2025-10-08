@@ -49,7 +49,7 @@ const Contact = ({ headingAsMain = false }) => {
                 </span>
                 <br />
                 <span>
-                  <strong> {t.weekends} po pozivu </strong>
+                  <strong> {t.weekends} </strong>
                 </span>
                 <br />
                 <br />

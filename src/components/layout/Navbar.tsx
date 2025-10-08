@@ -7,15 +7,6 @@ import { FaPhoneAlt, FaInstagram, FaBars } from "react-icons/fa";
 import LanguageSelector from "./LanguageSelector";
 import { routeMap } from "../../../lib/routeMap";
 
-// const navLinks = [
-//   { href: "/o-osnivacu", label: "Vaš stomatolog" },
-//   { href: "/galerija", label: "Foto galerija" },
-//   { href: "/terapijske-usluge", label: "Usluge" },
-//   { href: "/najcesca-pitanja", label: "Najčešća pitanja" },
-//   { href: "/utisci", label: "Utisci" },
-//   { href: "/kontakt", label: "Kontakt" },
-// ];
-
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const pathname = usePathname();
@@ -69,9 +60,14 @@ function Navbar() {
     <>
       <header>
         <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-quicksand text-sm font-medium tracking-widest ">
-          <span>RADOVANA SIMICA CIGE 7, BEOGRAD</span>
-          <div className="">
-            <LanguageSelector />
+          <div className="container flex justify-between">
+            <div className="flex-1"></div>
+            <span className="flex-1 items-center flex">
+              RADOVANA SIMICA CIGE 7, BEOGRAD
+            </span>
+            <div className="flex-1 justify-end flex">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
         <div className="px-4 py-8 lg:py-12 bg-background2">

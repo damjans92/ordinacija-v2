@@ -1,6 +1,16 @@
+import { servicesTextsData } from "@/data/servicesTexts";
+import { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Endodoncija",
+  description: "DrSavkovic Dental Office ",
+};
+
 const ServiceEndodontics = () => {
+  const lang = "sr";
+  const t = servicesTextsData[lang];
+
   return (
     <main>
       <div className="container mx-auto py-12">
@@ -12,17 +22,7 @@ const ServiceEndodontics = () => {
 
         <div className="grid grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
           <div>
-            <p>
-              Nakon karijesa, drugi najčešći razlog javljanja stomatologu je
-              upala zubnog živca. Ona može biti posledica karijesa ili povrede.
-              Ako upala prođe neopaženo ili se zanemari, prelazi u gangrenu, i
-              tada se mogu javiti jak bol, otok i/ili temperatura. U tom slučaju
-              terapija je duža ali moguća. Dalje, u sklopu pripreme za protetske
-              radove, savetuje se endodontska terapija u određenim slučajevima,
-              prema proceni doktora. Savremenim terapijskim metodama,
-              instrumentima i materijalima, omogućen je jako visok procenat
-              uspeha u terapiji lečenja zuba – preko 97%.
-            </p>
+            <p>{t.endodontics.description}</p>
           </div>
 
           <div>

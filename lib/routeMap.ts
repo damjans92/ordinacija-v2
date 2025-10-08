@@ -9,6 +9,7 @@ export const routeMap: Record<string, Record<string, string>> = {
     gallery: "/galerija",
     reviews: "/utisci",
     contact: "/kontakt",
+    endodontics: "/terapijske-usluge/endodoncija",
   },
   en: {
     home: "/en",
@@ -18,5 +19,6 @@ export const routeMap: Record<string, Record<string, string>> = {
     gallery: "/en/photo-gallery",
     reviews: "/en/reviews",
     contact: "/en/contact",
+    endodontics: "/en/services/endodontics",
   },
 };

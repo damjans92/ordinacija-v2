@@ -1,11 +1,9 @@
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
 import React from "react";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Kontakt",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("sr", "kontakt");
+
 const ContactPage = () => {
   return <Contact headingAsMain={true} />;
 };

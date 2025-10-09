@@ -2,12 +2,9 @@ import React from "react";
 import About from "@/app/(sr)/o-osnivacu/About";
 import { aboutData } from "@/data/about";
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "About the Doctor",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("en", "about");
 
 const AboutPageEN = () => {
   return (

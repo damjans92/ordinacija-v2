@@ -2,15 +2,11 @@ import ReviewCard from "@/app/(sr)/utisci/_components/ReviewCard";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { reviewsData } from "@/data/reviews";
-import { Metadata } from "next";
 import React from "react";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Reviews",
-  description: "DrSavkovic Dental Office ",
-};
-
-const ReviewsPageEN = () => {
+export const metadata = getMetadata("sr", "testimonials");
+const TestimonialsPageEN = () => {
   return (
     <main>
       <Hero {...reviewsData.en.hero} imageSrc="/banner-home2.jpg" />
@@ -28,4 +24,4 @@ const ReviewsPageEN = () => {
   );
 };
 
-export default ReviewsPageEN;
+export default TestimonialsPageEN;

@@ -1,14 +1,9 @@
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Metadata } from "next";
 import React from "react";
 import ServiceHeading from "../_components/ServiceHeading";
 import { servicesTextsData } from "@/data/servicesTexts";
+import { getMetadata } from "../../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Protetska hirurgija",
-  description: "DrSavkovic Dental Office ",
-};
-
+export const metadata = getMetadata("sr", "servicePages.prosthetics");
 const ServiceProstetics = () => {
   const lang = "sr";
   const t = servicesTextsData[lang];

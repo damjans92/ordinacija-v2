@@ -1,12 +1,9 @@
-import { Metadata } from "next";
 import React from "react";
 import ServiceHeading from "../_components/ServiceHeading";
 import { servicesTextsData } from "@/data/servicesTexts";
+import { getMetadata } from "../../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Konzervativna stomatologija",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("sr", "servicePages.conservative");
 
 const ServiceConservative = () => {
   const lang = "sr";

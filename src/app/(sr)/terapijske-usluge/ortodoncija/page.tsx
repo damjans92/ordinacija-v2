@@ -1,14 +1,11 @@
 import { servicesTextsData } from "@/data/servicesTexts";
-import { Metadata } from "next";
 import React from "react";
 import ServiceHeading from "../_components/ServiceHeading";
+import { getMetadata } from "../../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Ortodoncija",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("sr", "servicePages.orthodontics");
 
-const ServicePage = () => {
+const ServiceOrthodontics = () => {
   const lang = "sr";
   const t = servicesTextsData[lang];
 
@@ -42,4 +39,4 @@ const ServicePage = () => {
   );
 };
 
-export default ServicePage;
+export default ServiceOrthodontics;

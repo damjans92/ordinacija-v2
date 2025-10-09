@@ -6,12 +6,14 @@ import Hero from "../../../components/Hero";
 import GalleryContainer from "./_components/GalleryContainer";
 import GalleryText from "./_components/GalleryText";
 import { galleryData } from "@/data/gallery";
-import { Metadata } from "next";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Foto galerija | Dr Savković",
-  description: "Pogledajte fotografije ordinacije i naših pacijenata.",
-};
+// export const metadata: Metadata = {
+//   title: "Foto galerija | Dr Savković",
+//   description: "Pogledajte fotografije ordinacije i naših pacijenata.",
+// };
+
+export const metadata = getMetadata("sr", "gallery");
 
 const GalleryPage = async () => {
   const lang = "sr";

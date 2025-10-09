@@ -4,13 +4,9 @@ import WhatWeDo from "../../_components/WhatWeDo";
 import { homeData } from "@/data/home";
 import { servicesData } from "@/data/services";
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Terapijske usluge",
-  description: "DrSavkovic Dental Office ",
-};
-
+export const metadata = getMetadata("sr", "services");
 const ServicesPage = () => {
   const lang = "sr";
   const t = homeData[lang];

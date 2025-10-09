@@ -3,8 +3,11 @@ import Hero from "../../../components/Hero";
 import { reviewsData } from "@/data/reviews";
 import ReviewCard from "./_components/ReviewCard";
 import Contact from "@/components/Contact";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-const ReviewsPage = () => {
+export const metadata = getMetadata("sr", "testimonials");
+
+const TestimonialsPage = () => {
   const lang = "sr";
   const t = reviewsData[lang];
 
@@ -25,4 +28,4 @@ const ReviewsPage = () => {
   );
 };
 
-export default ReviewsPage;
+export default TestimonialsPage;

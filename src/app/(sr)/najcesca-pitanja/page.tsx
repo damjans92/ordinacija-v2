@@ -3,12 +3,9 @@ import Hero from "../../../components/Hero";
 import Accordion from "@/app/(sr)/najcesca-pitanja/Accordion";
 import { faqsData } from "@/data/faqs";
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Najčešća pitanja",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("sr", "faq");
 const FaqsPage = () => {
   return (
     <main>

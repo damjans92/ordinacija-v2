@@ -2,13 +2,10 @@ import Accordion from "@/app/(sr)/najcesca-pitanja/Accordion";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { faqsData } from "@/data/faqs";
-import { Metadata } from "next";
 import React from "react";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Frequently Asked Questions",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("en", "faq");
 
 const FAQsPage = () => {
   return (

@@ -25,7 +25,10 @@ function Navbar() {
     },
     { href: routes.services, label: lang === "en" ? "Services" : "Usluge" },
     { href: routes.faq, label: lang === "en" ? "FAQ" : "Najčešća pitanja" },
-    { href: routes.reviews, label: lang === "en" ? "Testimonials" : "Utisci" },
+    {
+      href: routes.testimonials,
+      label: lang === "en" ? "Testimonials" : "Utisci",
+    },
     { href: routes.contact, label: lang === "en" ? "Contact" : "Kontakt" },
   ];
 

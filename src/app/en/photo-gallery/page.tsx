@@ -8,12 +8,9 @@ import { mainGalleryQuery } from "../../../../lib/sanity.queries";
 import { client } from "../../../../lib/sanity.client";
 import { galleryData } from "@/data/gallery";
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
+import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata: Metadata = {
-  title: "Photo Gallery",
-  description: "DrSavkovic Dental Office ",
-};
+export const metadata = getMetadata("sr", "gallery");
 
 const GalleryPageEN = async () => {
   const lang = "en";

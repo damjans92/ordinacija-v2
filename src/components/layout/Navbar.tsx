@@ -63,12 +63,14 @@ function Navbar() {
     <>
       <header>
         <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-quicksand text-sm font-medium tracking-widest ">
-          <div className="container flex justify-between">
-            <div className="flex-1"></div>
-            <span className="flex-1 items-center flex">
-              RADOVANA SIMICA CIGE 7, BEOGRAD
+          <div className="container flex justify-between items-center">
+            <div className="flex-1" />
+
+            <span className="absolute left-1/2 -translate-x-1/2 text-center whitespace-nowrap text-xs md:text-lg">
+              RADOVANA SIMIĆA CIGE 7, BEOGRAD
             </span>
-            <div className="flex-1 justify-end flex">
+
+            <div className="flex justify-end w-fit">
               <LanguageSelector />
             </div>
           </div>

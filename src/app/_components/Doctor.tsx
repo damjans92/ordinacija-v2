@@ -25,7 +25,7 @@ const Doctor = ({ title, description, moreBtn }: DoctorProps) => {
           </h2>
           <p className="pb-6 md:px-10">{description}</p>
           <Link
-            href="/about"
+            href={moreBtn.href}
             className="uppercase tracking-widest pb-6 link-underline"
           >
             {moreBtn.text}

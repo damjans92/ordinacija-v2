@@ -45,7 +45,7 @@ export const homeData = {
         "Graduated from the Faculty of Dentistry, University of Belgrade in 2013, and in 2014, after completing his internship, he started working in private practice. He specializes in endodontics, conservative dentistry, and dental prosthetics. Alongside his work, he participates in certified courses by domestic and foreign lecturers in the aforementioned fields, as well as in the field of temporomandibular joint disorder therapy and aesthetic medicine using hyaluronic acid preparations.",
       moreBtn: {
         text: "Read more",
-        href: "/about",
+        href: "/en/about",
       },
     },
     whatWeDo: {

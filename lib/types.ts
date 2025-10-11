@@ -45,3 +45,13 @@ export type Lang = "sr" | "en";
 export interface PageProps {
   params: { lang?: Lang };
 }
+
+export interface NavbarLink {
+  href: string;
+  label: string;
+}
+
+export interface NavbarLinksProps {
+  navLinks: NavbarLink[];
+  pathname: string;
+}

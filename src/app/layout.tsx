@@ -10,8 +10,8 @@ import {
 } from "next/font/google";
 
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar/Navbar";
+import Footer from "@/components/layout/Footer/Footer";
 import { headers } from "next/headers";
 import LangUpdater from "@/components/LangUpdater";
 

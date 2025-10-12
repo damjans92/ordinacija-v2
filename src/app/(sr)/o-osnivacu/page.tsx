@@ -2,9 +2,13 @@ import React from "react";
 import About from "./About";
 import { aboutData } from "@/data/about";
 import Contact from "@/components/Contact";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { seoData } from "@/data/seoData";
+import { Metadata } from "next";
 
-export const metadata = getMetadata("sr", "about");
+export const metadata: Metadata = {
+  title: seoData.sr.about.title,
+  description: seoData.sr.about.description,
+};
 
 const AboutPage = () => {
   return (

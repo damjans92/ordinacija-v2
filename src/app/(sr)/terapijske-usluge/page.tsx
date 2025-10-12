@@ -4,9 +4,14 @@ import WhatWeDo from "../../_components/WhatWeDo";
 import { homeData } from "@/data/home";
 import { servicesData } from "@/data/services";
 import Contact from "@/components/Contact";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { seoData } from "@/data/seoData";
+import { Metadata } from "next";
 
-export const metadata = getMetadata("sr", "services");
+export const metadata: Metadata = {
+  title: seoData.sr.services.title,
+  description: seoData.sr.services.description,
+};
+
 const ServicesPage = () => {
   const lang = "sr";
   const t = homeData[lang];

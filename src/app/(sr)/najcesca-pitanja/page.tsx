@@ -3,9 +3,13 @@ import Hero from "../../../components/Hero";
 import Accordion from "@/app/(sr)/najcesca-pitanja/Accordion";
 import { faqsData } from "@/data/faqs";
 import Contact from "@/components/Contact";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
 
-export const metadata = getMetadata("sr", "faq");
+export const metadata: Metadata = {
+  title: seoData.sr.faq.title,
+  description: seoData.sr.faq.description,
+};
 const FaqsPage = () => {
   return (
     <main>

@@ -6,11 +6,11 @@ import Contact from "@/components/Contact";
 import { homeData } from "@/data/home";
 import { servicesData } from "@/data/services";
 import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
 
 export const metadata: Metadata = {
-  title: "Početna",
-  description:
-    "Dr Savković Dental Office – stomatolog u Beogradu, zdrav osmeh za ceo život",
+  title: seoData.sr.home.title,
+  description: seoData.sr.home.description,
 };
 
 export default function Home() {

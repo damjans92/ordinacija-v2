@@ -3,9 +3,13 @@ import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { faqsData } from "@/data/faqs";
 import React from "react";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
 
-export const metadata = getMetadata("en", "faq");
+export const metadata: Metadata = {
+  title: seoData.en.faq.title,
+  description: seoData.en.faq.description,
+};
 
 const FAQsPage = () => {
   return (

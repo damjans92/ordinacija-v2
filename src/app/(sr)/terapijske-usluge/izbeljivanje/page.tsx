@@ -1,9 +1,13 @@
 import { servicesTextsData } from "@/data/servicesTexts";
 import React from "react";
 import ServiceHeading from "../_components/ServiceHeading";
-import { getMetadata } from "../../../../../lib/getMetadata";
+import { seoData } from "@/data/seoData";
+import { Metadata } from "next";
 
-export const metadata = getMetadata("sr", "servicePages.whitening");
+export const metadata: Metadata = {
+  title: seoData.sr.servicePages.teethWhitening.title,
+  description: seoData.sr.servicePages.teethWhitening.description,
+};
 
 const ServiceWhitening = () => {
   const lang = "sr";

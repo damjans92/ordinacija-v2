@@ -1,12 +1,12 @@
 import { servicesTextsData } from "@/data/servicesTexts";
 import { Metadata } from "next";
 import React from "react";
+import { seoData } from "@/data/seoData";
 
 export const metadata: Metadata = {
-  title: "Endodoncija",
-  description: "DrSavkovic Dental Office ",
+  title: seoData.en.servicePages.endodontics.title,
+  description: seoData.en.servicePages.endodontics.description,
 };
-
 const ServiceEndodonticsEN = () => {
   const lang = "en";
   const t = servicesTextsData[lang];

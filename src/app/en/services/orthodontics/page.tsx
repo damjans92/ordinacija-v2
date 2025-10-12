@@ -2,9 +2,11 @@ import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHead
 import { servicesTextsData } from "@/data/servicesTexts";
 import { Metadata } from "next";
 import React from "react";
+import { seoData } from "@/data/seoData";
+
 export const metadata: Metadata = {
-  title: "Ortodoncija",
-  description: "DrSavkovic Dental Office ",
+  title: seoData.en.servicePages.orthodontics.title,
+  description: seoData.en.servicePages.orthodontics.description,
 };
 
 const ServicePageEN = () => {

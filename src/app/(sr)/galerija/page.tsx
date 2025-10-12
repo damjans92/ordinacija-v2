@@ -6,14 +6,13 @@ import Hero from "../../../components/Hero";
 import GalleryContainer from "./_components/GalleryContainer";
 import GalleryText from "./_components/GalleryText";
 import { galleryData } from "@/data/gallery";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
 
-// export const metadata: Metadata = {
-//   title: "Foto galerija | Dr Savković",
-//   description: "Pogledajte fotografije ordinacije i naših pacijenata.",
-// };
-
-export const metadata = getMetadata("sr", "gallery");
+export const metadata: Metadata = {
+  title: seoData.sr.gallery.title,
+  description: seoData.sr.gallery.description,
+};
 
 const GalleryPage = async () => {
   const lang = "sr";

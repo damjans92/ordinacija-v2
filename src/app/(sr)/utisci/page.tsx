@@ -3,9 +3,14 @@ import Hero from "../../../components/Hero";
 import { reviewsData } from "@/data/reviews";
 import ReviewCard from "./_components/ReviewCard";
 import Contact from "@/components/Contact";
-import { getMetadata } from "../../../../lib/getMetadata";
 
-export const metadata = getMetadata("sr", "testimonials");
+import { seoData } from "@/data/seoData";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: seoData.sr.testimonials.title,
+  description: seoData.sr.testimonials.description,
+};
 
 const TestimonialsPage = () => {
   const lang = "sr";

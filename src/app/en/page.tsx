@@ -6,6 +6,13 @@ import WhatWeDo from "../_components/WhatWeDo";
 import Office from "../_components/Office";
 import { servicesData } from "@/data/services";
 import Contact from "@/components/Contact";
+import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
+
+export const metadata: Metadata = {
+  title: seoData.en.home.title,
+  description: seoData.en.home.description,
+};
 
 const HomePageEN = () => {
   return (

@@ -2,13 +2,14 @@ import WhatWeDo from "@/app/_components/WhatWeDo";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { homeData } from "@/data/home";
+import { seoData } from "@/data/seoData";
 import { servicesData } from "@/data/services";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: "DrSavkovic Dental Office ",
+  title: seoData.en.services.title,
+  description: seoData.en.services.description,
 };
 
 const ServicesPage = () => {

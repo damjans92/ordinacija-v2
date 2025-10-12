@@ -2,10 +2,11 @@ import { Metadata } from "next";
 import React from "react";
 import { servicesTextsData } from "@/data/servicesTexts";
 import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHeading";
+import { seoData } from "@/data/seoData";
 
 export const metadata: Metadata = {
-  title: "Konzervativna stomatologija",
-  description: "DrSavkovic Dental Office ",
+  title: seoData.en.servicePages.conservativeDentistry.title,
+  description: seoData.en.servicePages.conservativeDentistry.description,
 };
 
 const ServiceConservativeEN = () => {

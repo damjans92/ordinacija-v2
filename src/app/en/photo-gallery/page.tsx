@@ -2,15 +2,18 @@ import React from "react";
 import GalleryContainer from "@/app/(sr)/galerija/_components/GalleryContainer";
 import GalleryText from "@/app/(sr)/galerija/_components/GalleryText";
 import Hero from "@/components/Hero";
-
 import { PhotoGallery } from "../../../../lib/types";
 import { mainGalleryQuery } from "../../../../lib/sanity.queries";
 import { client } from "../../../../lib/sanity.client";
 import { galleryData } from "@/data/gallery";
 import Contact from "@/components/Contact";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
 
-export const metadata = getMetadata("sr", "gallery");
+export const metadata: Metadata = {
+  title: seoData.en.gallery.title,
+  description: seoData.en.gallery.description,
+};
 
 const GalleryPageEN = async () => {
   const lang = "en";

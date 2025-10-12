@@ -1,8 +1,12 @@
 import Contact from "@/components/Contact";
 import React from "react";
-import { getMetadata } from "../../../../lib/getMetadata";
+import { Metadata } from "next";
+import { seoData } from "@/data/seoData";
 
-export const metadata = getMetadata("sr", "contact");
+export const metadata: Metadata = {
+  title: seoData.en.contact.title,
+  description: seoData.en.contact.description,
+};
 
 const ContactPageEN = () => {
   return <Contact headingAsMain={true} />;

@@ -1,9 +1,13 @@
 import { servicesTextsData } from "@/data/servicesTexts";
 import React from "react";
 import ServiceHeading from "../_components/ServiceHeading";
-import { getMetadata } from "../../../../../lib/getMetadata";
+import { seoData } from "@/data/seoData";
+import { Metadata } from "next";
 
-export const metadata = getMetadata("sr", "servicePages.examination");
+export const metadata: Metadata = {
+  title: seoData.sr.servicePages.examination.title,
+  description: seoData.sr.servicePages.examination.description,
+};
 
 const ServiceAppointment = () => {
   const lang = "sr";

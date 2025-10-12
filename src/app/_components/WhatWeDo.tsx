@@ -44,13 +44,13 @@ const WhatWeDo = ({
           <p className=" pb-6">{description}</p>
 
           <div className="flex flex-col items-start gap-4 mt-8 uppercase font-bold tracking-widest mb-12">
-            <a href="#" className="link-underline-reverse ">
+            <a href={link1.href} className="link-underline-reverse ">
               {link1.text}
             </a>
-            <a href="#" className="link-underline-reverse ">
+            <a href={link2.href} className="link-underline-reverse ">
               {link2.text}
             </a>
-            <a href="#" className="link-underline-reverse ">
+            <a href={link3.href} className="link-underline-reverse ">
               {link3.text}
             </a>
           </div>

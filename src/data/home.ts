@@ -20,9 +20,9 @@ export const homeData = {
       title: "Za vaš \n osmeh",
       description:
         "Nudimo širok spektar stomatoloških usluga, od preventivnih pregleda i čišćenja, preko estetskih zahvata kao što su izbeljivanje i fasete, do složenijih procedura poput endodoncije i protetike. Naš cilj je da vam pružimo sveobuhvatnu negu kako biste imali zdrav i lep osmeh.",
-      link1: { text: "Viđe o procedurama", href: "#" },
-      link2: { text: "Pre i posle galerija", href: "#" },
-      link3: { text: "Pročitajte najčešća pitanja", href: "#" },
+      link1: { text: "Viđe o procedurama", href: "/terapijske-usluge" },
+      link2: { text: "Pre i posle galerija", href: "/galerija" },
+      link3: { text: "Pročitajte najčešća pitanja", href: "/najcesca-pitanja" },
     },
     office: {
       title: "Pogled iz naše ordinacije",
@@ -52,9 +52,9 @@ export const homeData = {
       title: "For your \n smile",
       description:
         "We offer a wide range of dental services, from preventive check-ups and cleanings to cosmetic procedures such as whitening and veneers, as well as more complex treatments like endodontics and prosthetics. Our goal is to provide you with comprehensive care to ensure you have a healthy and beautiful smile.",
-      link1: { text: "Learn about procedures", href: "#" },
-      link2: { text: "Before and after gallery", href: "#" },
-      link3: { text: "Read the FAQs", href: "#" },
+      link1: { text: "Learn about procedures", href: "/en/services" },
+      link2: { text: "Before and after gallery", href: "/en/photo-gallery" },
+      link3: { text: "Read the FAQs", href: "/en/faqs" },
     },
     office: {
       title: "View our office",

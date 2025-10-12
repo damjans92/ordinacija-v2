@@ -9,6 +9,7 @@ import { galleryData } from "@/data/gallery";
 import Contact from "@/components/Contact";
 import { Metadata } from "next";
 import { seoData } from "@/data/seoData";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: seoData.en.gallery.title,
@@ -19,11 +20,18 @@ const GalleryPageEN = async () => {
   const lang = "en";
   const t = galleryData[lang];
 
-  const data: PhotoGallery = await client.fetch(mainGalleryQuery);
+  let data = null;
+
+  try {
+    data = await client.fetch(mainGalleryQuery);
+  } catch (err) {
+    throw new Error("Failed to fetch gallery data", { cause: err });
+  }
+
   const gallery = data;
 
   if (!gallery) {
-    return <p className="text-center py-10">No gallery found.</p>;
+    notFound();
   }
 
   return (

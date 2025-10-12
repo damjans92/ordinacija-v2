@@ -35,6 +35,9 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
             width={450}
             height={800}
             className="w-full h-full object-cover"
+            placeholder="blur"
+            blurDataURL="/banner-home2.jpg"
+            priority
           />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col p-12">

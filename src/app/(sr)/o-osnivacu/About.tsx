@@ -24,7 +24,7 @@ const About = ({ aboutTitle, aboutText }: AboutProps) => {
                 ))}
               </p>
             </div>
-            <div className="flex-1 items-center justify-center">
+            <div className="flex-1 items-center justify-center border-1">
               <img
                 src="/osnivac.jpg"
                 alt="Dr Savkovic"

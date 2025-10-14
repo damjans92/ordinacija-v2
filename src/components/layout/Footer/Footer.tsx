@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-background2 text-black py-6 pt-12">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between">
-          <FooterLogo />
+          <FooterLogo tData={t.logoAlt} />
           <FooterLinks tData={t.quickLinks} />
           <div className="lg:order-3"> </div>
           <FooterSocial title={t.followUs} />

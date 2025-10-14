@@ -1,6 +1,7 @@
 export const footerData = {
   sr: {
     followUs: "Pratite na",
+    logoAlt: "Dr Savković Stomatološka ordinacija logo",
     quickLinks: {
       title: "Brzi linkovi",
       link1: { href: "/o-osnivacu", text: "O osnivaču" },
@@ -14,6 +15,7 @@ export const footerData = {
   },
   en: {
     followUs: "Follow us on",
+    logoAlt: "Dr Savkovic Dental Office logo",
     quickLinks: {
       title: "Quick Links",
       link1: { href: "/en/about", text: "Your Dentist" },

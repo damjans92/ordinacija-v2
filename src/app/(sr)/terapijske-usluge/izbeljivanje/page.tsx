@@ -24,7 +24,10 @@ const ServiceWhitening = () => {
           </div>
 
           <div>
-            <img src="/Izbeljivanje2.webp" alt="Izbeljivanje" />
+            <img
+              src="/Izbeljivanje2.webp"
+              alt={lang == "sr" ? "Izbeljivanje" : "Teeth Whitening"}
+            />
           </div>
         </div>
       </div>

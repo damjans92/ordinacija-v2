@@ -25,7 +25,10 @@ const ServiceEndodontics = () => {
           </div>
 
           <div>
-            <img src="/Infekcija-zuba.jpg" alt="Infekcija zuba" />
+            <img
+              src="/Infekcija-zuba.jpg"
+              alt={lang == "sr" ? "Infekcija zuba" : "Tooth infection"}
+            />
           </div>
         </div>
       </div>

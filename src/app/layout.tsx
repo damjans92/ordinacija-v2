@@ -14,7 +14,6 @@ import Navbar from "@/components/layout/Navbar/Navbar";
 import Footer from "@/components/layout/Footer/Footer";
 import { headers } from "next/headers";
 import LangUpdater from "@/components/LangUpdater";
-import ChatWidget from "@/components/ChatWIdget";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -109,7 +108,6 @@ export default async function RootLayout({
         <LangUpdater />
         <Navbar />
         {children}
-        <ChatWidget />
         <Footer />
       </body>
     </html>

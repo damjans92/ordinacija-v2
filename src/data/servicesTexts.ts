@@ -52,7 +52,7 @@ export const servicesTextsData = {
       },
     },
     TMJ: {
-      title: "Terapija donjoviličnog zgloba",
+      title: "Terapija donjoviličnog \n zgloba",
       description: {
         text1:
           "Kod velikog broja pacijenata se pri rutinskom pregledu detektuju različiti problemi sa donjoviličnim zglobom. Oni se ogledaju u širokom dijapazonu poremećaja, počevši od krckanja, pucanja, preskakanja u regiji ispred ušne školjke, do bolova i glavobolja. Poseban problem imaju pacijenti sa poremećajem u zagrižaju, kao i oni koji imaju oštećenje bočnih zuba koje nastaje usled prirodnog trošenja zubnog tkiva ili kao posledica karijesa. Kod uznapredovalog poremećaja funkcije javlja se i otežano otvaranje ili nemogućnost otvaranja usta.",

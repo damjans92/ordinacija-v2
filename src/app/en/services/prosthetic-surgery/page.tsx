@@ -15,12 +15,13 @@ const ServiceProstetics = () => {
 
   return (
     <main>
-      <div className="container mx-auto py-8 lg:py-12">
+      <div className="container max-auto">
         <ServiceHeading title={t.prosthetics.title} />
-
-        <div className="grid md:grid-cols-3 gap-4 p-10 px-8 mt-12 border-1 border-foreground2">
+      </div>
+      <div className="container max-auto">
+        <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
           <div>
-            <h2 className="text-2xl   font-light font-outfit  mb-4 uppercase">
+            <h2 className="text-xl md:text-2xl font-light font-outfit  mb-4 uppercase">
               {t.prosthetics.description.subTitle1}
             </h2>
             <p>{t.prosthetics.description.text1}</p>
@@ -37,7 +38,6 @@ const ServiceProstetics = () => {
             </h2>
             <p>{t.prosthetics.description.text3}</p>
           </div>
-          <div>{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
     </main>

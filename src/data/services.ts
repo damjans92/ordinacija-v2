@@ -54,7 +54,7 @@ export const servicesData = {
         title: "Prosthetic Surgery",
         url: "/en/services/prosthetic-surgery",
       },
-      { id: 4, title: "Whitening", url: "/en/services/teeth-whitening" },
+      { id: 4, title: "Whitening", url: "/en/services/whitening" },
       { id: 5, title: "Examination", url: "/en/services/examination" },
       { id: 6, title: "Orthodontics", url: "/en/services/orthodontics" },
       {

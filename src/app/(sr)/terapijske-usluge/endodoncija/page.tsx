@@ -15,20 +15,15 @@ const ServiceEndodontics = () => {
 
   return (
     <main>
-      <div className="container mx-auto py-12">
+      <div className="container max-auto">
         <ServiceHeading title={t.endodontics.title} />
+      </div>
+      <div className="container mx-auto">
         {/* <div className="py-10"></div> */}
 
-        <div className="grid grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
-          <div>
+        <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
+          <div className="max-w-[400px]">
             <p>{t.endodontics.description}</p>
-          </div>
-
-          <div>
-            <img
-              src="/Infekcija-zuba.jpg"
-              alt={lang == "sr" ? "Infekcija zuba" : "Tooth infection"}
-            />
           </div>
         </div>
       </div>

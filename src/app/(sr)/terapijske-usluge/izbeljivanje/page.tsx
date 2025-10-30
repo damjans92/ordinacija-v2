@@ -18,16 +18,9 @@ const ServiceWhitening = () => {
       <div className="container mx-auto py-12">
         <ServiceHeading title={t.whitening.title} />
 
-        <div className="grid grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
+        <div className="grid md:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
           <div>
             <p>{t.whitening.description}</p>
-          </div>
-
-          <div>
-            <img
-              src="/Izbeljivanje2.webp"
-              alt={lang == "sr" ? "Izbeljivanje" : "Teeth Whitening"}
-            />
           </div>
         </div>
       </div>

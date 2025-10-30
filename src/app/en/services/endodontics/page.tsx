@@ -2,6 +2,7 @@ import { servicesTextsData } from "@/data/servicesTexts";
 import { Metadata } from "next";
 import React from "react";
 import { seoData } from "@/data/seoData";
+import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHeading";
 
 export const metadata: Metadata = {
   title: seoData.en.servicePages.endodontics.title,
@@ -13,24 +14,13 @@ const ServiceEndodonticsEN = () => {
 
   return (
     <main>
-      <div className="container mx-auto py-12">
-        <h1 className="uppercase text-4xl font-extralight font-outfit mb-12 leading-14 tracking-widest bg-foreground2 text-white text-center p-6">
-          {t.endodontics.title.split("\n").map((line, idx) => (
-            <React.Fragment key={idx}>
-              {line}
-              <br />
-            </React.Fragment>
-          ))}
-        </h1>
-        {/* <div className="py-10"></div> */}
-
+      <div className="container max-auto">
+        <ServiceHeading title={t.endodontics.title} />
+      </div>
+      <div className="container max-auto">
         <div className="grid grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
           <div>
             <p>{t.endodontics.description}</p>
-          </div>
-
-          <div>
-            <img src="/Infekcija-zuba.jpg" alt="Infekcija zuba" />
           </div>
         </div>
       </div>

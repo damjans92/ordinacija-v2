@@ -14,7 +14,7 @@ const ReviewCard = ({ review, onClick }: ReviewCardProps) => {
 
   return (
     <div
-      className="flex flex-col justify-between border-1 p-10"
+      className="flex flex-col justify-between border-1 p-10 cursor-pointer hover:shadow-lg transition-shadow h-full"
       onClick={onClick}
     >
       <p className="mb-3">{truncateText(review.text, 230)}</p>

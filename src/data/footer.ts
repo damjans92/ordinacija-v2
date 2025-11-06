@@ -6,7 +6,7 @@ export const footerData = {
       title: "Brzi linkovi",
       link1: { href: "/o-osnivacu", text: "O osnivaču" },
       link2: { href: "/galerija", text: "Foto galerija" },
-      link3: { href: "/usluge", text: "Usluge" },
+      link3: { href: "/terapijske-usluge", text: "Usluge" },
       link4: { href: "/najcesca-pitanja", text: "Najčešća pitanja" },
       link5: { href: "/utisci", text: "Utisci" },
       link6: { href: "/kontakt", text: "Kontakt" },

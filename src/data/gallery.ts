@@ -8,7 +8,7 @@ export const galleryData = {
       scrollBtn: "Skroluj dole",
     },
     galleryText:
-      "Ovde mozete videti neke od nasih radova. Svaki rad je unikatan i prilagodjen potrebama pacijenta. Nadamo se da cete uzivati u galeriji i da cemo imati priliku da radimo zajedno. Za vise informacija, slobodno nas kontaktirajte. Hvala sto ste posetili nasu galeriju.",
+      "Ovde možete videti neke od naših radova. Svaki rad je unikatan i prilagodjen potrebama pacijenta. Nadamo se da ćete uživati u galeriji i da ćemo imati priliku da radimo zajedno. Za više informacija, slobodno nas kontaktirajte. Hvala što ste posetili našu galeriju.",
     beforeText: "Pre",
     afterText: "Posle",
   },

@@ -20,7 +20,7 @@ export const homeData = {
       title: "Za vaš \n osmeh",
       description:
         "Nudimo širok spektar stomatoloških usluga, od preventivnih pregleda i čišćenja, preko estetskih zahvata kao što su izbeljivanje i fasete, do složenijih procedura poput endodoncije i protetike. Naš cilj je da vam pružimo sveobuhvatnu negu kako biste imali zdrav i lep osmeh.",
-      link1: { text: "Viđe o procedurama", href: "/terapijske-usluge" },
+      link1: { text: "Više o procedurama", href: "/terapijske-usluge" },
       link2: { text: "Pre i posle galerija", href: "/galerija" },
       link3: { text: "Pročitajte najčešća pitanja", href: "/najcesca-pitanja" },
     },

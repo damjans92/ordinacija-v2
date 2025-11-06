@@ -22,7 +22,7 @@ export const servicesTextsData = {
         "Nakon karijesa, drugi najčešći razlog javljanja stomatologu je upala zubnog živca. Ona može biti posledica karijesa ili povrede. Ako upala prođe neopaženo ili se zanemari, prelazi u gangrenu, i tada se mogu javiti jak bol, otok i/ili temperatura. U tom slučaju terapija je duža ali moguća. Dalje, u sklopu pripreme za protetske radove, savetuje se endodontska terapija u određenim slučajevima, prema proceni doktora. Savremenim terapijskim metodama, instrumentima i materijalima, omogućen je jako visok procenat uspeha u terapiji lečenja zuba – preko 97%.",
     },
     ortodontics: {
-      title: "Ortodoncija",
+      title: "Terapija folijama",
       description: {
         subTitle1: "Fiksna proteza",
         text1:
@@ -51,15 +51,15 @@ export const servicesTextsData = {
           "Manje hirurške intervencije kao što su vađenje zuba, ušivanje rane nakon povreda ili drenaža abscesa, se rutinski izvode. Kod komplikovanih vađenja i intervencija angažuje se specijalista oralne hirurgije.",
       },
     },
-    TMJ: {
-      title: "Terapija donjoviličnog \n zgloba",
-      description: {
-        text1:
-          "Kod velikog broja pacijenata se pri rutinskom pregledu detektuju različiti problemi sa donjoviličnim zglobom. Oni se ogledaju u širokom dijapazonu poremećaja, počevši od krckanja, pucanja, preskakanja u regiji ispred ušne školjke, do bolova i glavobolja. Poseban problem imaju pacijenti sa poremećajem u zagrižaju, kao i oni koji imaju oštećenje bočnih zuba koje nastaje usled prirodnog trošenja zubnog tkiva ili kao posledica karijesa. Kod uznapredovalog poremećaja funkcije javlja se i otežano otvaranje ili nemogućnost otvaranja usta.",
-        text2:
-          "Terapija najvećeg broja poremećaja se može izvesti vežbama, uz izradu specijalnih splinotva ili držača položaja donje vilice. Nakon nekoliko dana osećaju se prva olakšanja, a nakon mesec dana se uglavnom povlači najveći broj simptoma. Izrada splintova je visoko precizan proces, budući da se svakom pacijentu pruža individualna terapija. Topao savet pacijentima je da obave pregled u slučaju glavobolja (posebno jutarnjih), kao i bolova u ramenima, vratu i lopaticama, jer uzrok bolova može biti porekla donjoviličnog zgloba.",
-      },
-    },
+    // TMJ: {
+    //   title: "Terapija donjoviličnog \n zgloba",
+    //   description: {
+    //     text1:
+    //       "Kod velikog broja pacijenata se pri rutinskom pregledu detektuju različiti problemi sa donjoviličnim zglobom. Oni se ogledaju u širokom dijapazonu poremećaja, počevši od krckanja, pucanja, preskakanja u regiji ispred ušne školjke, do bolova i glavobolja. Poseban problem imaju pacijenti sa poremećajem u zagrižaju, kao i oni koji imaju oštećenje bočnih zuba koje nastaje usled prirodnog trošenja zubnog tkiva ili kao posledica karijesa. Kod uznapredovalog poremećaja funkcije javlja se i otežano otvaranje ili nemogućnost otvaranja usta.",
+    //     text2:
+    //       "Terapija najvećeg broja poremećaja se može izvesti vežbama, uz izradu specijalnih splinotva ili držača položaja donje vilice. Nakon nekoliko dana osećaju se prva olakšanja, a nakon mesec dana se uglavnom povlači najveći broj simptoma. Izrada splintova je visoko precizan proces, budući da se svakom pacijentu pruža individualna terapija. Topao savet pacijentima je da obave pregled u slučaju glavobolja (posebno jutarnjih), kao i bolova u ramenima, vratu i lopaticama, jer uzrok bolova može biti porekla donjoviličnog zgloba.",
+    //   },
+    // },
   },
   en: {
     endodontics: {
@@ -84,7 +84,7 @@ export const servicesTextsData = {
         " After tooth decay, the second most common reason for visiting a dentist is inflammation of the dental nerve. It can be caused by decay or injury. If the inflammation goes unnoticed or is neglected, it progresses to gangrene, which can result in severe pain, swelling, and/or fever. In such cases, the therapy is longer but still possible. Furthermore, as part of the preparation for prosthetic work, endodontic therapy is advised in certain cases, based on the doctor's assessment. With modern therapeutic methods, instruments, and materials, a very high success rate in root canal treatment is achieved – over 97%.",
     },
     ortodontics: {
-      title: "Orthodontics",
+      title: "Foil therapy",
       description: {
         subTitle1: "Fixed Braces",
         text1:
@@ -113,14 +113,14 @@ export const servicesTextsData = {
           "Minor surgical interventions such as tooth extractions, suturing wounds after injuries, or abscess drainage are routinely performed. In cases of complicated extractions and interventions, a specialist in oral surgery is engaged.",
       },
     },
-    TMJ: {
-      title: "Temporomandibular Joint \n Therapy",
-      description: {
-        text1:
-          "During routine examinations, a significant number of patients are found to have various issues with the temporomandibular joint (TMJ). These issues can manifest in a wide range of disorders, starting from clicking, popping, or skipping sounds in the area in front of the ear, to pain and headaches. Patients with bite disorders and those with damage to the lateral teeth caused by natural wear of tooth tissue or as a result of decay face particular challenges. In advanced cases of functional disorders, difficulty or inability to open the mouth may occur.",
-        text2:
-          "The therapy for most disorders can be performed through exercises, along with the creation of special splints or mandibular positioners. Initial relief is often felt within a few days, and most symptoms generally subside after a month. The fabrication of splints is a highly precise process, as each patient receives individualized therapy. A warm recommendation for patients is to undergo an examination in case of headaches (especially morning headaches) and pain in the shoulders, neck, and shoulder blades, as the source of the pain may originate from the temporomandibular joint.",
-      },
-    },
+    // TMJ: {
+    //   title: "Temporomandibular Joint \n Therapy",
+    //   description: {
+    //     text1:
+    //       "During routine examinations, a significant number of patients are found to have various issues with the temporomandibular joint (TMJ). These issues can manifest in a wide range of disorders, starting from clicking, popping, or skipping sounds in the area in front of the ear, to pain and headaches. Patients with bite disorders and those with damage to the lateral teeth caused by natural wear of tooth tissue or as a result of decay face particular challenges. In advanced cases of functional disorders, difficulty or inability to open the mouth may occur.",
+    //     text2:
+    //       "The therapy for most disorders can be performed through exercises, along with the creation of special splints or mandibular positioners. Initial relief is often felt within a few days, and most symptoms generally subside after a month. The fabrication of splints is a highly precise process, as each patient receives individualized therapy. A warm recommendation for patients is to undergo an examination in case of headaches (especially morning headaches) and pain in the shoulders, neck, and shoulder blades, as the source of the pain may originate from the temporomandibular joint.",
+    //   },
+    // },
   },
 };

@@ -1,7 +1,6 @@
 import Contact from "@/components/Contact";
 import { client } from "../../../../lib/sanity.client";
 import { mainGalleryQuery } from "../../../../lib/sanity.queries";
-import { PhotoGallery } from "../../../../lib/types";
 import Hero from "../../../components/Hero";
 import GalleryContainer from "./_components/GalleryContainer";
 import GalleryText from "./_components/GalleryText";
@@ -23,6 +22,7 @@ const GalleryPage = async () => {
 
   try {
     data = await client.fetch(mainGalleryQuery);
+    console.log("Fetched gallery data:", data);
   } catch (err) {
     throw new Error("Failed to fetch gallery data", { cause: err });
   }
@@ -42,6 +42,7 @@ const GalleryPage = async () => {
         gallery={gallery}
         beforeText={t.beforeText}
         afterText={t.afterText}
+        lang={lang}
       />
       <Contact />
     </main>

@@ -9,6 +9,10 @@ export type BeforeAfterPair = {
   _key: string;
   before: SanityImage;
   after: SanityImage;
+  title: {
+    sr: string;
+    en: string;
+  };
 };
 
 export type PhotoGallery = {

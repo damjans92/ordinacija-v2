@@ -2,7 +2,6 @@ import React from "react";
 import GalleryContainer from "@/app/(sr)/galerija/_components/GalleryContainer";
 import GalleryText from "@/app/(sr)/galerija/_components/GalleryText";
 import Hero from "@/components/Hero";
-import { PhotoGallery } from "../../../../lib/types";
 import { mainGalleryQuery } from "../../../../lib/sanity.queries";
 import { client } from "../../../../lib/sanity.client";
 import { galleryData } from "@/data/gallery";
@@ -43,6 +42,7 @@ const GalleryPageEN = async () => {
         gallery={gallery}
         beforeText={t.beforeText}
         afterText={t.afterText}
+        lang={lang}
       />
       <Contact />
     </main>

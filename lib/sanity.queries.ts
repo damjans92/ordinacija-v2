@@ -14,6 +14,10 @@ export const mainGalleryQuery = `*[_type == "photoGallery" && title == "Photo ga
   title,
   pairs[]{
     _key,
+    title{
+      sr,
+      en
+    },
     before{
       _key,
       asset->{_id, url},

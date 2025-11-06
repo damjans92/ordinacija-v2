@@ -1,17 +1,19 @@
 import React from "react";
-import { PhotoGallery } from "../../../../../lib/types";
+import { Lang, PhotoGallery } from "../../../../../lib/types";
 import BeforeAndAfterPair from "./BeforeAndAfterPair";
 
 type GalleryContainerProps = {
   gallery: PhotoGallery;
   beforeText: string;
   afterText: string;
+  lang: Lang;
 };
 
 const GalleryContainer = ({
   gallery,
   beforeText,
   afterText,
+  lang,
 }: GalleryContainerProps) => {
   return (
     <section>
@@ -22,6 +24,7 @@ const GalleryContainer = ({
               pair={pair}
               beforeText={beforeText}
               afterText={afterText}
+              lang={lang}
             />
             <div className="border-t-1 border-gray-300"></div>
           </div>

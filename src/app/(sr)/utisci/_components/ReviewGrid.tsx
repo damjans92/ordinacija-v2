@@ -28,7 +28,7 @@ const ReviewsGrid = ({ reviews }: ReviewsGridProps) => {
           onClick={() => setSelectedReview(null)}
         >
           <div
-            className="bg-white p-6 rounded-2xl max-w-lg w-full relative shadow-lg"
+            className="bg-white p-8 rounded-2xl max-w-lg w-full relative shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
             <button

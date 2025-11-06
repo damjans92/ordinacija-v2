@@ -1,10 +1,10 @@
-import ReviewCard from "@/app/(sr)/utisci/_components/ReviewCard";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import { reviewsData } from "@/data/reviews";
 import React from "react";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
+import ReviewsGrid from "@/app/(sr)/utisci/_components/ReviewGrid";
 
 export const metadata: Metadata = {
   title: seoData.en.testimonials.title,
@@ -12,16 +12,15 @@ export const metadata: Metadata = {
 };
 
 const TestimonialsPageEN = () => {
+  const lang = "en";
+  const t = reviewsData[lang];
+
   return (
     <main>
-      <Hero {...reviewsData.en.hero} imageSrc="/banner-home2.jpg" />
-      <section id="reviews">
-        <div className="container mx-auto ">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 py-12">
-            {reviewsData.en.reviewsList.map((review) => (
-              <ReviewCard review={review} key={review.id} />
-            ))}
-          </div>
+      <Hero {...t.hero} imageSrc="/banner-home2.jpg" />
+      <section id="reviews" className="lg:py-16 lg:pb-20">
+        <div className="container mx-auto">
+          <ReviewsGrid reviews={t.reviewsList} />
         </div>
       </section>
       <Contact />

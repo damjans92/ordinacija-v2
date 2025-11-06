@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
+import ReviewsGrid from "./_components/ReviewGrid";
 
 export const metadata: Metadata = {
   title: seoData.sr.testimonials.title,
@@ -20,12 +21,8 @@ const TestimonialsPage = () => {
     <main>
       <Hero {...t.hero} imageSrc="/banner-home2.jpg" />
       <section id="reviews" className="lg:py-16 lg:pb-20">
-        <div className="container mx-auto ">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 py-12">
-            {t.reviewsList.map((review) => (
-              <ReviewCard review={review} key={review.id} />
-            ))}
-          </div>
+        <div className="container mx-auto">
+          <ReviewsGrid reviews={t.reviewsList} />
         </div>
       </section>
       <Contact />

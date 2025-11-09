@@ -29,7 +29,7 @@ const HomePageEN = () => {
         servicesList={servicesData.en.servicesList}
         btnText={servicesData.en.btnText}
       />
-      <Office {...homeData.en.office} />
+      {/* <Office {...homeData.en.office} /> */}
       <Contact />
     </main>
   );

@@ -1,4 +1,3 @@
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Metadata } from "next";
 import React from "react";
 import { servicesTextsData } from "@/data/servicesTexts";

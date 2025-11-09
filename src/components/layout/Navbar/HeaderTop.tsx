@@ -3,7 +3,7 @@ import LanguageSelector from "./LanguageSelector";
 
 const HeaderTop = () => {
   return (
-    <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-quicksand text-sm font-medium tracking-widest">
+    <div className="bg-black flex justify-center py-2 lg:py-4 text-white font-redhat text-sm font-medium tracking-widest">
       <div className="container flex justify-between items-center">
         <div className="flex-1" />
 

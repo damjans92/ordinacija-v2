@@ -10,17 +10,9 @@
 }
 
 @theme inline {
-  /* --color-background: var(--background);
-  --color-foreground: var(--foreground); */
   --font-sans: var(--font-geist-sans);
   --font-: var(--font-geist-mono);
-
-  --font-noto: var(--font-noto);
-  --font-lora: var(--font-lora);
   --font-comfortaa: var(--font-comfortaa);
-  --font-quicksand: var(--font-quicksand);
-  --font-outfit: var(--font-outfit);
-  --font-baskervville: var(--font-baskervville);
   --font-redhat: var(--font-redhat);
 
   --container-max: 1330px;

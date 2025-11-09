@@ -4,7 +4,7 @@ import { NavbarLinksProps } from "../../../../lib/types";
 
 const NavbarLinksLeft = ({ navLinks, pathname }: NavbarLinksProps) => {
   return (
-    <nav className="hidden lg:flex flex-1 font-quicksand font-extrabold text-sm tracking-widest ">
+    <nav className="hidden lg:flex flex-1 font-extrabold text-sm tracking-widest ">
       <ul className="flex items-center justify-center gap-8 uppercase col-">
         {navLinks.slice(0, 3).map((link) => (
           <li key={link.href}>

@@ -33,7 +33,7 @@ const Hero = () => {
 
           {/* Paragraph sticks to bottom */}
           <div className="flex flex-col items-center md:flex-row md:justify-between">
-            <p className="mt-4 text-md font-bold uppercase tracking-widest font-quicksand text-center md:text-left">
+            <p className="mt-4 text-md font-bold uppercase tracking-widest font-redhat text-center md:text-left">
               {homeData.sr.hero.location.split("\n").map((line, idx) => (
                 <React.Fragment key={idx}>
                   {line}

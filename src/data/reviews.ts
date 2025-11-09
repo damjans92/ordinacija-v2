@@ -52,7 +52,7 @@ export const reviewsData = {
   },
   en: {
     hero: {
-      title: "Reviews",
+      title: "Testimonials",
       moreBtn: "More",
       location: "Find us at \n Radovana Simića Cige 7",
       imageAlt: "Dental Clinic Dr Savković",

@@ -1,53 +1,17 @@
 import type { Metadata } from "next";
-import {
-  Noto_Sans,
-  Lora,
-  Comfortaa,
-  Quicksand,
-  Outfit,
-  Baskervville,
-  Red_Hat_Display,
-} from "next/font/google";
+import { Comfortaa, Red_Hat_Display } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar/Navbar";
 import Footer from "@/components/layout/Footer/Footer";
 import { headers } from "next/headers";
 import LangUpdater from "@/components/LangUpdater";
-
-const notoSans = Noto_Sans({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-noto",
-});
-
-const lora = Lora({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-lora",
-});
+import { Analytics } from "@/components/Analytics";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
   weight: "variable",
   variable: "--font-comfortaa",
-});
-const quicksand = Quicksand({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-quicksand",
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-outfit",
-});
-
-const baskervvile = Baskervville({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-baskervville",
 });
 
 const redhat = Red_Hat_Display({
@@ -103,8 +67,9 @@ export default async function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${redhat.variable} ${baskervvile.variable} ${outfit.variable} ${comfortaa.variable} ${quicksand.variable} ${notoSans.variable} ${lora.variable} antialiased`}
+        className={`${redhat.variable} ${comfortaa.variable}   antialiased`}
       >
+        {process.env.NODE_ENV === "production" && <Analytics />}
         <LangUpdater />
         <Navbar />
         {children}

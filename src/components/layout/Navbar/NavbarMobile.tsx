@@ -22,7 +22,7 @@ const NavbarMobile = ({
       `}
     >
       <nav className="flex w-full justify-center">
-        <ul className="flex flex-col w-full h-full border-t-1 text-center font-quicksand font-bold text-md tracking-widest uppercase">
+        <ul className="flex flex-col w-full h-full border-t-1 text-center font-redhat font-bold text-md tracking-widest uppercase">
           {navLinks.map((link) => (
             <li key={link.href} className="py-6 border-b border-black">
               <Link

@@ -23,7 +23,7 @@ export const servicesData = {
       { id: 5, title: "Pregled", url: "/terapijske-usluge/pregled" },
       {
         id: 6,
-        title: "Terapija folijama",
+        title: '"High Align" folije',
         url: "/terapijske-usluge/terapija-folijama",
       },
       // {
@@ -56,7 +56,11 @@ export const servicesData = {
       },
       { id: 4, title: "Whitening", url: "/en/services/whitening" },
       { id: 5, title: "Examination", url: "/en/services/examination" },
-      { id: 6, title: "Foil therapy", url: "/en/services/foil-therapy" },
+      {
+        id: 6,
+        title: '"High Align" aligners',
+        url: "/en/services/foil-therapy",
+      },
       // {
       //   id: 7,
       //   title: "Temporomandibular Joint Therapy",

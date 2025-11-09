@@ -32,7 +32,7 @@ export default function Home() {
         servicesList={servicesT.servicesList}
         btnText={servicesT.btnText}
       />
-      <Office {...t.office} />
+      {/* <Office {...t.office} /> */}
       <Contact />
     </main>
   );

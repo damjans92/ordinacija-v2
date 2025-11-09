@@ -20,7 +20,7 @@ const HomePageEN = () => {
       <h1 className="sr-only">
         Dr Savković – dentist in Belgrade, a healthy smile for a lifetime
       </h1>
-      <Hero {...homeData.en.hero} imageSrc="/banner-home2.jpg" />
+      <Hero {...homeData.en.hero} imageSrc="/banner-home3.jpg" />
       <Doctor {...homeData.en.doctor} />
 
       <div className="border-t-1 border-black"></div>

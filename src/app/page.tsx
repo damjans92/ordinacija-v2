@@ -23,7 +23,7 @@ export default function Home() {
       <h1 className="sr-only">
         Dr Savković – stomatolog u Beogradu, zdrav osmeh za ceo život
       </h1>
-      <Hero {...t.hero} imageSrc="/banner-home3.jpg" />
+      <Hero {...t.hero} imageSrc="/banner-home3-1.jpg" />
       <Doctor {...t.doctor} />
 
       <div className="border-t-1 border-black"></div>

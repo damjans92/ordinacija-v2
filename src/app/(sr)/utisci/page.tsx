@@ -19,7 +19,7 @@ const TestimonialsPage = () => {
 
   return (
     <main>
-      <Hero {...t.hero} imageSrc="/banner-home3.jpg" />
+      <Hero {...t.hero} imageSrc="/banner-home3-1.jpg" />
       <section id="reviews" className="lg:py-16 lg:pb-20">
         <div className="container mx-auto">
           <ReviewsGrid reviews={t.reviewsList} />

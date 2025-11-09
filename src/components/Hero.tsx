@@ -30,7 +30,7 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
       <div className="flex flex-wrap border-b-1 lg:border-1 border-black">
         <div className="w-full lg:w-1/2">
           <Image
-            src={imageSrc || "/banner-home2.jpg"}
+            src={imageSrc || "/banner-home3-1.jpg"}
             alt="Hero Image"
             width={450}
             height={800}

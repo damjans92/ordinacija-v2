@@ -21,7 +21,9 @@ const ServiceWhiteningEN = () => {
       <div className="container max-auto">
         <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
           <div>
-            <p>{t.whitening.description}</p>
+            <p
+              dangerouslySetInnerHTML={{ __html: t.whitening.description }}
+            ></p>
           </div>
         </div>
       </div>

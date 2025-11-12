@@ -19,7 +19,7 @@ export const servicesTextsData = {
     whitening: {
       title: "Izbeljivanje",
       description:
-        "Nakon karijesa, drugi najčešći razlog javljanja stomatologu je upala zubnog živca. Ona može biti posledica karijesa ili povrede. Ako upala prođe neopaženo ili se zanemari, prelazi u gangrenu, i tada se mogu javiti jak bol, otok i/ili temperatura. U tom slučaju terapija je duža ali moguća. Dalje, u sklopu pripreme za protetske radove, savetuje se endodontska terapija u određenim slučajevima, prema proceni doktora. Savremenim terapijskim metodama, instrumentima i materijalima, omogućen je jako visok procenat uspeha u terapiji lečenja zuba – preko 97%.",
+        "Izbeljivanje zuba može biti izvedeno u kućnim ili ordinacijskim uslovima. Kućno izbeljivanje se vrši izradom individualnih folija koje u sebi imaju rezervoare u koje se stavlja gel. Folije se nose nekoliko sati dnevno ili tokom noći, u zavisnosti od jačine gela. Ordinacijsko izbeljivanje se vrši u kratkom roku – 30 do 45 minuta, uz primenu posebnih lampi i gelova visoke koncentracije. Ova metoda <i>ne oštećuje zube</i>, već ih hemijski dubinski čisti, čime se postiže belina.",
     },
     ortodontics: {
       title: '"High align" \n folije',
@@ -81,7 +81,7 @@ export const servicesTextsData = {
     whitening: {
       title: "Whitening",
       description:
-        " After tooth decay, the second most common reason for visiting a dentist is inflammation of the dental nerve. It can be caused by decay or injury. If the inflammation goes unnoticed or is neglected, it progresses to gangrene, which can result in severe pain, swelling, and/or fever. In such cases, the therapy is longer but still possible. Furthermore, as part of the preparation for prosthetic work, endodontic therapy is advised in certain cases, based on the doctor's assessment. With modern therapeutic methods, instruments, and materials, a very high success rate in root canal treatment is achieved – over 97%.",
+        "Teeth whitening can be performed at home or in a dental office. Home whitening involves creating custom trays with reservoirs for the gel. The trays are worn for several hours a day or overnight, depending on the strength of the gel. In-office whitening is done in a short period – 30 to 45 minutes, using special lamps and high-concentration gels. This method <i>does not damage the teeth</i>, but chemically cleans them deeply, resulting in whiteness.",
     },
     ortodontics: {
       title: '"High align" \n Aligners',

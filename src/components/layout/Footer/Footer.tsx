@@ -17,7 +17,7 @@ const Footer = () => {
           <FooterLogo tData={t.logoAlt} />
           <FooterLinks tData={t.quickLinks} />
           <div className="lg:order-3"> </div>
-          <FooterSocial title={t.followUs} />
+          {/* <FooterSocial title={t.followUs} /> */}
         </div>
       </div>
       <div className="border-t-1 border-black pt-6">

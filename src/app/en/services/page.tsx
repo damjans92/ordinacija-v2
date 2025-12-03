@@ -1,6 +1,7 @@
 import WhatWeDo from "@/app/_components/WhatWeDo";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
+import PageHeader from "@/components/PageHeader";
 import { homeData } from "@/data/home";
 import { seoData } from "@/data/seoData";
 import { servicesData } from "@/data/services";
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
 const ServicesPage = () => {
   return (
     <main>
-      <Hero {...servicesData.en.hero} />
+      {/* <Hero {...servicesData.en.hero} /> */}
+      <PageHeader title="Services" />
       <div className="border-t-1 border-gray-300 mt-12"></div>
       <WhatWeDo
         {...homeData.en.whatWeDo}

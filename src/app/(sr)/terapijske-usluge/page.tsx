@@ -6,6 +6,7 @@ import { servicesData } from "@/data/services";
 import Contact from "@/components/Contact";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: seoData.sr.services.title,
@@ -19,7 +20,8 @@ const ServicesPage = () => {
 
   return (
     <main>
-      <Hero {...t.hero} title="Usluge" />
+      {/* <Hero {...t.hero} title="Usluge" /> */}
+      <PageHeader title="Usluge" />
       <div className="border-t-1 border-gray-300 mt-12"></div>
       <WhatWeDo
         {...t.whatWeDo}

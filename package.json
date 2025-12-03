@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.1.0",
+    "framer-motion": "^12.23.25",
     "next": "15.4.6",
     "next-sanity": "^9.12.3",
     "nextjs-google-analytics": "^2.3.7",

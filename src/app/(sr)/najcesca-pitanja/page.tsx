@@ -5,6 +5,7 @@ import { faqsData } from "@/data/faqs";
 import Contact from "@/components/Contact";
 import { Metadata } from "next";
 import { seoData } from "@/data/seoData";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: seoData.sr.faq.title,
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
 const FaqsPage = () => {
   return (
     <main>
-      <Hero {...faqsData.sr.hero} title={faqsData.sr.hero.title} />
+      {/* <Hero {...faqsData.sr.hero} title={faqsData.sr.hero.title} /> */}
+      <PageHeader title={faqsData.sr.hero.title} />
       <section className="lg:py-16">
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-20 px-6 py-12">

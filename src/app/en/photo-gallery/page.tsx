@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 import { seoData } from "@/data/seoData";
 import { notFound } from "next/navigation";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: seoData.en.gallery.title,
@@ -35,7 +36,8 @@ const GalleryPageEN = async () => {
 
   return (
     <main>
-      <Hero {...t.hero} imageSrc="/banner-gallery2.jpg" />
+      {/* <Hero {...t.hero} imageSrc="/banner-gallery2.jpg" /> */}
+      <PageHeader {...t.hero} />
       <GalleryText galleryText={t.galleryText} />
       <div className="border-t-1 border-gray-300"></div>
       <GalleryContainer

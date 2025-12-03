@@ -3,6 +3,8 @@ import React from "react";
 import ServiceHeading from "../_components/ServiceHeading";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
+import { motion } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: seoData.sr.servicePages.endodontics.title,
@@ -13,20 +15,35 @@ const ServiceEndodontics = () => {
   const lang = "sr";
   const t = servicesTextsData[lang];
 
+  // const services = {
+  //   endodontics: {
+  //     title: "Endodoncija",
+  //     description:
+  //       "Savremena mašinska endodoncija predstavlja zlatni standard u lečenju korenskih kanala...",
+  //     benefits: [
+  //       "Bezbolna intervencija",
+  //       "Trajno rešenje",
+  //       "Minimalno invazivno",
+  //       "Garancija 5 godina",
+  //     ],
+  //     price: "od 8.500 RSD",
+  //   },
+  // };
   return (
     <main>
-      <div className="container max-auto">
-        <ServiceHeading title={t.endodontics.title} />
+      <div className="max-auto">
+        {/* <ServiceHeading title={t.endodontics.title} /> */}
+        <PageHeader title={t.endodontics.title} />
       </div>
-      <div className="container mx-auto">
-        {/* <div className="py-10"></div> */}
-
-        <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
-          <div className="max-w-[400px]">
-            <p>{t.endodontics.description}</p>
-          </div>
+      <section className=" py-32 lg:py-40">
+        <div className="container mx-auto px-6">
+          <article className="max-w-4xl mx-auto text-center">
+            <p className="text-xl lg:text-2xl leading-relaxed text-[#171717]/80 tracking-wide font-light">
+              {t.endodontics.description}
+            </p>
+          </article>
         </div>
-      </div>
+      </section>
     </main>
   );
 };

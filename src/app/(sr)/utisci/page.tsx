@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import ReviewsGrid from "./_components/ReviewGrid";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: seoData.sr.testimonials.title,
@@ -19,7 +20,8 @@ const TestimonialsPage = () => {
 
   return (
     <main>
-      <Hero {...t.hero} imageSrc="/banner-home3-1.jpg" />
+      {/* <Hero {...t.hero} imageSrc="/banner-home3-1.jpg" /> */}
+      <PageHeader title={t.hero.title} />
       <section id="reviews" className="lg:py-16 lg:pb-20">
         <div className="container mx-auto">
           <ReviewsGrid reviews={t.reviewsList} />

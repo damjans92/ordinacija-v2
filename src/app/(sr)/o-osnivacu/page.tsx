@@ -4,6 +4,7 @@ import { aboutData } from "@/data/about";
 import Contact from "@/components/Contact";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: seoData.sr.about.title,
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <main>
+      <PageHeader title={aboutData.sr.aboutTitle} />
       <About {...aboutData.sr} />
       <Contact />
     </main>

@@ -24,7 +24,7 @@ const ServiceAppointment = () => {
         <div className="container mx-auto px-6">
           <article className="max-w-4xl mx-auto text-center">
             <p className="text-xl lg:text-2xl leading-relaxed text-[#171717]/80 tracking-wide font-light">
-              {t.endodontics.description}
+              {t.examination.description}
             </p>
           </article>
         </div>

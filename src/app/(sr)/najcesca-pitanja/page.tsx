@@ -1,5 +1,3 @@
-import React from "react";
-import Hero from "../../../components/Hero";
 import Accordion from "@/app/(sr)/najcesca-pitanja/Accordion";
 import { faqsData } from "@/data/faqs";
 import Contact from "@/components/Contact";
@@ -7,14 +5,48 @@ import { Metadata } from "next";
 import { seoData } from "@/data/seoData";
 import PageHeader from "@/components/PageHeader";
 
+const BASE_URL = "https://drsavkovic.rs";
 export const metadata: Metadata = {
   title: seoData.sr.faq.title,
   description: seoData.sr.faq.description,
+
+  keywords: [
+    "faq stomatolog",
+    "najčešća pitanja implanti",
+    "pitanja o protetici",
+    "stomatološki odgovori",
+  ],
+
+  alternates: {
+    canonical: `${BASE_URL}/najcesca-pitanja`,
+  },
+
+  openGraph: {
+    title: seoData.sr.faq.title,
+    description: seoData.sr.faq.description,
+  },
 };
+
 const FaqsPage = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqsData.sr.questions.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <main>
-      {/* <Hero {...faqsData.sr.hero} title={faqsData.sr.hero.title} /> */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHeader title={faqsData.sr.hero.title} />
       <section className="lg:py-16">
         <div className="container mx-auto">

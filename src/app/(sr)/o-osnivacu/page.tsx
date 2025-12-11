@@ -9,11 +9,41 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: seoData.sr.about.title,
   description: seoData.sr.about.description,
+  keywords: [
+    "Dr Savković biografija",
+    "iskustvo stomatolog Beograd",
+    "autoritet stomatolog",
+    "stomatolog Medaković EAT",
+  ],
+  alternates: {
+    canonical: "https://drsavkovic.rs/o-osnivacu",
+  },
+  openGraph: {
+    title: seoData.sr.about.title,
+    description: seoData.sr.about.description,
+  },
 };
 
 const AboutPage = () => {
+  const BASE_URL = "https://drsavkovic.rs";
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Dr Savković",
+    jobTitle: "Stomatolog i Osnivač",
+    image: `${BASE_URL}/osnivac.jpg`,
+    url: `${BASE_URL}/o-osnivacu`,
+    alumniOf: "Stomatološki fakultet, Univerzitet u Beogradu",
+    sameAs: ["https://www.instagram.com/drsavkovic/"],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <PageHeader title={aboutData.sr.aboutTitle} />
       <About {...aboutData.sr} />
       <Contact />

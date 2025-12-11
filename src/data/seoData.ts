@@ -8,7 +8,7 @@ export const seoData = {
     about: {
       title: "O osnivaču",
       description:
-        "Upoznajte dr Savkovića, stomatologa sa dugogodišnjim iskustvom i posvećenošću vrhunskoj stomatološkoj nezi.",
+        "Upoznajte dr Savkovića, stomatologa sa dugogodišnjim iskustvom i posvećenošću vrhunskoj stomatološkoj nezi na Medakoviću.",
     },
     services: {
       title: "Usluge",
@@ -16,9 +16,9 @@ export const seoData = {
         "Pregledajte ponudu stomatoloških usluga – ortodoncija, protetika, endodoncija, izbeljivanje zuba i još mnogo toga.",
     },
     contact: {
-      title: "Kontakt",
+      title: "Kontaktirajte Dr Savković Dental Office | Radno Vreme & Adresa",
       description:
-        "Kontaktirajte ordinaciju Dr Savković u Beogradu – zakažite pregled ili konsultaciju već danas.",
+        "Zakažite termin kod stomatologa na Medakoviću, Beograd. Proverite radno vreme, tačnu adresu i brojeve telefona Dr Savković Dental Office.",
     },
     gallery: {
       title: "Foto galerija",
@@ -26,9 +26,9 @@ export const seoData = {
         "Pogledajte galeriju naše ordinacije i primera radova koji oslikavaju posvećenost kvalitetu i estetici.",
     },
     testimonials: {
-      title: "Priče pacijenata",
+      title: "Utisci i Recenzije Pacijenata | Stomatolog Beograd",
       description:
-        "Pročitajte iskustva zadovoljnih pacijenata ordinacije Dr Savković.",
+        "Pročitajte Google recenzije i utiske pacijenata o uslugama, implantima i ljubaznosti osoblja ordinacije Dr Savković.",
     },
     faq: {
       title: "Najčešća pitanja",
@@ -82,7 +82,7 @@ export const seoData = {
     about: {
       title: "About the Founder",
       description:
-        "Meet Dr. Savković, a dentist with years of experience and commitment to exceptional dental care.",
+        "Meet Dr Savković, the founder and lead dentist with years of experience, dedicated to providing top-tier dental care in Medaković, Belgrade.",
     },
     services: {
       title: "Services",
@@ -100,9 +100,9 @@ export const seoData = {
         "Take a look at our dental office and examples of work that reflect our dedication to quality and aesthetics.",
     },
     testimonials: {
-      title: "Patient Stories",
+      title: "Patient Reviews & Testimonials | Dentist Belgrade",
       description:
-        "Read testimonials and experiences from satisfied patients of Dr Savković Dental Office.",
+        "Read Google reviews and testimonials from patients about dental services, implant procedures, and staff friendliness at Dr Savković Dental Office.",
     },
     faq: {
       title: "Frequently Asked Questions",

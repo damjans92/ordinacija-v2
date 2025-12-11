@@ -1,21 +1,53 @@
 import Accordion from "@/app/(sr)/najcesca-pitanja/Accordion";
 import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
 import { faqsData } from "@/data/faqs";
-import React from "react";
 import { Metadata } from "next";
 import { seoData } from "@/data/seoData";
 import PageHeader from "@/components/PageHeader";
 
+const BASE_URL = "https://drsavkovic.rs";
+const EN_URL = `${BASE_URL}/en/faq`;
+
 export const metadata: Metadata = {
   title: seoData.en.faq.title,
   description: seoData.en.faq.description,
-};
 
+  keywords: [
+    "dentist faq",
+    "dental implants questions",
+    "prosthetics answers",
+    "dental office questions",
+  ],
+
+  alternates: {
+    canonical: EN_URL,
+  },
+
+  openGraph: {
+    title: seoData.en.faq.title,
+    description: seoData.en.faq.description,
+  },
+};
 const FAQsPage = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqsData.en.questions.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <main>
-      {/* <Hero {...faqsData.en.hero} title={faqsData.en.hero.title} /> */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHeader title={faqsData.en.hero.title} />
       <section>
         <div className="container mx-auto">

@@ -42,9 +42,9 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
         </div>
         <div className="w-full lg:w-1/2 flex flex-col p-12">
           <div className="flex flex-1 flex-col items-center justify-center text-center">
-            <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-13 max-w-[70%]">
+            <h2 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-13 max-w-[70%]">
               {title}
-            </h1>
+            </h2>
             <a
               href="#"
               className="uppercase tracking-widest link-underline text-sm"

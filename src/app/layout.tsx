@@ -21,14 +21,53 @@ const redhat = Red_Hat_Display({
   variable: "--font-redhat",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Dr Savković Dental Office",
-    template: "%s | Dr Savković Dental Office",
-  },
-  description:
-    "Dr Savković Dental Office – stomatolog u Beogradu, zdrav osmeh za ceo život",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: {
+      default: "Dr Savković Dental Office | Stomatolog Medaković, Beograd",
+      template: "%s | Dr Savković Dental Office",
+    },
+    description:
+      "Dr Savković Dental Office – Vaš pouzdani stomatolog na Medakoviću, Beograd. Nudimo sve usluge moderne stomatologije: implanti, protetika, estetska stomatologija.",
+    authors: [{ name: "Dr Savković" }, { name: "Dr Savković Dental Office" }],
+    creator: "Dr Savković Dental Office",
+    keywords: [
+      "stomatolog Medaković",
+      "zubari Beograd",
+      "implanti Medaković",
+      "protetika",
+      "estetska stomatologija",
+    ],
+    alternates: {
+      canonical: `https://drsavkovic.rs`,
+    },
+    openGraph: {
+      title: "Dr Savković Dental Office | Stomatolog Medaković, Beograd",
+      description:
+        "Dr Savković Dental Office – Vaš pouzdani stomatolog na Medakoviću, Beograd. Nudimo sve usluge moderne stomatologije: implanti, protetika, estetska stomatologija.",
+      url: `https://drsavkovic.rs`,
+      siteName: "Dr Savković Dental Office",
+      images: [
+        {
+          url: `https://drsavkovic.rs/stomatolog-beograd-open-graph.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Dr Savković Dental Office – Stomatolog Medaković, Beograd",
+        },
+      ],
+      locale: "sr_RS",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title:
+        "Dr Savković Dental Office | Stomatolog Beograd | Implanti & Protetika",
+      description:
+        "Dr Savković Dental Office – Vaš pouzdani stomatolog na Medakoviću, Beograd. Nudimo sve usluge moderne stomatologije: implanti, protetika, estetska stomatologija.",
+      images: [`https://drsavkovic.rs/stomatolog-beograd-open-graph.jpg`],
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

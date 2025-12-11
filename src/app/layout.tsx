@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer/Footer";
 import { headers } from "next/headers";
 import LangUpdater from "@/components/LangUpdater";
 import { Analytics } from "@/components/Analytics";
+import { getLocalBusinessSchema } from "@/data/schema";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
@@ -37,6 +38,8 @@ export default async function RootLayout({
   const rawLocale = (await headers()).get("x-site-locale");
   const locale: "sr" | "en" = rawLocale === "en" ? "en" : "sr";
 
+  const currentSchema = getLocalBusinessSchema(locale);
+
   return (
     <html lang={locale}>
       <head>
@@ -65,6 +68,10 @@ export default async function RootLayout({
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(currentSchema) }}
+        />
       </head>
       <body
         className={`${redhat.variable} ${comfortaa.variable}   antialiased`}

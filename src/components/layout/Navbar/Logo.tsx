@@ -13,9 +13,9 @@ const Logo = ({ lang }: LogoProps) => {
     <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5">
       <Link href={routeMap[lang].home}>
         <Image
-          src="/LogoNewBlack.svg"
+          src="/dr-savkovic-dental-logo.svg"
           alt={aboutData[lang].logoAlt}
-          width={250} // base size
+          width={250}
           height={60}
           className="w-42 sm:w-45 md:w-45 lg:w-58 h-auto"
           priority

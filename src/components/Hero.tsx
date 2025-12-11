@@ -41,11 +41,8 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
           />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col p-12">
-          {/* H1 fills top space */}
           <div className="flex flex-1 flex-col items-center justify-center text-center">
             <h1 className="text-3xl lg:text-5xl font-normal tracking-widest mb-4 uppercase lg:leading-13 max-w-[70%]">
-              {/* THE ART OF <br /> THE SMILE */}
-              {/* Vaš osmeh, <br /> naša briga */}
               {title}
             </h1>
             <a
@@ -57,7 +54,6 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
             </a>
           </div>
 
-          {/* Paragraph sticks to bottom */}
           <div className="flex flex-col items-center md:flex-row md:justify-between">
             <p className="mt-4 text-md font-bold uppercase tracking-widest font-redhat text-center md:text-left">
               {location.split("\n").map((line, idx) => (
@@ -69,9 +65,9 @@ const Hero = ({ title, moreBtn, location, scrollBtn, imageSrc }: HeroProps) => {
             </p>
             <div className="text-5xl lg:text-7xl font-extrabold flex-none px-5 mt-8 lg:mt-0">
               <Image
-                src="/LogoNewBlack.svg"
-                alt="Logo"
-                width={220} // base size
+                src="/dr-savkovic-dental-logo.svg"
+                alt="Dr Savković Dental Office – Stomatolog Beograd"
+                width={220}
                 height={40}
                 className="w-34 sm:w-38 md:w-45 lg:w-48 h-auto"
                 priority

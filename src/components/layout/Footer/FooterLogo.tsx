@@ -6,7 +6,7 @@ const FooterLogo = ({ tData }: { tData: string }) => {
     <div className="order-4 lg:order-1">
       <div className="py-12 lg:py-0 text-5xl lg:text-7xl font-extrabold  text-center">
         <Image
-          src="/LogoNewBlack.svg"
+          src="/dr-savkovic-dental-logo.svg"
           alt={tData}
           width={220}
           height={40}

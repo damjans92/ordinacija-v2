@@ -41,15 +41,19 @@ function Navbar() {
         <HeaderTop />
         <div className="px-4 py-8 lg:py-12 bg-background2">
           <div className="container mx-auto flex items-center justify-between ">
-            <button className=" flex lg:hidden" onClick={handleToggle}>
+            <button className="flex lg:hidden" onClick={handleToggle}>
               <FaBars className="w-full h-full" size={28} />
             </button>
             <NavbarLinksLeft navLinks={navLinks} pathname={pathname} />
             <Logo lang={lang} />
             <NavbarLinksRight navLinks={navLinks} pathname={pathname} />
-            <button className=" flex lg:hidden">
-              <FaPhoneAlt className="w-6 h-6" />
-            </button>
+            <a
+              href="tel:+381691986900"
+              className="flex lg:hidden"
+              aria-label="Pozovi ordinaciju"
+            >
+              <FaPhoneAlt className="w-10 h-10" size={26} />
+            </a>
           </div>
         </div>
       </header>

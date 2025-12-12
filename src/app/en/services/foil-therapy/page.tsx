@@ -1,20 +1,65 @@
 import ServiceHeading from "@/app/(sr)/terapijske-usluge/_components/ServiceHeading";
 import { servicesTextsData } from "@/data/servicesTexts";
 import { Metadata } from "next";
-import React from "react";
 import { seoData } from "@/data/seoData";
 
 export const metadata: Metadata = {
   title: seoData.en.servicePages.orthodontics.title,
   description: seoData.en.servicePages.orthodontics.description,
+  alternates: {
+    canonical: "https://drsavkovic.rs/en/services/foil-therapy",
+  },
 };
 
 const ServicePageEN = () => {
   const lang = "en";
   const t = servicesTextsData[lang];
 
+  const orthodonticsServiceSchemaEn = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    url: "https://drsavkovic.rs/en/services/foil-therapy",
+    serviceType: "Orthodontic Treatment / Teeth and Jaw Alignment",
+    name: seoData.en.servicePages.orthodontics.title,
+    description:
+      "Modern orthodontic treatment for children and adults, including fixed and removable braces, as well as clear aligners. Achieve a proper bite and aesthetic smile.",
+
+    provider: {
+      "@type": "Dental",
+      name: "Dr Savković Dental Office",
+      url: "https://drsavkovic.rs/",
+      image: "https://drsavkovic.rs/dr-savkovic-dental-logo.svg",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Radovana Simića Cige 7, stan 4",
+        addressLocality: "Belgrade",
+        addressRegion: "Serbia",
+        postalCode: "11010",
+        addressCountry: "RS",
+      },
+    },
+
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "RSD",
+      availability: "https://schema.org/InStock",
+      description:
+        "The price of orthodontic treatment depends on the type of appliance and the duration of the therapy. Schedule a consultation for an accurate cost estimate.",
+    },
+
+    areaServed: {
+      "@type": "City",
+      name: "Belgrade",
+    },
+  };
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(orthodonticsServiceSchemaEn),
+        }}
+      />
       <div className="container max-auto">
         <ServiceHeading title={t.ortodontics.title} />
       </div>

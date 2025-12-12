@@ -1,6 +1,4 @@
 import { servicesTextsData } from "@/data/servicesTexts";
-import React from "react";
-import ServiceHeading from "../_components/ServiceHeading";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
@@ -8,22 +6,67 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: seoData.sr.servicePages.orthodontics.title,
   description: seoData.sr.servicePages.orthodontics.description,
+
+  alternates: {
+    canonical: "https://drsavkovic.rs/terapijske-usluge/terapija-folijama",
+  },
 };
 
 const ServiceOrthodontics = () => {
   const lang = "sr";
   const t = servicesTextsData[lang];
 
+  const orthodonticsServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    url: "https://drsavkovic.rs/terapijske-usluge/terapija-folijama",
+    serviceType: "Ortodontska Terapija / Ispravljanje Zuba i Vilice",
+    name: seoData.sr.servicePages.orthodontics.title,
+    description:
+      "Moderna ortodontska terapija za decu i odrasle, uključujući fiksne i mobilne aparatiće, kao i prozirne folije (alignere). Postignite pravilan zagriz i estetski osmeh.",
+
+    provider: {
+      "@type": "Dental",
+      name: "Dr Savković Dental Office",
+      url: "https://drsavkovic.rs/",
+      image: "https://drsavkovic.rs/dr-savkovic-dental-logo.svg",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Radovana Simića Cige 7, stan 4",
+        addressLocality: "Beograd",
+        addressRegion: "Srbija",
+        postalCode: "11010",
+        addressCountry: "RS",
+      },
+    },
+
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "RSD",
+      availability: "https://schema.org/InStock",
+      description:
+        "Cena ortodontske terapije zavisi od vrste aparatića i trajanja tretmana. Zakažite konsultacije za preciznu procenu troškova.",
+    },
+
+    areaServed: {
+      "@type": "City",
+      name: "Beograd",
+    },
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(orthodonticsServiceSchema),
+        }}
+      />
       <PageHeader title={t.ortodontics.title} />
-      {/* <div className="container max-auto">
-        <ServiceHeading title={t.ortodontics.title} />
-      </div> */}
+
       <section className="py-16 lg:py-18">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto space-y-32 lg:space-y-40">
-            {/* Svaka sekcija ide jedna ispod druge – savršeno za duže naslove i tekstove */}
             <article className="text-center lg:text-left">
               <h2 className="text-4xl lg:text-6xl font-light uppercase tracking-widest text-[#171717] mb-8">
                 {t.ortodontics.description.subTitle1}

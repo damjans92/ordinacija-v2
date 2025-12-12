@@ -6,7 +6,7 @@ import { seoData } from "@/data/seoData";
 import PageHeader from "@/components/PageHeader";
 
 const BASE_URL = "https://drsavkovic.rs";
-const EN_URL = `${BASE_URL}/en/faq`;
+const EN_URL = `${BASE_URL}/en/faqs`;
 
 export const metadata: Metadata = {
   title: seoData.en.faq.title,

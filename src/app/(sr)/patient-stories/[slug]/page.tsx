@@ -5,8 +5,22 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { PatientStorySingle } from "../../../../../lib/types";
 import StoryHeader from "./_component/StoyHeader";
 import StoryTextSection from "./_component/StoryTextSection";
+import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Priče Pacijenata | NoIndex",
+  description: "Ova stranica se ne indeksira.",
+
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    noarchive: true,
+    nosnippet: true,
+  },
+};
 
 interface PageProps {
   params: Promise<{ slug: string }>;

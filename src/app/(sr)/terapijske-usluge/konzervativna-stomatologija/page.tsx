@@ -2,6 +2,7 @@ import { servicesTextsData } from "@/data/servicesTexts";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: seoData.sr.servicePages.conservativeDentistry.title,
@@ -66,44 +67,35 @@ const ServiceConservative = () => {
       <div className="  max-auto">
         <PageHeader title={t.conservative.title} />
       </div>
-      {/* <div className="container mx-auto">
-        <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
-          <div>
-            <h2 className="text-xl md:text-2xl font-light font-outfit  mb-4 uppercase">
-              {t.conservative.description.subTitle1}
-            </h2>
-            <p>{t.conservative.description.text1}</p>
-          </div>
-          <div>
-            <h2 className="text-xl md:text-2xl font-light font-outfit  mb-4 uppercase">
-              {t.conservative.description.subTitle2}
-            </h2>
-            <p>{t.conservative.description.text2}</p>
-          </div>
-        </div>
-      </div> */}
-      <section className="py-32 bg-white">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-6xl mx-auto">
             <div className="group cursor-default">
-              <div className="p-12 lg:p-16 border border-[#84b788]/20 rounded-3xl hover:border-[#84b788]/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <div className="w-20 h-px bg-[#84b788] mb-8" />
-                <h2 className="text-4xl lg:text-5xl font-normal tracking-wider text-[#171717] mb-6">
+              <div
+                className="p-8 border-2 border-[#84b788] rounded-3xl 
+                       hover:shadow-2xl hover:-translate-y-2 
+                       transition-all duration-500 bg-white shadow-lg h-full"
+              >
+                <h3 className="text-2xl font-semibold text-[#84b788] mb-4">
                   {t.conservative.description.subTitle1}
-                </h2>
-                <p className="text-lg text-[#171717]/70 font-light">
+                </h3>
+
+                <p className="text-base lg:text-lg text-[#171717]/80 font-light leading-relaxed">
                   {t.conservative.description.text1}
                 </p>
               </div>
             </div>
 
             <div className="group cursor-default">
-              <div className="p-12 lg:p-16 border border-[#84b788]/20 rounded-3xl hover:border-[#84b788]/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <div className="w-20 h-px bg-[#84b788] mb-8" />
-                <h2 className="text-4xl lg:text-5xl font-normal tracking-wider text-[#171717] mb-6">
+              <div
+                className="p-8 border-2 border-[#84b788] rounded-3xl 
+                       hover:shadow-2xl hover:-translate-y-2 
+                       transition-all duration-500 bg-white shadow-lg h-full"
+              >
+                <h3 className="text-2xl font-semibold text-[#84b788] mb-4">
                   {t.conservative.description.subTitle2}
-                </h2>
-                <p className="text-lg text-[#171717]/70 font-light">
+                </h3>
+                <p className="text-base lg:text-lg text-[#171717]/80 font-light leading-relaxed">
                   {t.conservative.description.text2}
                 </p>
               </div>
@@ -111,6 +103,7 @@ const ServiceConservative = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </main>
   );
 };

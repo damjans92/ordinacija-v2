@@ -2,6 +2,7 @@ import { servicesTextsData } from "@/data/servicesTexts";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: seoData.sr.servicePages.orthodontics.title,
@@ -64,91 +65,51 @@ const ServiceOrthodontics = () => {
       />
       <PageHeader title={t.ortodontics.title} />
 
-      <section className="py-16 lg:py-18">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto space-y-32 lg:space-y-40">
-            <article className="text-center lg:text-left">
-              <h2 className="text-4xl lg:text-6xl font-light uppercase tracking-widest text-[#171717] mb-8">
-                {t.ortodontics.description.subTitle1}
-              </h2>
-              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light max-w-4xl mx-auto lg:mx-0">
-                {t.ortodontics.description.text1}
-              </p>
-            </article>
-
-            <article className="text-center lg:text-left">
-              <h2 className="text-4xl lg:text-6xl font-light uppercase tracking-widest text-[#171717] mb-8">
-                {t.ortodontics.description.subTitle2}
-              </h2>
-
-              {t.ortodontics.description.text2.split("\n").map((line, idx) => (
-                <p
-                  className="text-base md:text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light max-w-4xl mx-auto lg:mx-0"
-                  key={idx}
-                >
-                  {line}
-                  <br />
-                </p>
-              ))}
-            </article>
-          </div>
-        </div>
-      </section>
-      {/* <section className="py-16 lg:py-18">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-3 gap-16 lg:gap-24">
-              <article className="text-center lg:text-left">
-                <h2 className="text-3xl lg:text-4xl font-light uppercase tracking-widest text-[#171717] mb-8">
+          <div className="max-w-4xl mx-auto space-y-12 lg:space-y-16">
+            <div className="group cursor-default">
+              <div
+                className="p-12 lg:p-16 border-2 border-[#84b788] rounded-3xl 
+                     hover:shadow-2xl hover:-translate-y-2 
+                     transition-all duration-500 bg-white shadow-lg"
+              >
+                <h3 className="text-3xl font-semibold text-[#84b788] mb-8 text-center">
                   {t.ortodontics.description.subTitle1}
-                </h2>
-                <p className="text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light">
+                </h3>
+
+                <p className="text-lg lg:text-xl text-[#171717]/80 font-light leading-relaxed">
                   {t.ortodontics.description.text1}
                 </p>
-              </article>
+              </div>
+            </div>
 
-              <article className="text-center lg:text-left">
-                <h2 className="text-3xl lg:text-4xl font-light uppercase tracking-widest text-[#171717] mb-8">
+            <div className="group cursor-default">
+              <div
+                className="p-12 lg:p-16 border-2 border-[#84b788] rounded-3xl 
+                     hover:shadow-2xl hover:-translate-y-2 
+                     transition-all duration-500 bg-white shadow-lg"
+              >
+                <h3 className="text-3xl font-semibold text-[#84b788] mb-8 text-center">
                   {t.ortodontics.description.subTitle2}
-                </h2>
+                </h3>
+
                 {t.ortodontics.description.text2
-                  .split("\n")
-                  .map((line, idx) => (
+                  .split("\n\n")
+                  .map((paragraph, idx) => (
                     <p
-                      className="text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light mt-4"
                       key={idx}
+                      className="text-lg lg:text-xl text-[#171717]/80 font-light leading-relaxed mb-4"
                     >
-                      {line}
-                      <br />
+                      {paragraph}
                     </p>
                   ))}
-              </article>
+              </div>
             </div>
           </div>
         </div>
-      </section> */}
-
-      {/* <div className="container mx-auto">
-        <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
-          <div>
-            <h2 className="text-2xl   font-light font-outfit  mb-4 uppercase">
-              {t.ortodontics.description.subTitle1}
-            </h2>
-            <p>{t.ortodontics.description.text1}</p>
-          </div>
-          <div>
-            <h2 className="text-2xl   font-light font-outfit  mb-4 uppercase">
-              {t.ortodontics.description.subTitle2}
-            </h2>
-            {t.ortodontics.description.text2.split("\n").map((line, idx) => (
-              <p className="mt-4" key={idx}>
-                {line}
-                <br />
-              </p>
-            ))}
-          </div>
-        </div>
-      </div> */}
+      </section>
+      <Contact />
     </main>
   );
 };

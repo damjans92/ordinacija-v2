@@ -2,6 +2,7 @@ import { servicesTextsData } from "@/data/servicesTexts";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: seoData.sr.servicePages.examination.title,
@@ -64,22 +65,22 @@ const ServiceAppointment = () => {
       />
       <PageHeader title={t.examination.title} />
 
-      <section className=" py-16 lg:py-18">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-6">
-          <article className="max-w-4xl mx-auto text-center">
-            <p className="text-xl lg:text-2xl leading-relaxed text-[#171717]/80 tracking-wide font-light">
-              {t.examination.description}
-            </p>
-          </article>
-        </div>
-      </section>
-      {/* <div className="container mx-auto">
-        <div className="grid  lg:grid-cols-3 gap-4 p-10 px-8 border-1 border-foreground2">
-          <div>
-            <p>{t.examination.description}</p>
+          <div className="max-w-4xl mx-auto group cursor-default">
+            <div
+              className="p-12 lg:p-16 border-2 border-[#84b788] rounded-3xl 
+                   hover:shadow-2xl hover:-translate-y-2 
+                   transition-all duration-500 bg-white shadow-lg"
+            >
+              <p className="text-lg lg:text-xl text-[#171717]/80 font-light leading-relaxed">
+                {t.examination.description}
+              </p>
+            </div>
           </div>
         </div>
-      </div> */}
+      </section>
+      <Contact />
     </main>
   );
 };

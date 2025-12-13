@@ -2,6 +2,7 @@ import { servicesTextsData } from "@/data/servicesTexts";
 import { seoData } from "@/data/seoData";
 import { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: seoData.sr.servicePages.prostheticSurgery.title,
@@ -62,38 +63,57 @@ const ServiceProstetics = () => {
         }}
       />
       <PageHeader title={t.prosthetics.title} />
-      <section className="py-16 lg:py-18">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto space-y-32 lg:space-y-40">
-            <article className="text-center lg:text-left">
-              <h2 className="text-2xl md:text-4xl lg:text-6xl font-light uppercase tracking-widest text-[#171717] mb-8">
-                {t.prosthetics.description.subTitle1}
-              </h2>
-              <p className="text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light max-w-4xl mx-auto lg:mx-0">
-                {t.prosthetics.description.text1}
-              </p>
-            </article>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="group cursor-default">
+              <div
+                className="p-8 border-2 border-[#84b788] rounded-3xl 
+                       hover:shadow-2xl hover:-translate-y-2 
+                       transition-all duration-500 bg-white shadow-lg h-full"
+              >
+                <h3 className="text-2xl font-semibold text-[#84b788] mb-4">
+                  {t.prosthetics.description.subTitle1}
+                </h3>
+                <p className="text-base lg:text-lg text-[#171717]/80 font-light leading-relaxed">
+                  {t.prosthetics.description.text1}
+                </p>
+              </div>
+            </div>
 
-            <article className="text-center lg:text-left">
-              <h2 className="text-2xl md:text-4xl lg:text-6xl font-light uppercase tracking-widest text-[#171717] mb-8">
-                {t.prosthetics.description.subTitle2}
-              </h2>
-              <p className="text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light max-w-4xl mx-auto lg:mx-0">
-                {t.prosthetics.description.text2}
-              </p>
-            </article>
+            <div className="group cursor-default">
+              <div
+                className="p-8 border-2 border-[#84b788] rounded-3xl 
+                       hover:shadow-2xl hover:-translate-y-2 
+                       transition-all duration-500 bg-white shadow-lg h-full"
+              >
+                <h3 className="text-2xl font-semibold text-[#84b788] mb-4">
+                  {t.prosthetics.description.subTitle2}
+                </h3>
+                <p className="text-base lg:text-lg text-[#171717]/80 font-light leading-relaxed">
+                  {t.prosthetics.description.text2}
+                </p>
+              </div>
+            </div>
 
-            <article className="text-center lg:text-left">
-              <h2 className="text-2xl md:text-4xl lg:text-6xl font-light uppercase tracking-widest text-[#171717] mb-8">
-                {t.prosthetics.description.subTitle3}
-              </h2>
-              <p className="text-lg lg:text-xl leading-relaxed text-[#171717]/80 font-light max-w-4xl mx-auto lg:mx-0">
-                {t.prosthetics.description.text3}
-              </p>
-            </article>
+            <div className="group cursor-default md:col-span-2">
+              <div
+                className="p-8 border-2 border-[#84b788] rounded-3xl 
+                       hover:shadow-2xl hover:-translate-y-2 
+                       transition-all duration-500 bg-white shadow-lg"
+              >
+                <h3 className="text-2xl font-semibold text-[#84b788] mb-4">
+                  {t.prosthetics.description.subTitle3}
+                </h3>
+                <p className="text-base lg:text-lg text-[#171717]/80 font-light leading-relaxed">
+                  {t.prosthetics.description.text3}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <Contact />
     </main>
   );
 };

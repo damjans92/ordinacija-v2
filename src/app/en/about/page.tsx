@@ -10,10 +10,12 @@ export const metadata: Metadata = {
   title: seoData.en.about.title,
   description: seoData.en.about.description,
   keywords: [
-    "Dr Savković biography",
-    "dentist experience Belgrade",
-    "dental authority Belgrade",
-    "dentist Medaković EAT",
+    "Dr Savkovic dentist Belgrade",
+    "dentist in Medakovic Belgrade",
+    "dental clinic Belgrade Serbia",
+    "best English speaking dentist Belgrade",
+    "Dr Savkovic biography",
+    "experienced dentist Belgrade",
   ],
   alternates: {
     canonical: "https://drsavkovic.rs/en/about",

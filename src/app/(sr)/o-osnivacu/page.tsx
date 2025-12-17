@@ -10,10 +10,11 @@ export const metadata: Metadata = {
   title: seoData.sr.about.title,
   description: seoData.sr.about.description,
   keywords: [
-    "Dr Savković biografija",
-    "iskustvo stomatolog Beograd",
-    "autoritet stomatolog",
-    "stomatolog Medaković EAT",
+    "Dr Savković stomatolog",
+    "stomatološka ordinacija Medaković",
+    "najbolji stomatolog Beograd",
+    "iskusan zubar Beograd",
+    "stomatološki pregled cena",
   ],
   alternates: {
     canonical: "https://drsavkovic.rs/o-osnivacu",
